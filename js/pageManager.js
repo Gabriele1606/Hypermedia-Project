@@ -31,11 +31,7 @@ function clickPageLinks() {
 
             manager(args);
         }
-
-
-
     };
-
 }
 
 // it manages the content of the main section
@@ -50,7 +46,7 @@ function manager(args) {
     var special = parts[1];
 
     // enable script for calls to external php
-    $.getScript('js/ajaxCalls.js', function(){
+    
         // load the page dinamycally inside the template
         $( ".mainContent" ).load(page+'.html', function() {
 
@@ -59,61 +55,57 @@ function manager(args) {
             // the callback function
             switch (page) {
                 case 'home':
-                    // scripts for "static" content
-                    $.getScript('js/staticCalls.js', function() {
-                        getInfo('2');
-                        getInfo('3');
-                        getInfo('4');
-                        getInfo('5');
-                    });
-
-                    clickPageLinks();
-
-                    break;
+                clickPageLinks();
+                break;
+                case 'contacts':
+                clickPageLinks();
+                break;
+                case 'whoweare':
+                clickPageLinks();
+                break;
                 case 'promotions':
-                    getPromoIndex('1');
-                    getPromoIndex('2');
-                    getPromoIndex('3');
-                    getPromoIndex('4');
-                    break;
-                case 'categories':
-                    getCategorie(function () { clickPageLinks(); });
-                    break;
+                getPromoIndex('1');
+                clickPageLinks();
+                break;
+                case 'allSmartLifeServices':
+                var categoria="smartlife";
+                getCategorie(categoria,function () { clickPageLinks(); });
+                break;
                 case 'classes_al':
-                    getCorsi(function () { clickPageLinks(); });
-                    break;
+                getCorsi(function () { clickPageLinks(); });
+                break;
                 case 'classes_lvl':
-                    getCorsiPerLivello(function () { clickPageLinks(); });
-                    break;
+                getCorsiPerLivello(function () { clickPageLinks(); });
+                break;
                 case 'classes_cat':
-                    getCorsiCat(special,function () { clickPageLinks(); });
-                    break;
+                getCorsiCat(special,function () { clickPageLinks(); });
+                break;
                 case 'single_class':
-                    getCorso(special,function () { clickPageLinks(); });
-                    break;
+                getCorso(special,function () { clickPageLinks(); });
+                break;
                 case 'trainers':
-                    getIstruttori(function () { clickPageLinks(); });
-                    break;
+                getIstruttori(function () { clickPageLinks(); });
+                break;
                 case 'single_trainer':
-                    getIstruttore(special,function () { clickPageLinks(); });
-                    $.getScript("js/externalAPIs.js", function() {
-                        getTweets();
-                    });
-                    break;
+                getIstruttore(special,function () { clickPageLinks(); });
+                $.getScript("js/externalAPIs.js", function() {
+                    getTweets();
+                });
+                break;
                 case 'pricing':
-                    $.getScript("js/externalAPIs.js", function() {
-                        facebookInit();
-                        facebookPrepare();
-                    });
-                    break;
+                $.getScript("js/externalAPIs.js", function() {
+                    facebookInit();
+                    facebookPrepare();
+                });
+                break;
                 case 'contact':
-                    $.getScript("js/externalAPIs.js", function() {
-                        initializeMap();
-                    });
-                    getInfo('6');
-                    break;
+                $.getScript("js/externalAPIs.js", function() {
+                    initializeMap();
+                });
+                getInfo('6');
+                break;
                 default:
-                    clickPageLinks();
+                clickPageLinks();
             }
             //************** END SPECIFIC PAGE FUNCTIONS ***********//
 
@@ -121,7 +113,4 @@ function manager(args) {
             window.scrollTo(0,0);
         });
 
-    });
-
-
-}
+    }

@@ -5,36 +5,23 @@
  * Author: Riccardo Cannistrà, Alessio Dichio, Gabriele Bressan
  */
 
-function getPromoIndex(info) {
-
-        $.ajax({
+ function getPromoIndex(info) {
+    $.ajax({
         method: "POST",
-        dataType: "json", //type of data
         crossDomain: true, //localhost purposes
         url: "php/getPromoIndex.php", //Relative or absolute path to file.php file
         data: {id:info},
         success: function(response) {
-            var json=JSON.parse(response);
-            var content = '';
-            $.each(json[0], function(key, value){
-                content += value;
-            });
 
-            // based on id I will fill the related divs
-            switch(info) {
-                case '1':
-                    $("#mainTitle").html(content);
-                break;
-                case '2':
-                    $("#desc").html(content);
-                break;
-                case '3':
-                    $("#left-image").html(content);
-                break;
-                case '4':
-                    $("#right-image").html(content);
-                break;
-            }
+            var json=JSON.parse(response);
+
+            $("#mainTitle").html(json[0].title);
+            
+            $("#desc").html(json[0].descrizione);
+
+            $("#left-image").html(json[0].left_image);
+
+            $("#right-image").html(json[0].right_image);
 
         },
         error: function(request,error)
@@ -47,39 +34,28 @@ function getPromoIndex(info) {
 
 
 // retrieve list of categories from the db
-function getCategorie(callback){
-    console.log("I'm ready!");
-    var id=1;
+function getCategorie(categoria,callback){
 
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "http://zerbinatifrancesco.it/hypermedia/php/getCategorie.php", //Relative or absolute path to file.php file
-        data: {course:id},
+        url: "php/getCategorie.php", //Relative or absolute path to file.php file
+        data: {categoria:categoria},
         success: function(response) {
 
             var categorie=JSON.parse(response);
-            var el="";
+            var nome;
+            var immagine;
+            var descrizione;
             for(var i=0;i<categorie.length;i++){
-
-                if(i%2==0)  {
-                    el+='<div class="row class_box">';
-
-                    el+='<div class="col-md-6"><div class="class_right"><h3>'+categorie[i].nome+'</h3><p>'+categorie[i].descrizione+'</p>';
-                    el+='<ul class="buttons_class"><li class="btn5"><a href="#">Descrizione</a></li><li class="btn6"><a class="interactive_link" href="#classes_cat&'+categorie[i].id+'">Corsi</a></li></ul><div class="clear"></div><div class="clear"></div></div></div>';
-
-
-                } else {
-
-                    el+='<div class="col-md-6"><div class="class_right1"><h3>'+categorie[i].nome+'</h3><p>'+categorie[i].descrizione+'</p>';
-                    el+='<ul class="buttons_class"><li class="btn7"><a href="#">Descrizione</a></li><li class="btn8"><a class="interactive_link" href="#classes_cat&'+categorie[i].id+'">Corsi</a></li></ul><div class="clear"></div><div class="clear"></div></div></div>';
-
-                    el+='</div>';
-                }
-
+                nome=categorie[i].nome;
+                descrizione=categorie[i].descrizione;
+                immagine=categorie[i].immagine;
+                $(".mainTitle"+i).html(nome);
+                $(".descrizione"+i).html(descrizione);
+                $(".immagine"+i).html(immagine);
             }
 
-            $(".classes_wrapper").html(el);
             callback();
         },
         error: function(request,error)
@@ -309,11 +285,11 @@ function getIstruttori(callback){
             var el='';
             for(var i=0;i<istruttori.length;i++){
 
-                    el+='<div class="col-md-4"><div class="box2"><div class="box1_left">';
-                    el+='<a href="#single_trainer&'+istruttori[i].id+'" class="interactive_link"><img src="images/'+istruttori[i].img_small+'" class="img-responsive img-center" alt=""/></a>';
-                    el+='<div class="desc2"><h3>'+istruttori[i].nome+'<br><span class="m_text">'+istruttori[i].specialita+'</span></h3>';
-                    el+='<div class="clear"></div></div></div>';
-                    el+='<div class="box1_right">'+istruttori[i].intro+'</div><div class="clear"></div></div></div>';
+                el+='<div class="col-md-4"><div class="box2"><div class="box1_left">';
+                el+='<a href="#single_trainer&'+istruttori[i].id+'" class="interactive_link"><img src="images/'+istruttori[i].img_small+'" class="img-responsive img-center" alt=""/></a>';
+                el+='<div class="desc2"><h3>'+istruttori[i].nome+'<br><span class="m_text">'+istruttori[i].specialita+'</span></h3>';
+                el+='<div class="clear"></div></div></div>';
+                el+='<div class="box1_right">'+istruttori[i].intro+'</div><div class="clear"></div></div></div>';
             }
             el+='<div class="clear"></div>';
 
@@ -420,3 +396,4 @@ function drawEntryCorso(last,object) {
     return el;
 
 }
+

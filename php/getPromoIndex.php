@@ -9,29 +9,10 @@ header('Access-Control-Allow-Origin: *');
 
 require('connect_db.php');
 
-//connection to db
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-
 if(isset($_POST['id'])) $type = $_POST['id'];
     else $type = '1'; //debug
-
-    switch($type) {
-
-        case '1':
-        $query = "SELECT title FROM promotions";
-        break;
-        case '2':
-        $query = "SELECT descrizione FROM promotions";
-        break;
-        case '3':
-        $query = "SELECT left-image FROM promotions";
-        break;
-        case '4':
-        $query = "SELECT right-image FROM promotions";
-        break;
-        case '5':
-    }
-
+    
+    $query = "SELECT * FROM promotions";
 
     //query execution
     $result = mysqli_query($dbc,$query);  
@@ -49,15 +30,6 @@ if(isset($_POST['id'])) $type = $_POST['id'];
     $result->close();
 
     //close connection
-    $mysqli->close();
-
-
-
-}
-
-
-
-
-
-
-?>
+    $dbc->close();
+    
+    ?>
