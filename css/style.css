@@ -1,0 +1,31 @@
+/* This CSS stylesheed includes CSS styles for non-predefined elements of the bootstrap theme.
+Those elements are accessible in main.css */
+
+/*************************
+******* Home Banners *****
+**************************/
+
+section.banners {
+	padding-top: 40px;
+	background-color: #e6e6ff;
+}
+
+.banner {
+	margin-bottom: 10px;
+}
+
+/*************************
+******* Main Logo ********
+**************************/
+
+a.navbar-brand {
+	margin-bottom: 10px;
+}
+
+/*************************
+***** Promotions Page ****
+**************************/
+
+section.promo_page {
+	background-image: url(../images/bg.jpg);
+}
