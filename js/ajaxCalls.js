@@ -5,13 +5,13 @@
  * Author: Riccardo Cannistrà, Alessio Dichio, Gabriele Bressan
  */
 
-function getInfo(info) {
+function getPromoIndex(info) {
 
         $.ajax({
         method: "POST",
-        //dataType: "json", //type of data
+        dataType: "json", //type of data
         crossDomain: true, //localhost purposes
-        url: "http://zerbinatifrancesco.it/hypermedia/php/getInfo.php", //Relative or absolute path to file.php file
+        url: "php/getPromoIndex.php", //Relative or absolute path to file.php file
         data: {id:info},
         success: function(response) {
             var json=JSON.parse(response);
@@ -23,24 +23,17 @@ function getInfo(info) {
             // based on id I will fill the related divs
             switch(info) {
                 case '1':
-                    $("#info").html(content);
+                    $("#mainTitle").html(content);
                 break;
                 case '2':
-                    $("#home1").html(content);
+                    $("#desc").html(content);
                 break;
                 case '3':
-                    $("#home2").html(content);
+                    $("#left-image").html(content);
                 break;
                 case '4':
-                    $("#promo").html(content);
+                    $("#right-image").html(content);
                 break;
-                case '5':
-                    $("#partners").html(content);
-                break;
-                case '6':
-                    $("#inform").html(content);
-                break;
-
             }
 
         },

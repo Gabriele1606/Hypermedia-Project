@@ -70,6 +70,12 @@ function manager(args) {
                     clickPageLinks();
 
                     break;
+                case 'promotions':
+                    getPromoIndex('1');
+                    getPromoIndex('2');
+                    getPromoIndex('3');
+                    getPromoIndex('4');
+                    break;
                 case 'categories':
                     getCategorie(function () { clickPageLinks(); });
                     break;
