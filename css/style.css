@@ -61,6 +61,22 @@ section#allSmartLifeServices a {
 	color: #fff;
 	font-size: 20px;
 }
+
+/*************************
+***** All Assistance Page*
+**************************/
+
+section#services{
+	padding-top: 15px;
+    background-image: url(../images/assistanceservices/background.jpg);
+}
+
+section#services row{
+    table-layout: fixed;
+}
+
+
+
     
 /*************************
 ***** Sidebar CSS ****
