@@ -71,6 +71,9 @@ function manager(args) {
                 var categoria="smartlife";
                 getCategorie(categoria,function () { clickPageLinks(); });
                 break;
+                case 'allAssistanceServices':
+                clickPageLinks();
+                break;
                 case 'classes_al':
                 getCorsi(function () { clickPageLinks(); });
                 break;
