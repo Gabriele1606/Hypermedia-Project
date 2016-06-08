@@ -286,8 +286,8 @@ section.sidebar {
   padding: 0;
 }
     
-
+.contact_page {
+	background-image: url(../images/contact/contact.png);
+	
 }
-#contact{
-    	background-color: #07478f;
-    }
+
