@@ -106,11 +106,10 @@ function manager(args) {
                         facebookPrepare();
                     });
                     break;
-                case 'contact':
-                    $.getScript("js/externalAPIs.js", function() {
-                        initializeMap();
-                    });
-                    getInfo('6');
+                case 'contactPage':
+                    window.open("contactPage.html");
+                    
+                    
                     break;
                 default:
                     clickPageLinks();

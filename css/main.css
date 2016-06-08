@@ -1548,21 +1548,22 @@ ul.social_icons li  a i{
 }
 
 .portfolio-items, 
-.portfolio-filter {
+.contact-menu  {
   list-style: none outside none;
   margin: 0 0 40px 0;
   padding: 0;
 }
 
-.portfolio-filter > li {
+.contact-menu  > li {
   display: inline-block;
 }
 
-.portfolio-filter > li a {
+.contact-menu  > li a {
   background: none repeat scroll 0 0 #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   margin-right: 20px;
+  margin-top: 5px;
   text-transform: uppercase;
   transition: all 0.9s ease 0s;
   -moz-transition: all 0.9s ease 0s;
@@ -1573,8 +1574,8 @@ ul.social_icons li  a i{
   border-radius: 3px;
 }
 
-.portfolio-filter > li a:hover,
-.portfolio-filter > li a.active{
+.contact-menu  > li a:hover,
+.contact-menu  > li a.active{
   color:#fff;
   background: #c52d2f;
   border: 1px solid #c52d2f;

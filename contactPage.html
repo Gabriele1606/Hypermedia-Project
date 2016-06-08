@@ -1,0 +1,32 @@
+
+
+<section id="contact" class="no-margin">
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script>
+	$(function(){
+
+				// load the header
+				$(".contactMenu").load( "contactMenu.html");
+
+				// default behaviour: load homepage
+				$(".content").load( "contact.html", function() {
+					// after loading the page we should load the page manager for links
+					$.getScript('js/pageManager.js', function() {
+						// load dynamic links (index.html)
+						clickPageLinks();
+					});
+
+				});
+				
+			});
+	<div class="contactMenu"></div>
+		<div class="content"></div>
+	</script>
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</section>
