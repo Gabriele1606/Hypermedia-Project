@@ -57,9 +57,6 @@ function manager(args) {
                 case 'home':
                 clickPageLinks();
                 break;
-                case 'contacts':
-                clickPageLinks();
-                break;
                 case 'whoweare':
                 clickPageLinks();
                 break;
@@ -93,12 +90,11 @@ function manager(args) {
                 });
                 break;
                 case 'pricing':
-                        facebookInit();
-                        facebookPrepare();
-                    break;
+                facebookInit();
+                facebookPrepare();
+                break;
                 case 'contactPage':
-                    clickPageLinks();  
-                    break;
+                clickPageLinks();  
                 break;
                 default:
                 clickPageLinks();
