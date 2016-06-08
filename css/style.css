@@ -220,17 +220,74 @@ section.sidebar {
         }
     
     }
-
-    
  
+/*************************
+******* CONTACT MENU *****
+**************************/
 
+
+.contact-menu  > li {
+  display: inline-block;
+}
+
+.contact-menu  > li a {
+  background: none repeat scroll 0 0 #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-menu  > li a:hover {
+	background: none repeat scroll 0 0 #00004d;
+	color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-menu  > li.active {
+  background: none repeat scroll 0 0 #00004d;
+	color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-menu  {
+  list-style: none outside none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
     
 
 }
 #contact{
     	background-color: #07478f;
     }
-
-.contact_menu{
-
-}

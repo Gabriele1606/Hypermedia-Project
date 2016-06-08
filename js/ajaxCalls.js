@@ -10,7 +10,7 @@
         method: "POST",
         crossDomain: true, //localhost purposes
         url: "php/getPromoIndex.php", //Relative or absolute path to file.php file
-        data: {id:info},
+        data: '',
         success: function(response) {
 
             var json=JSON.parse(response);

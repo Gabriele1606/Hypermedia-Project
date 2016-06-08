@@ -29,7 +29,10 @@ function clickPageLinks() {
 
             newElm.addClass('active');
 
-            manager(args);
+            if(page!='contact'&&page!='askus'&&page!='whereweare'&&page!='findyourshop')
+                manager(args);
+            else
+                staticPageManager(page);
         }
     };
 }
@@ -105,4 +108,24 @@ function manager(args) {
             window.scrollTo(0,0);
         });
 
+    }
+
+    function staticPageManager(page) {
+        $( ".content" ).load(page+'.html', function() {
+
+            switch (page) {
+                case 'askus':
+                clickPageLinks();
+                break;
+                case 'findyourshop':
+                clickPageLinks();
+                break;
+                case 'whereweare':
+                clickPageLinks();
+                break;
+                case 'contact':
+                clickPageLinks();
+                break;
+            }
+        });
     }

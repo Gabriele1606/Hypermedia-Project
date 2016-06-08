@@ -8,10 +8,6 @@
 header('Access-Control-Allow-Origin: *');
 
 require('connect_db.php');
-
-if(isset($_POST['id'])) $type = $_POST['id'];
-    else $type = '1'; //debug
-    
     $query = "SELECT * FROM promotions";
 
     //query execution
