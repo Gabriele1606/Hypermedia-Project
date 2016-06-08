@@ -26,8 +26,41 @@ a.navbar-brand {
 ***** Promotions Page ****
 **************************/
 
-section.promo_page {
-	background-image: url(../images/bg.jpg);
+section#promo_page {
+	background-image: url(../images/promotions/bg.jpg);
+}
+
+section#promo_page h2 {
+	margin-top: 15px;
+}
+
+section#promo_page p {
+	background-color: rgba(230, 246, 255,0.9);
+	border-radius: 16px;
+}
+
+section#promo_page a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.btn-primary:hover {
+	background-color: #990000;
+}
+
+/*************************
+***** All Smart Life Page*
+**************************/
+
+section#allSmartLifeServices {
+	background-color: #e6f2ff;
+	padding-top: 15px;
+}
+
+section#allSmartLifeServices a {
+	color: #fff;
+	font-size: 20px;
+}
     
 /*************************
 ***** Sidebar CSS ****
