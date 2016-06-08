@@ -93,30 +93,13 @@ function manager(args) {
                 });
                 break;
                 case 'pricing':
-<<<<<<< HEAD
-                    $.getScript("js/externalAPIs.js", function() {
                         facebookInit();
                         facebookPrepare();
-                    });
                     break;
                 case 'contactPage':
-                    window.open("contactPage.html");
-                    
-                    
+                    clickPageLinks();  
                     break;
-=======
-                $.getScript("js/externalAPIs.js", function() {
-                    facebookInit();
-                    facebookPrepare();
-                });
                 break;
-                case 'contact':
-                $.getScript("js/externalAPIs.js", function() {
-                    initializeMap();
-                });
-                getInfo('6');
-                break;
->>>>>>> 426bf2c7d1c5b9376e657e7c45ceccd2bc6b0b6c
                 default:
                 clickPageLinks();
             }
