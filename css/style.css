@@ -62,6 +62,11 @@ section#allSmartLifeServices a {
 	font-size: 20px;
 }
 
+.btn-primary:hover {
+	background-color: #990000;
+}
+
+
 /*************************
 ***** All Assistance Page*
 **************************/
@@ -75,6 +80,84 @@ section#services row{
     table-layout: fixed;
 }
 
+.btn-primary:hover {
+	background-color: #990000;    
+}
+section#services .btn-primary {
+    float:right;
+    width: 35%;
+    text-align: center;
+    
+}
+section#services a {
+	color: #fff;
+}
+
+/*************************
+***** The Group Telecom*
+**************************/
+
+section#theGroup{
+	padding-top: 15px;
+    background-image: url(../images/theGroup/background.png);
+}
+
+section#theGroup .nav-tabs>li>a {
+    align-content: center;
+    background-color: #000033;
+    color: #fff;
+    margin-right: 15px;
+    border-bottom: 0px;
+}
+section#theGroup .nav-tabs {
+    margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+    border: 0px;
+    border-bottom: 0px;
+}
+section#theGroup .nav-tabs>li{
+    border-bottom: 0px;
+}
+
+section#theGroup .nav-tabs>li.active>a{
+    background-color: #cc0000;
+    border-bottom: 0px;
+}
+
+section#theGroup .nav-tabs>li>a:hover {
+	background-color: #990000;    
+}
+    
+section#theGroup .nav-tabs>li.active>a:after{
+    border-style: none;
+}
+
+section#theGroup .nav-tabs.nav-justified>.active>a {
+    border: none;
+}
+
+section#theGroup .nav-tabs.nav-justified>.active>a:hover{
+    border: none;
+}
+
+section#theGroup .nav-tabs.nav-justified>.active>a:focus{
+    border: none;
+}
+
+section#theGroup h2{
+    padding-top: 15px;
+	color: #fff;
+}
+section#theGroup i {
+	color: #fff;
+}
+section#theGroup div#text{
+    border-bottom: 3px dotted #ccc;
+    width: 85%;
+    color: #fff;
+    text-align: justify;
+}
 
 
     
