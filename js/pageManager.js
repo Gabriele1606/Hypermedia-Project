@@ -99,9 +99,6 @@ function manager(args) {
                 facebookInit();
                 facebookPrepare();
                 break;
-                case 'contactPage':
-                clickPageLinks();  
-                break;
                 default:
                 clickPageLinks();
             }
@@ -121,9 +118,6 @@ function manager(args) {
                 clickPageLinks();
                 break;
                 case 'findyourshop':
-                clickPageLinks();
-                break;
-                case 'whereweare':
                 clickPageLinks();
                 break;
                 case 'contact':

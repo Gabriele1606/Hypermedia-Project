@@ -302,8 +302,129 @@ section.sidebar {
   padding: 0;
 }
     
-.contact_page {
-	background-image: url(../images/contact/contact.png);
+section#contact {
+	
+  background: url(../images/contact/contact.png) no-repeat center center fixed; 
+  background-size: cover;;
 	
 }
 
+.contact_div {
+	background-color: rgba(230, 246, 255,0.9);
+	border-radius: 5px;
+	
+}
+section#contact p {
+	color: black;
+}
+section#contact h1 {
+	color: red;
+}
+section#contact h2 {
+	color: red;
+	margin-left: 13px;
+}
+
+.contact_left_space{
+	text-align: left;
+	margin-left: 13px;
+	margin-top: 20px;
+	float: left;
+}
+.contact_right_space{
+	text-align: left;
+	margin-left: 500px;
+}
+
+.input_name{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.input_surname{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.input_mail{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.input_telephone{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+
+}
+.input_birthday{
+	clear: left;
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.input_city{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.input_provincia{
+
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.input_cap{
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+
+}
+.submit_button{
+    background: -webkit-linear-gradient(left top, #980000 , #E80000 );
+	height: 210px;
+	width:  200px;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	margin-top: -35px;
+	margin-right: 60px;
+	float: right;
+	border: none;
+	border-radius: 5px;
+}
+.submit_button:hover{
+    background: -webkit-linear-gradient(left top, #580000  , #880000  );
+	height: 210px;
+	width:  200px;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	margin-top: -35px;
+	margin-right: 60px;
+	float: right;
+	border: none;
+	border-radius: 5px;
+}
+.text_area{
+	resize: none;
+	clear: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	float: left;
+}
