@@ -53,7 +53,7 @@ section#promo_page a {
 **************************/
 
 section#allSmartLifeServices {
-	background-color: #e6f2ff;
+	background-image: url(../images/smartlife_cat/bg.jpg);
 	padding-top: 15px;
 }
 
@@ -62,10 +62,50 @@ section#allSmartLifeServices a {
 	font-size: 20px;
 }
 
+section#allSmartLifeServices p {
+	background-color: rgba(230, 246, 255,0.6);
+	border-radius: 16px;
+	padding: 5px;
+}
+
+section#allSmartLifeServices img {
+	box-shadow: 8px 8px 10px #aaa;
+	border-radius: 20%;
+}
+
 .btn-primary:hover {
 	background-color: #990000;
 }
 
+/*************************
+***** All Plans Page******
+**************************/
+
+/*Product page layout*/
+
+section#plans {
+	 background-color: rgb(242,255,255);
+}
+
+.products,.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 21%;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
 
 /*************************
 ***** All Assistance Page*
@@ -159,7 +199,28 @@ section#theGroup div#text{
     text-align: justify;
 }
 
+section#theGroup div#textintable{
+    border-right: 3px dotted #ccc;    
+    width: 50%;
+    color: #fff;
+    text-align: justify;
+    float: left;
+}
 
+section#theGroup div#textintable2{
+    width: 50%;
+    color: #fff;
+    text-align: justify;
+    float: left;
+}
+section#theGroup h2#coloredText{
+    color: #ff0000;
+    font-size: large;
+}
+section#theGroup strong#coloredText{
+    color: #ff0000;
+    font-size: large;
+}
     
 /*************************
 ***** Sidebar CSS ****

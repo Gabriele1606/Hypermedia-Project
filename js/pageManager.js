@@ -74,8 +74,9 @@ function manager(args) {
                 case 'allAssistanceServices':
                 clickPageLinks();
                 break;
-                case 'classes_al':
-                getCorsi(function () { clickPageLinks(); });
+                case 'plans':
+                var tabella='piani';
+                getIntro(tabella,function () { clickPageLinks(); });
                 break;
                 case 'classes_lvl':
                 getCorsiPerLivello(function () { clickPageLinks(); });
