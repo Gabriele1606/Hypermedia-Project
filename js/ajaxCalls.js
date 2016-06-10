@@ -66,6 +66,31 @@ function getCategorie(categoria,callback){
 
 }
 
+function getIntro(tabella,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getIntro.php", //Relative or absolute path to file.php file
+        data: {tabella:tabella},
+        success: function(response) {
+
+            var intro=JSON.parse(response);
+            var content='';
+            for(var i=0;i<intro.length;i++){
+                content+=intro[i].intro;
+            }
+
+             $(".plans-grid").html(content);
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
 // retrieve courses given a category (category param)
 function getCorsiCat(category,callback) {
 
