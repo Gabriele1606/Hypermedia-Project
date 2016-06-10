@@ -201,7 +201,28 @@ section#theGroup div#text{
     text-align: justify;
 }
 
+section#theGroup div#textintable{
+    border-right: 3px dotted #ccc;    
+    width: 50%;
+    color: #fff;
+    text-align: justify;
+    float: left;
+}
 
+section#theGroup div#textintable2{
+    width: 50%;
+    color: #fff;
+    text-align: justify;
+    float: left;
+}
+section#theGroup h2#coloredText{
+    color: #ff0000;
+    font-size: large;
+}
+section#theGroup strong#coloredText{
+    color: #ff0000;
+    font-size: large;
+}
     
 /*************************
 ***** Sidebar CSS ****
