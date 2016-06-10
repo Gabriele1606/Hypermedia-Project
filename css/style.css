@@ -421,28 +421,28 @@ section#contact h2 {
 
 .input_name{
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
 }
 .input_surname{
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
 }
 .input_mail{
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
 }
 .input_telephone{
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
@@ -451,14 +451,14 @@ section#contact h2 {
 .input_birthday{
 	clear: left;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
 }
 .input_city{
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
@@ -466,14 +466,14 @@ section#contact h2 {
 .input_provincia{
 
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
 }
 .input_cap{
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
 	float: left;
 
@@ -486,7 +486,7 @@ section#contact h2 {
 	font-size: 40px;
 	text-align: center;
 	margin-top: -35px;
-	margin-right: 60px;
+	margin-right: 40px;
 	float: right;
 	border: none;
 	border-radius: 5px;
@@ -499,7 +499,7 @@ section#contact h2 {
 	font-size: 40px;
 	text-align: center;
 	margin-top: -35px;
-	margin-right: 60px;
+	margin-right: 40px;
 	float: right;
 	border: none;
 	border-radius: 5px;
@@ -507,7 +507,13 @@ section#contact h2 {
 .text_area{
 	resize: none;
 	clear: left;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 20px;
+	padding-bottom: 10px;
 	float: left;
+}
+
+section#contact-info h1 {
+	position: left;
+	color: red;
 }

@@ -9,56 +9,56 @@
 <script type="text/javascript" src="js/checkForm.js"></script>
 <div>
 
-<form  name="send_problem" action="php/insertProblem.php" id="send_problem" onsubmit="return(validateForm())" method="post">
+<form  name="send_problem" class="contact-form" action="php/insertProblem.php" id="send_problem" onsubmit="return(validateForm())" method="post">
 
 <div class="input_name">
   First name*:<br>
-  <input type="text" name="name" placeholder="Nome...">
+  <input type="text" class="form-control" name="name" placeholder="Nome...">
 </div>
 
 <div class="input_surname">
   Last name*:<br>
-  <input type="text" name="surname" placeholder="Cognome...">
+  <input type="text" class="form-control" name="surname" placeholder="Cognome...">
 </div>
 
 <div class="input_mail">
   Mail*:<br>
-  <input type="text" name="mail" placeholder="Indirizzo mail...">
+  <input type="text" class="form-control" name="mail" placeholder="Indirizzo mail...">
 </div>
 
 <div class="input_telephone">
   Telephone Number*:<br>
-  <input type="text" name="telephone" placeholder="Telefono...">
+  <input type="text"  class="form-control" name="telephone" placeholder="Telefono...">
 </div>
 
 
 <div class="input_birthday">
   Your Birthday*:<br>
-  <input type="text" name="birthday" placeholder="YYYY/MM/GG">
+  <input type="text" class="form-control" name="birthday" placeholder="YYYY/MM/GG">
 </div>
 
 <div class="input_city">
 	Your City:<br>
-<input type="text" name="city" placeholder="City...">
+<input type="text" class="form-control" name="city" placeholder="City...">
 </div>
 
 <div class="input_provincia">
 	Your Province:<br>
-<input type="text" name="provincia" placeholder="Provincia...">
+<input type="text" class="form-control" name="provincia" placeholder="Provincia...">
 </div>
 
 <div class="input_cap">
 
   Insert CAP:<br>
-  <input type="text" name="cap" placeholder="CAP...">
+  <input type="text" class="form-control" name="cap" placeholder="CAP...">
 </div>
 
 	
   <input type="submit" class="submit_button" value="SEND">
-</div>
 
-<textarea class="text_area" name="textArea" id="textArea" rows="4" cols="96">
+
+<textarea class="text_area" class="form-control" name="textArea" id="textArea" rows="4" cols="98">
 </textarea>
-</div>
-</form>
 
+</form>
+</div>
