@@ -80,7 +80,7 @@ function getIntro(tabella,callback) {
                 content+=intro[i].intro;
             }
 
-             $(".plans-grid").html(content);
+             $(".products").append(content);
 
             callback();
         },

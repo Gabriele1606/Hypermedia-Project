@@ -83,16 +83,14 @@ section#allSmartLifeServices img {
 
 /*Product page layout*/
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(242,255,255);
+section#plans {
+	 background-color: rgb(242,255,255);
 }
 
-/*.products .product-card:first-child, 
-.products .product-card:nth-child(2) {
-  flex: 2 46%;
-}*/
+.products,.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .product-card {
   padding: 2%;
