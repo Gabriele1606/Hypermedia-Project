@@ -63,8 +63,8 @@ function manager(args) {
                 case 'whoweare':
                 clickPageLinks();
                 break;
-                case 'promotions':
-                getPromoIndex('1');
+                case 'allPromotions':
+                getPromoIndex();
                 clickPageLinks();
                 break;
                 case 'allSmartLifeServices':
