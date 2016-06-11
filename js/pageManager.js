@@ -76,7 +76,22 @@ function manager(args) {
                 break;
                 case 'plans':
                 var tabella='piani';
-                getIntro(tabella,function () { clickPageLinks(); });
+                getIntro(tabella,null,function () { clickPageLinks(); });
+                break;
+                case 'smartphones':
+                var tabella='devices';
+                var categoria='smartphones';
+                getIntro(tabella,categoria,function () { clickPageLinks(); });
+                break;
+                case 'tablets':
+                var tabella='devices';
+                var categoria='tablets';
+                getIntro(tabella,categoria,function () { clickPageLinks(); });
+                break;
+                case 'devicesPromotions':
+                var tabella='devices';
+                var categoria='promotions';
+                getIntro(tabella,categoria,function () { clickPageLinks(); });
                 break;
                 case 'classes_lvl':
                 getCorsiPerLivello(function () { clickPageLinks(); });

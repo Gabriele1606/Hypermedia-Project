@@ -4,10 +4,19 @@ require('connect_db.php');
 
 if (isset($_POST['tabella'])) {
 	$tabella=$_POST['tabella'];
+	$categoria=$_POST['categoria'];
+
 }
 else
 	echo "Error, table wasn't set correctly";
+if ($tabella=='devices') {
+	$query="SELECT intro FROM $tabella WHERE categoria='$categoria'";
+}
+else{
+
 $query='SELECT intro FROM '.$tabella;
+}
+
 $result=mysqli_query($dbc,$query);
 
 if($result){
@@ -25,5 +34,6 @@ else
 
 //close connection
 $dbc->close();
+
 
 ?>
