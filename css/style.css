@@ -193,25 +193,32 @@ section#theGroup i {
 	color: #fff;
 }
 section#theGroup div#text{
+    color: #fff;
     border-bottom: 3px dotted #ccc;
     width: 85%;
-    color: #fff;
     text-align: justify;
+}
+section#theGroup div#text{
+    color: #fff;
+    width:85%;
+    text-align: justify;
+}
+section#theGroup . row{
+    width: 85%;
 }
 
 section#theGroup div#textintable{
     border-right: 3px dotted #ccc;    
-    width: 50%;
     color: #fff;
+    padding-left: 35px;
     text-align: justify;
-    float: left;
 }
 
 section#theGroup div#textintable2{
-    width: 50%;
     color: #fff;
+    padding-left: 35px;
+    padding-bottom: 20px;
     text-align: justify;
-    float: left;
 }
 section#theGroup h2#coloredText{
     color: #ff0000;
@@ -221,7 +228,17 @@ section#theGroup strong#coloredText{
     color: #ff0000;
     font-size: large;
 }
-    
+.btn-primary:hover {
+	background-color: #990000;    
+}
+section#theGroup .btn-primary {
+    float:right;
+    width: 25%;
+    text-align: center;
+}
+section#theGroup a {
+	color: #fff;
+}
 /*************************
 ***** Sidebar CSS ****
 **************************/
