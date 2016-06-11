@@ -5,7 +5,7 @@
  * Author: Riccardo Cannistrà, Alessio Dichio, Gabriele Bressan
  */
 
- function getPromoIndex(info) {
+ function getPromoIndex() {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
