@@ -3,5 +3,5 @@
  */
    var $ = jQuery.noConflict();
   $(document).ready(function() { 
-      $('#main-slider').carousel({ interval: 2000, cycle: true });
+      $('#main-slider').carousel({ interval: 4000, cycle: true });
   }); 
