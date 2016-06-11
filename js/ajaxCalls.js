@@ -66,12 +66,12 @@ function getCategorie(categoria,callback){
 
 }
 
-function getIntro(tabella,callback) {
+function getIntro(tabella,categoria,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
         url: "php/getIntro.php", //Relative or absolute path to file.php file
-        data: {tabella:tabella},
+        data: {tabella:tabella, categoria:categoria},
         success: function(response) {
 
             var intro=JSON.parse(response);

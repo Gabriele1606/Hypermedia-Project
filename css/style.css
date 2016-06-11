@@ -869,4 +869,19 @@ section#map-slider h2{
 	color:#0000FF;
 }
 
+/*************************
+***** Intro image Devices*
+**************************/
+.introImageSmartphones{
+  width:150px;
+  height:290px;
+}
+.introImageTablets{
+  width:150px;
+  height:250px;
+}
+.introTelefonoFisso{
+  height:300px;
+  width:550px;
 
+}

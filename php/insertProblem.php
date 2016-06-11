@@ -20,11 +20,17 @@ require('connect_db.php');
     VALUES ('$name ', '$surname', '$mail', '$telephone', '$birthday', '$city', '$province', '$cap' ,'$problem' )";
 
     if(mysqli_query($dbc, $query)){
-    echo "Records added successfully.";
-} else{
+    echo "";
+}
+else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($dbc);
-} 
+}
 mysqli_close($dbc);
 
 
 ?>
+<script>
+        var timer = setTimeout(function() { window.location='../index.html'}, 3000);
+    </script>
+<center><h2>La tua richiesta è stata inviata con successo!<br>
+Stai per essere reindirizzato alla home page...<h2></center>
