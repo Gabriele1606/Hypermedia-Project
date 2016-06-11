@@ -1865,7 +1865,7 @@ ul.social_icons li  a i{
 }
 
 .gmap-area .gmap iframe {
-  border-radius: 50%;
+  border-box: 50%;
   height: 280px;
   width: 600px;
 }
