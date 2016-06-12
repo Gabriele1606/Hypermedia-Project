@@ -805,3 +805,28 @@ section#map-slider h2{
   width:550px;
 
 }
+/*************************
+***** All Devices page ****
+**************************/
+
+section#allDevices {
+  background-image: url(../images/allDevices/sfondo.jpg);
+}
+section#allDevices h2{
+  color:white;
+}
+
+section#allDevices .btn-primary {
+    float:right;
+    width: 35%;
+    text-align: center;
+    
+}
+section#allDevices a {
+  color: #fff;
+}
+section#allDevices .icon-dim{
+    display: block;
+    height: auto;
+    max-width: 20%;
+}
