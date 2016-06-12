@@ -1,0 +1,96 @@
+<div class="visible-xs">
+	<div class="container-fluid">
+		<button class="btn btn-default navbar-btn" data-toggle="collapse" data-target="#filter-sidebar">
+			<i class="fa fa-tasks"></i> Toggle Sidebar
+		</button>
+	</div>
+</div>
+
+<div class="container-fluid">
+
+	<div class="row">
+
+		<!-- filter sidebar -->
+		<div id="filter-sidebar" class="visible-sm visible-md visible-lg collapse sliding-sidebar">
+			<h2>Filter options</h2>
+			<script type="text/javascript">
+				var $checkboxes = $("input:checkbox");
+				$checkboxes.on("change", function(){
+					var opts = getFilterOptions();
+					update(opts);
+				});
+				update();
+			</script>
+			
+			<div>
+				<h4 data-toggle="collapse" data-target="#group-1">
+					<i class="fa fa-fw fa-caret-down parent-expanded"></i>
+					<i class="fa fa-fw fa-caret-right parent-collapsed"></i>
+					Fixed Line
+				</h4>
+				<div id="group-1" class="list-group collapse in">
+					<div>
+						<input type="checkbox" id="fixedline" name="fixedline">
+						<label for="fixedline">All plans</label>
+					</div>
+					<div>
+						<input type="checkbox" id="timvision" name="timvision">
+						<label for="timvision">Internet,Voice & TIM Vision</label>
+					</div>
+					<div>
+						<input type="checkbox" id="fixinternet" name="fixinternet">
+						<label for="fixinternet">Internet, Voice & Sky</label>
+					</div>
+					<div>
+						<input type="checkbox" id="fixvoiceinternet" name="fixvoiceinternet">
+						<label for="fixvoiceinternet">Voice & Internet</label>
+					</div>
+					<div>
+						<input type="checkbox" id="voice" name="voice">
+						<label for="voice">Voice Only</label>
+					</div>
+					<div>
+						<input type="checkbox" id="service" name="service">
+						<label for="service">Fixed Line Service & App</label>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h4 data-toggle="collapse" data-target="#group-2">
+					<i class="fa fa-fw fa-caret-down parent-expanded"></i>
+					<i class="fa fa-fw fa-caret-right parent-collapsed"></i>
+					Mobile
+				</h4>
+				<div id="group-2" class="list-group collapse in">
+					<div>
+						<input type="checkbox" id="mobile" name="mobile">
+						<label for="mobile">All plans</label>
+					</div>
+					<div>
+						<input type="checkbox" id="mobvoiceinternet" name="mobvoiceinternet">
+						<label for="mobvoiceinternet">Voice & Internet</label>
+					</div>
+					<div>
+						<input type="checkbox" id="mobinternet" name="mobinternet">
+						<label for="mobinternet">Internet for Tablet & PC</label>
+					</div>
+					<div>
+						<input type="checkbox" id="smartphone" name="smartphone">
+						<label for="smartphone">Smartphone on installments</label>
+					</div>
+					<div>
+						<input type="checkbox" id="overseas" name="overseas">
+						<label for="overseas">Overseas</label>
+					</div>
+					<div>
+						<input type="checkbox" id="service" name="service">
+						<label for="service">Mobile Service & Apps</label>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>

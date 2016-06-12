@@ -1,7 +1,19 @@
 <!-- Start Plans section -->
 <section class="no-margin" id="plans">
-	<div class="products center container">
-		<!-- content from DB goes here -->
+	<script>
+		$(function(){
+			$(".sidebar-filter").load( "plansSidebar.html");
+		});
+	</script>
+	<div class="container">
+
+		<div class="sidebar-filter col-md-3 wow fadeInUp animated">
+			<!-- Here gets loaded the sidebar for the plans page -->
+		</div>
+		<div class="products center col-md-9 col-sm-9">
+			<!-- content from DB goes here -->
+		</div>
+
 	</div>
 </section><!-- /end of plans grid-->
 
