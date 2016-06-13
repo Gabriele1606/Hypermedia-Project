@@ -13,3 +13,12 @@ function fillMultipleGroupDynamicButtons(previousSection) {
     $("#backToCategory").html("Back to "+previousSection);
     beginTourButton.setAttribute('href','#planPage&0'); //planPage deve cambiare in base alla basic page
 }
+
+function loadBreadCrumb(categoria) {
+    var breadCrumb = document.getElementById('breadcrumbName');
+    if(categoria=='plans') {
+        $("#breadcrumbName").html("Plans");
+    } else if(categoria=='entertainment') {
+        $("#breadcrumbName").html("TV & Entertainment");
+    }
+}
