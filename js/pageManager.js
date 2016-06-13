@@ -47,6 +47,7 @@ function manager(args) {
     // for istance, single_class.html can contains different informations based on
     // different values of special
     var special = parts[1];
+    var id = parts[2];
 
     // enable script for calls to external php
     
@@ -82,9 +83,11 @@ function manager(args) {
                 break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
+                fillDynamicButtons('allDevices');
                 break;
                 case 'deviceInfo':
-                clickPageLinks();
+                var tabella='devices';
+                getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
                 break;
                 case 'caratteristicheTecniche':
                 clickPageLinks();
