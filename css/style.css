@@ -901,6 +901,13 @@ section#devicesInfo .nav-tabs.nav-justified>.active>a:hover{
 section#devicesInfo .nav-tabs.nav-justified>.active>a:focus{
     border: none;
 }
+
+.icon-device{
+  width:50px;
+  height: 50px;
+  display: inline-block;
+}
+
 /*************************
 ***** All Devices by category ****
 **************************/

@@ -12,7 +12,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 debugger;
-	$query="SELECT nome, immagine, caratteristiche, colori, compra, caratteristichetecniche FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+	$query="SELECT nome, immagine, icone, caratteristiche, colori, compra, caratteristichetecniche FROM $tabella WHERE categoria='$categoria' AND id='$id'";
 
 
 

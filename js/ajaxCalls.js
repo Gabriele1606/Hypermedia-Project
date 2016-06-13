@@ -103,6 +103,7 @@ function getDeviceInfo(tabella,categoria,id,callback) {
             var info=JSON.parse(response);
              $(".nome").append(info[0].nome);
              $(".immagine").append(info[0].immagine);
+             $(".icone").append(info[0].icone);
              $(".caratteristiche").append(info[0].caratteristiche);
              $(".colori").append(info[0].colori);
              $(".compra").append(info[0].compra);
