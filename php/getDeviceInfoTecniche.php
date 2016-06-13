@@ -4,7 +4,6 @@ require('connect_db.php');
 
 if (isset($_POST['tabella'])) {
 	$tabella=$_POST['tabella'];
-	$categoria=$_POST['categoria'];
 	$id=$_POST['id'];
 
 }
@@ -12,7 +11,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 debugger;
-	$query="SELECT nome, immagine, caratteristiche, colori, compra, button FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+	$query="SELECT caratteristichetecniche,button FROM $tabella WHERE id='$id'";
 
 
 

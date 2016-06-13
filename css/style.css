@@ -845,12 +845,53 @@ section#infoDevice .immagine{
   height:15%;
   width:15%;
 }
-section#infoDevice .btn-primary {
-    float:none;
-    width: 35%;
+
+/*************************
+***** All Devices by category ****
+**************************/
+
+section#devices .btn-primary {
+    float: left;
     text-align: center;
     
 }
-section#infoDevice a {
+section#devices a {
+  color: #fff;
+}
+section#devices hr {
+  width:70%;
+}
+
+section#devicesInfo .btn-primary {
+    float: left;
+    text-align: center;
+    
+}
+section#devicesInfo a {
+  color: #fff;
+}
+section#devicesInfo hr {
+  width:100%;
+}
+.backToAllDevices{
+  background: #0000CC;
+}
+
+section#devicesInfoTecno a {
+  color: #fff;
+}
+section#devicesInfoTecno hr {
+  width:100%;
+}
+section#devicesInfoTecno ul,ol{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+section#devicesInfoTecno .btn-primary {
+    float: left;
+    text-align: center;
+    
+}
+section#devicesInfoTecno a {
   color: #fff;
 }

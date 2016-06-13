@@ -78,22 +78,13 @@ function manager(args) {
                 var tabella='piani';
                 getIntro(tabella,null,function () { clickPageLinks(); });
                 break;
-                case 'smartphones':
-                var tabella='devices';
-                var categoria='smartphones';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
-                break;
-                case 'tablets':
-                var tabella='devices';
-                var categoria='tablets';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
-                break;
-                case 'devicePromotions':
-                var tabella='devices';
-                var categoria='promotions';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
+                case 'devices':
+                getIntro(page,special,function () { clickPageLinks(); });
                 break;
                 case 'deviceInfo':
+                clickPageLinks();
+                break;
+                case 'caratteristicheTecniche':
                 clickPageLinks();
                 break;
                 case 'classes_lvl':
