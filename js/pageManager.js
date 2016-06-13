@@ -80,15 +80,16 @@ function manager(args) {
                 var categoria='plans';
                 var prevSection='allSmartLifeServices';
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
-                fillDynamicButtons(prevSection);
+                fillMultipleGroupDynamicButtons(prevSection);
                 break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
-                fillDynamicButtons('allDevices');
+                fillMultipleGroupDynamicButtons('allDevices');
                 break;
                 case 'deviceInfo':
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
+                fillTopicDynamicButtons(tabella,special);
                 break;
                 case 'caratteristicheTecniche':
                 clickPageLinks();

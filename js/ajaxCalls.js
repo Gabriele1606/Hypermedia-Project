@@ -106,7 +106,6 @@ function getDeviceInfo(tabella,categoria,id,callback) {
              $(".caratteristiche").append(info[0].caratteristiche);
              $(".colori").append(info[0].colori);
              $(".compra").append(info[0].compra);
-             $(".button").append(info[0].button);
              $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
 
             callback();
