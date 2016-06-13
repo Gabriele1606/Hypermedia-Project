@@ -47,6 +47,7 @@ function manager(args) {
     // for istance, single_class.html can contains different informations based on
     // different values of special
     var special = parts[1];
+    var id = parts[2];
 
     // enable script for calls to external php
     
@@ -74,26 +75,22 @@ function manager(args) {
                 case 'allAssistanceServices':
                 clickPageLinks();
                 break;
-                case 'plans':
-                var tabella='piani';
-                getIntro(tabella,null,function () { clickPageLinks(); });
-                break;
-                case 'smartphones':
-                var tabella='devices';
-                var categoria='smartphones';
+                case 'plans': //è da modificare: plans deve andare dentro la tabella smartlife
+                var tabella='smartlifeservices';
+                var categoria='plans';
+                var prevSection='allSmartLifeServices';
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
+                fillDynamicButtons(prevSection);
                 break;
-                case 'tablets':
-                var tabella='devices';
-                var categoria='tablets';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
-                break;
-                case 'devicePromotions':
-                var tabella='devices';
-                var categoria='promotions';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
+                case 'devices':
+                getIntro(page,special,function () { clickPageLinks(); });
+                fillDynamicButtons('allDevices');
                 break;
                 case 'deviceInfo':
+                var tabella='devices';
+                getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
+                break;
+                case 'caratteristicheTecniche':
                 clickPageLinks();
                 break;
                 case 'classes_lvl':

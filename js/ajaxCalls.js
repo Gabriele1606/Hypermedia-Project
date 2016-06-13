@@ -106,6 +106,30 @@ function getDeviceInfo(tabella,categoria,id,callback) {
              $(".caratteristiche").append(info[0].caratteristiche);
              $(".colori").append(info[0].colori);
              $(".compra").append(info[0].compra);
+             $(".button").append(info[0].button);
+             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
+function getDeviceInfoTecniche(tabella,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getDeviceInfoTecniche.php", //Relative or absolute path to file.php file
+        data: {tabella:tabella, id:id},
+        success: function(response) {
+
+            var info=JSON.parse(response);
+             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
+             $(".button").append(info[0].button);
+             
 
             callback();
         },

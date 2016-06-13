@@ -4,12 +4,16 @@ require('connect_db.php');
 
 if (isset($_POST['tabella'])) {
 	$tabella=$_POST['tabella'];
-	$categoria=$_POST['categoria'];
+	$id=$_POST['id'];
 
 }
-else
-	echo "Error, table wasn't set correctly"; //debugging
-$query="SELECT intro FROM $tabella WHERE categoria='$categoria'";
+else{
+	echo "Error, table wasn't set correctly";
+}
+debugger;
+	$query="SELECT caratteristichetecniche,button FROM $tabella WHERE id='$id'";
+
+
 
 $result=mysqli_query($dbc,$query);
 

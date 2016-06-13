@@ -2,8 +2,8 @@
 
 require('connect_db.php');
 $select = 'SELECT *';
-$from = ' FROM piani';
-$where = ' WHERE TRUE';
+$from = ' FROM smartlifeservices';
+$where = ' WHERE categoria="plans"';
 
 $opts = isset($_POST['filterOpts'])? $_POST['filterOpts'] : array('');
 

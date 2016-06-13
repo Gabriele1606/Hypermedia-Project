@@ -2,6 +2,25 @@
 Those elements are accessible in main.css */
 
 /*************************
+******* General **********
+**************************/
+
+.navigation-info {
+  margin: 0px;
+  background: #000033;
+  color: #fff;
+  border-top: 1px solid #00264d;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.navigation-info a:hover {
+  color: #4da6ff;
+}
+
+/*************************
 ******* Home Banners *****
 **************************/
 
@@ -845,12 +864,95 @@ section#infoDevice .immagine{
   height:15%;
   width:15%;
 }
-section#infoDevice .btn-primary {
-    float:none;
-    width: 35%;
+
+section#devicesInfo .nav-tabs>li>a {
+    align-content: center;
+    background-color: #000033;
+    color: #fff;
+    margin-right: 15px;
+    border-bottom: 0px;
+}
+section#devicesInfo.nav-tabs {
+    margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+    border: 0px;
+    border-bottom: 0px;
+}
+section#devicesInfo .nav-tabs>li{
+    border-bottom: 0px;
+}
+
+section#devicesInfo .nav-tabs>li.active>a{
+    background-color: #cc0000;
+    border-bottom: 0px;
+}
+
+section#devicesInfo .nav-tabs>li>a:hover {
+  background-color: #990000;    
+}
+    
+section#devicesInfo .nav-tabs>li.active>a:after{
+    border-style: none;
+}
+
+section#devicesInfo .nav-tabs.nav-justified>.active>a {
+    border: none;
+}
+
+section#devicesInfo .nav-tabs.nav-justified>.active>a:hover{
+    border: none;
+}
+
+section#devicesInfo .nav-tabs.nav-justified>.active>a:focus{
+    border: none;
+}
+/*************************
+***** All Devices by category ****
+**************************/
+
+section#devices .btn-primary {
+    float: left;
     text-align: center;
     
 }
-section#infoDevice a {
+section#devices a {
+  color: #fff;
+}
+section#devices hr {
+  width:70%;
+}
+
+section#devicesInfo .btn-primary {
+    float: left;
+    text-align: center;
+    
+}
+section#devicesInfo a {
+  color: #fff;
+}
+section#devicesInfo hr {
+  width:100%;
+}
+.backToAllDevices{
+  background: #0000CC;
+}
+
+section#devicesInfoTecno a {
+  color: #fff;
+}
+section#devicesInfoTecno hr {
+  width:100%;
+}
+section#devicesInfoTecno ul,ol{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+section#devicesInfoTecno .btn-primary {
+    float: left;
+    text-align: center;
+    
+}
+section#devicesInfoTecno a {
   color: #fff;
 }
