@@ -2,6 +2,25 @@
 Those elements are accessible in main.css */
 
 /*************************
+******* General **********
+**************************/
+
+.navigation-info {
+  margin: 0px;
+  background: #000033;
+  color: #fff;
+  border-top: 1px solid #00264d;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.navigation-info a:hover {
+  color: #4da6ff;
+}
+
+/*************************
 ******* Home Banners *****
 **************************/
 
