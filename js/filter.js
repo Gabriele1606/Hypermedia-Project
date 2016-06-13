@@ -13,12 +13,12 @@ function getFilterOptions(){
 	return opts;
 }
 
-function update(opts){
+function update(categoria,opts){
 	$.ajax({
 		method: "POST",
 		crossDomain: true,
 		url: "php/filter.php",
-		data: {filterOpts: opts},
+		data: {filterOpts: opts, categoria: categoria},
 		success: function(response){
 			var intro=JSON.parse(response);
 			var content='';
@@ -29,4 +29,8 @@ function update(opts){
 			$(".products").html(content);
 		}
 	});
+}
+
+function loadCategoryName(categoria) {
+	document.getElementById('categoryName').setAttribute('name',categoria);
 }

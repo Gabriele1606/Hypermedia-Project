@@ -1,0 +1,48 @@
+<!-- Sidebar -->
+<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
+	<script type="text/javascript">
+		var $checkboxes = $("input:checkbox");
+		var element = document.getElementById('categoryName');
+		var categoryName=element.getAttribute("name");
+		$checkboxes.on("change", function(){
+			var opts = getFilterOptions();
+			update(categoryName,opts);
+		});
+		update(categoryName);
+	</script>
+	<div class="row">
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-1"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Filter by Type <i class="fa fa-television"></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tv" name="tv">
+									<label for="tv">TV</label>
+								</li>
+								<li>
+									<input type="checkbox" id="music" name="music">
+									<label for="music">TIM Music</label>
+								</li>
+								<li>
+									<input type="checkbox" id="reading" name="reading">
+									<label for="reading">TIM Reading</label>
+								</li>
+								<li>
+									<input type="checkbox" id="games" name="games">
+									<label for="games">TIM Games</label>
+								</li>
+								<li>
+									<input type="checkbox" id="seriea" name="seriea">
+									<label for="seriea">Serie A TIM</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

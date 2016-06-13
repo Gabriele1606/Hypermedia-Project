@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 13, 2016 alle 18:29
+-- Creato il: Giu 14, 2016 alle 00:13
 -- Versione del server: 5.7.9-log
 -- Versione PHP: 5.6.21
 
@@ -56,7 +56,16 @@ INSERT INTO `smartlifeservices` (`id`, `nome`, `contenuti`, `descrizione`, `prez
 (7, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, ' <div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/plans/7.jpg"></div><div class="product-info"><h5>TIM Special Start</h5><h6>1000 mins up to 4GB. <span class="product-price">ONLINE ONLY 20&#0128/4 weeks</span></h6></div></div>\r\n	', 'mobile', 'voiceinternet', 'plans'),
 (8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, ' <div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/plans/5.jpg"></div><div class="product-info"><h5>Voice</h5><h6>Home line for unlimited calls. <span class="product-price">29&#0128/month</span></h6></div></div>\r\n	', 'fixedline', 'voiceonly', 'plans'),
 (9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, ' <div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/plans/9.jpg"></div><div class="product-info"><h5>TIM International Voice</h5><h6>Calls to your home country from 1 cent. <span class="product-price">9&#0128/4 weeks.</span></h6></div></div>', 'mobile', 'overseas', 'plans'),
-(10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, ' <div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/plans/10.jpg"></div><div class="product-info"><h5>Choose your smartphone</h5><h6>It suits for you. <span class="product-price">Starting from 0&#0128/month.</span></h6></div></div>', 'mobile', 'smartphone', 'plans');
+(10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, ' <div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/plans/10.jpg"></div><div class="product-info"><h5>Choose your smartphone</h5><h6>It suits for you. <span class="product-price">Starting from 0&#0128/month.</span></h6></div></div>', 'mobile', 'smartphone', 'plans'),
+(11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/1.png"></div>\r\n<div class="product-info"><h5>TIM Vision</h5><h6>Cartoons, cinema, documentaries, film, TV Series and concerts on Demand</h6></div></div>', 'tv', 'NULL', 'entertainment'),
+(12, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/2.png"></div>\r\n<div class="product-info"><h5>TIM Sky</h5><h6>Only our optic fibre and our fast ADSL bring you Sky. TIM Sky, the first offer with calls, no limits internet and gives your home all the Sky Entertainment</h6></div></div>', 'tv', 'NULL', 'entertainment'),
+(13, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/3.png"></div>\r\n<div class="product-info"><h5>Netflix</h5><h6>TV Series and films from <span class="product-price">7.99&#0128/month</span>, including Tim Vision Decoder</h6></div></div>', 'tv', 'NULL', 'entertainment'),
+(14, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/5.png"></div>\r\n<div class="product-info"><h5>Chromecast</h5><h6>Chromecast connects smartphones and tablets to your TV. Tim Vision included for 3 months!</h6></div></div>', 'tv', 'NULL', 'entertainment'),
+(15, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/4.png"></div>\r\n<div class="product-info"><h5>TIM Premium Online</h5><h6>Football, Cinema, TV Series and Infinity for Tim customers, from 19&#0128/month for all 2016, where and when you prefer</h6></div></div>', 'seriea', 'NULL', 'entertainment'),
+(16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/6.jpg"></div>\r\n<div class="product-info"><h5>Beats Earphones "Solo2"</h5><h6>More powerful audio with increased Beats sound quality</h6></div></div>', 'music', 'NULL', 'entertainment'),
+(17, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/8.jpg"></div>\r\n<div class="product-info"><h5>Nokia Speakers MD12</h5><h6>Listening to your favourite music is now easier than ever. Its ultra-compact design allows you to keep it inside of a pocket</h6></div></div>', 'music', 'NULL', 'entertainment'),
+(18, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/9.jpg"></div>\r\n<div class="product-info"><h5>Electronic Newspapers</h5><h6>Read your favourite newspaper on your smartphone, tablet or PC</h6></div></div>', 'reading', 'NULL', 'entertainment'),
+(19, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '<div class="product-card wow fadeInUp animated"><div class="product-image"><img src="images/entertainment/7.jpg"></div>\r\n<div class="product-info"><h5>Electronic Magazines</h5><h6>Trend, gossip, science, news. Which magazine would you like to read? Just click and watch on your smartphone, tablet or PC</h6></div></div>', 'reading', 'NULL', 'entertainment');
 
 --
 -- Indici per le tabelle scaricate
@@ -76,7 +85,7 @@ ALTER TABLE `smartlifeservices`
 -- AUTO_INCREMENT per la tabella `smartlifeservices`
 --
 ALTER TABLE `smartlifeservices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

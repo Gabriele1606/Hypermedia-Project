@@ -81,6 +81,8 @@ function manager(args) {
                 var prevSection='allSmartLifeServices';
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
                 loadSidebar(special);
+                loadCategoryName(special);
+                loadBreadCrumb(special);
                 fillMultipleGroupDynamicButtons(prevSection);
                 break;
                 case 'devices':
