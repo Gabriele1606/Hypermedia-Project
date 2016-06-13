@@ -124,12 +124,6 @@ section#plans {
   }
 }
 
-@media (max-width: 1000px) {
-  .product-card {
-    flex: 1 31%;
-  }
-}
-
 .product-image img {
   max-width: 100%;
 }
