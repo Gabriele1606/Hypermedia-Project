@@ -1,7 +1,9 @@
-function fillTopicDynamicButtons() {
+function fillTopicDynamicButtons(previousSection,categoria) {
     var previous = document.getElementById('previous');
     var next = document.getElementById('next');
     var backToMultipleGroupButton = document.getElementById('backToMultipleGroup');
+    backToMultipleGroup.setAttribute('href','#'+previousSection+'&'+categoria);
+    $("#backToMultipleGroup").html("&lt Back to "+categoria);
 }
 
 function fillMultipleGroupDynamicButtons(previousSection) {

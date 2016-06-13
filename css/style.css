@@ -921,6 +921,7 @@ section#devices a {
 }
 section#devices hr {
   width:70%;
+  margin: none;
 }
 
 section#devicesInfo .btn-primary {
@@ -931,28 +932,20 @@ section#devicesInfo .btn-primary {
 section#devicesInfo a {
   color: #fff;
 }
-section#devicesInfo hr {
+section#devicesInfo hr.bar {
   width:100%;
+  margin: auto;
 }
-.backToAllDevices{
-  background: #0000CC;
+#bar{
+  width:100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section#devices hr {
+  width:100%;
+  margin: auto;
 }
 
-section#devicesInfoTecno a {
-  color: #fff;
-}
-section#devicesInfoTecno hr {
-  width:100%;
-}
-section#devicesInfoTecno ul,ol{
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-section#devicesInfoTecno .btn-primary {
-    float: left;
-    text-align: center;
-    
-}
-section#devicesInfoTecno a {
-  color: #fff;
+.buttonMargin{
+  margin-right: 15px;
 }
