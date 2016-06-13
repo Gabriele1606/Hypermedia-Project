@@ -91,6 +91,31 @@ function getIntro(tabella,categoria,callback) {
     });
 }
 
+
+function getDeviceInfo(tabella,categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getDeviceInfo.php", //Relative or absolute path to file.php file
+        data: {tabella:tabella, categoria:categoria, id:id},
+        success: function(response) {
+
+            var info=JSON.parse(response);
+             $(".nome").append(info[0].nome);
+             $(".immagine").append(info[0].immagine);
+             $(".caratteristiche").append(info[0].caratteristiche);
+             $(".colori").append(info[0].colori);
+             $(".compra").append(info[0].compra);
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
 // retrieve courses given a category (category param)
 function getCorsiCat(category,callback) {
 

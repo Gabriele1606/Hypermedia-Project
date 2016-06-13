@@ -849,3 +849,27 @@ section#allDevices .icon-dim{
     height: auto;
     max-width: 20%;
 }
+/*************************
+***** Single Device page ****
+**************************/
+section#infoDevice .immagine{
+  height:290px;
+  width:150px;
+}
+.clickColor{
+  height:10%;
+  width:10%;
+}
+.clickColor:hover{
+  height:15%;
+  width:15%;
+}
+section#infoDevice .btn-primary {
+    float:none;
+    width: 35%;
+    text-align: center;
+    
+}
+section#infoDevice a {
+  color: #fff;
+}

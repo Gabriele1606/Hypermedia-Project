@@ -94,10 +94,13 @@ function manager(args) {
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
                 fillDynamicButtons(basicpage);
                 break;
-                case 'devicesPromotions':
+                case 'devicePromotions':
                 var tabella='devices';
                 var categoria='promotions';
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
+                break;
+                case 'deviceInfo':
+                clickPageLinks();
                 break;
                 case 'classes_lvl':
                 getCorsiPerLivello(function () { clickPageLinks(); });
