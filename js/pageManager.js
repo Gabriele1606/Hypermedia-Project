@@ -79,7 +79,7 @@ function manager(args) {
                 var categoria='plans';
                 var prevSection='allSmartLifeServices';
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
-                fillDynamicButtons(prevSection);
+                fillMultipleGroupDynamicButtons(prevSection);
                 break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
