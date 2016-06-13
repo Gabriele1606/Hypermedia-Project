@@ -76,10 +76,11 @@ function manager(args) {
                 clickPageLinks();
                 break;
                 case 'plans': //è da modificare: plans deve andare dentro la tabella smartlife
-                var tabella='piani';
-                var basicpage='allSmartLifeServices';
-                getIntro(tabella,null,function () { clickPageLinks(); });
-                fillDynamicButtons(basicpage);
+                var tabella='smartlifeservices';
+                var categoria='plans';
+                var prevSection='allSmartLifeServices';
+                getIntro(tabella,categoria,function () { clickPageLinks(); });
+                fillDynamicButtons(prevSection);
                 break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
