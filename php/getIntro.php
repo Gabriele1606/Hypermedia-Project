@@ -8,14 +8,8 @@ if (isset($_POST['tabella'])) {
 
 }
 else
-	echo "Error, table wasn't set correctly";
-if ($tabella=='devices') {
-	$query="SELECT intro FROM $tabella WHERE categoria='$categoria'";
-}
-else{
-
-$query='SELECT intro FROM '.$tabella;
-}
+	echo "Error, table wasn't set correctly"; //debugging
+$query="SELECT intro FROM $tabella WHERE categoria='$categoria'";
 
 $result=mysqli_query($dbc,$query);
 
