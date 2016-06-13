@@ -85,6 +85,7 @@ function manager(args) {
                 break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
+                loadSidebar(special);
                 fillMultipleGroupDynamicButtons('allDevices');
                 break;
                 case 'deviceInfo':
