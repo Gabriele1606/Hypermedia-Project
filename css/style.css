@@ -219,13 +219,16 @@ section#theGroup h2{
     padding-top: 15px;
 	color: #fff;
 }
+section#theGroup h3{
+	color: #fff;
+}
 section#theGroup i {
 	color: #fff;
 }
 section#theGroup div#text{
     color: #fff;
     border-bottom: 3px dotted #ccc;
-    width: 95%;
+    width: 93%;
     padding-bottom: 10px;
     text-align: justify;
 }
@@ -265,6 +268,31 @@ section#theGroup .btn-primary {
 }
 section#theGroup a {
 	color: #fff;
+}
+
+ul#navigationNews {
+    padding-left: 0px;
+    padding-top: 10px;
+}
+ul#navigationNews li{
+    display: inline;
+    font-style: italic;
+    color: #fff;
+    margin: 5px;
+}
+ul#navigationNews li{
+    display: inline;
+    font-style: italic;
+    color: #fff;
+    margin: 5px;
+}
+ul#utilsDoc {
+    padding-left: 0px;
+}
+ul#utilsDoc li{
+    list-style-type: none;
+    font-style: italic;
+    color: #fff;
 }
 /*************************
 ***** Sidebar CSS ****
@@ -915,6 +943,7 @@ section#devices a {
 }
 section#devices hr {
   width:70%;
+  margin: none;
 }
 
 section#devicesInfo .btn-primary {
@@ -925,28 +954,20 @@ section#devicesInfo .btn-primary {
 section#devicesInfo a {
   color: #fff;
 }
-section#devicesInfo hr {
+section#devicesInfo hr.bar {
   width:100%;
+  margin: auto;
 }
-.backToAllDevices{
-  background: #0000CC;
+#bar{
+  width:100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section#devices hr {
+  width:100%;
+  margin: auto;
 }
 
-section#devicesInfoTecno a {
-  color: #fff;
-}
-section#devicesInfoTecno hr {
-  width:100%;
-}
-section#devicesInfoTecno ul,ol{
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-section#devicesInfoTecno .btn-primary {
-    float: left;
-    text-align: center;
-    
-}
-section#devicesInfoTecno a {
-  color: #fff;
+.buttonMargin{
+  margin-right: 15px;
 }
