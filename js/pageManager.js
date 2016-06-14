@@ -88,11 +88,14 @@ function manager(args) {
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
                 loadSidebar(special);
+                loadCategoryName(special);
+                loadBreadCrumb(special);
                 fillMultipleGroupDynamicButtons('allDevices');
                 break;
                 case 'deviceInfo':
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
+           
                 fillTopicDynamicButtons(tabella,special);
                 break;
                 case 'caratteristicheTecniche':

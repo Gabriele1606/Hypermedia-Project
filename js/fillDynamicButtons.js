@@ -21,4 +21,12 @@ function loadBreadCrumb(categoria) {
     } else if(categoria=='entertainment') {
         $("#breadcrumbName").html("TV & Entertainment");
     }
+    else if(categoria=='smartphones'){
+        $("#breadcrumbName").html("Smartphones");
+    }
+    else if(categoria=='tablets'){
+        $("#breadcrumbName").html("Devices");
+    }
+}
+
 }
