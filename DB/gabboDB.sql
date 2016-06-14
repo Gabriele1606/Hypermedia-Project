@@ -1,4 +1,30 @@
->
+-- phpMyAdmin SQL Dump
+-- version 4.4.10
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Creato il: Giu 14, 2016 alle 10:30
+-- Versione del server: 5.5.42
+-- Versione PHP: 5.6.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `tim`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `devices`
+--
+
+CREATE TABLE `devices` (
+  `id` int(11) NOT NULL,
+  `intro` text NOT NULL,
+  `nome` text NOT NULL,
+  `caratteristiche` text NOT NULL,
   `prezzo` int(11) NOT NULL,
   `capacita` varchar(10) NOT NULL,
   `immagine` text NOT NULL,
