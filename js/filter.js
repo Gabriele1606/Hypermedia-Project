@@ -13,12 +13,12 @@ function getFilterOptions(){
 	return opts;
 }
 
-function update(categoria,opts){
+function update(tabella,categoria,opts){
 	$.ajax({
 		method: "POST",
 		crossDomain: true,
 		url: "php/filter.php",
-		data: {filterOpts: opts, categoria: categoria},
+		data: {filterOpts: opts, tabella:tabella,categoria: categoria},
 		success: function(response){
 			var intro=JSON.parse(response);
 			var content='';
@@ -32,5 +32,9 @@ function update(categoria,opts){
 }
 
 function loadCategoryName(categoria) {
-	document.getElementById('categoryName').setAttribute('name',categoria);
+	document.getElementById('information').setAttribute('categoryName',categoria);
+}
+
+function loadTableName(tabella) {
+	document.getElementById('information').setAttribute('tableName',tabella);
 }

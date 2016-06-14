@@ -82,6 +82,7 @@ function manager(args) {
                 getIntro(tabella,categoria,function () { clickPageLinks(); });
                 loadSidebar(special);
                 loadCategoryName(special);
+                loadTableName(tabella);
                 loadBreadCrumb(special);
                 fillMultipleGroupDynamicButtons(prevSection);
                 break;
@@ -89,7 +90,11 @@ function manager(args) {
                 getIntro(page,special,function () { clickPageLinks(); });
                 loadSidebar(special);
                 loadCategoryName(special);
+
                 loadBreadCrumb(special);
+
+                loadTableName(page);
+
                 fillMultipleGroupDynamicButtons('allDevices');
                 break;
                 case 'deviceInfo':
