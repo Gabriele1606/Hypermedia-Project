@@ -29,4 +29,8 @@ function loadBreadCrumb(categoria) {
     }
 }
 
+function loadDynamicContactBreadCrumb(value){
+    var breadCrumb=document.getElementById('dynamicContactBreadcrumb');
+    $("#dynamicContactBreadcrumb").html(value);
+
 }

@@ -1,5 +1,10 @@
+	<ol class="breadcrumb navigation-info">
+		<li><a href="#home">Home</a></li>
+		<li class="active" id="dynamicContactBreadcrumb">Contact</li>
+		
+	</ol>
 	<ul class="contact-menu text-center">
-		<li class="active contact_page contactPage_page "><a class="  btn btn-default" href="#contact">Contact</a></li>
-		<li class="findyourshop_page"><a class="  btn btn-default"href="#findyourshop">Find your shop</a></li>
-		<li class="askus_page"><a class="  btn btn-default" href="#askus">Ask us</a></li>
+		<li class="active contact_page contactPage_page "><a class="  btn btn-default" href="#contact" onclick="loadDynamicContactBreadCrumb('Contact')">Contact</a></li>
+		<li class="findyourshop_page"><a class="  btn btn-default"href="#findyourshop" onclick="loadDynamicContactBreadCrumb('Find your Shop')">Find your shop</a></li>
+		<li class="askus_page"><a class="  btn btn-default" href="#askus" onclick="loadDynamicContactBreadCrumb('Ask Us')">Ask us</a></li>
 	</ul>
