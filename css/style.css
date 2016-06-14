@@ -235,13 +235,16 @@ section#theGroup h2{
     padding-top: 15px;
 	color: #fff;
 }
+section#theGroup h3{
+	color: #fff;
+}
 section#theGroup i {
 	color: #fff;
 }
 section#theGroup div#text{
     color: #fff;
     border-bottom: 3px dotted #ccc;
-    width: 95%;
+    width: 93%;
     padding-bottom: 10px;
     text-align: justify;
 }
@@ -279,9 +282,34 @@ section#theGroup .btn-primary {
     width: 25%;
     text-align: center;
 }
-section#theGroup a {
-	color: #fff;
+   section#theGroup a {
+       color: #fff;
+   }
+ul#navigationNews {
+ padding-left: 0px;
+ padding-top: 10px;
 }
+ul#navigationNews li{
+ display: inline;
+ font-style: italic;
+ color: #fff;
+ margin: 5px;
+}
+ul#navigationNews li{
+ display: inline;
+ font-style: italic;
+ color: #fff;
+ margin: 5px;
+}
+ul#utilsDoc {
+ padding-left: 0px;
+}
+ul#utilsDoc li{
+ list-style-type: none;
+ font-style: italic;
+ color: #fff;
+}
+
 /*************************
 ***** Sidebar CSS ****
 **************************/
