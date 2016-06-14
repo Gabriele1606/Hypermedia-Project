@@ -106,12 +106,14 @@ section#allSmartLifeServices img {
   display: none;
 }
 
-#nav-buttons {
-  margin-top: 20px;
+#nav-buttons a {
+  margin: 10px;
 }
 
-#nav-buttons a {
-  margin-right: 10px;
+#nav-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline;
 }
 
 section#plans {
