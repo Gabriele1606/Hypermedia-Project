@@ -2,11 +2,14 @@
 <div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
 	<script type="text/javascript">
 		var $checkboxes = $("input:checkbox");
+		var information = document.getElementById('information');
+		var categoryName=information.getAttribute("categoryName");
+        var tableName=information.getAttribute("tableName");
 		$checkboxes.on("change", function(){
 			var opts = getFilterOptions();
-			update(opts);
+			update(tableName,categoryName,opts);
 		});
-		update();
+		update(tableName,categoryName);
 	</script>
 	<div class="row">
 		<div class="grid-m-12 grid-s-12 grid-xs-12">
@@ -78,7 +81,7 @@
 					<h6 data-toggle="collapse" data-target="#group-3"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
 						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Marca<i class=""></i></h6>
 					</div>
-					<div id="group-1" class="list-group collapse in">
+					<div id="group-3" class="list-group collapse in">
 						<div class="filter-list">
 							<ul>
 								<li>
@@ -119,7 +122,7 @@
 					<h6 data-toggle="collapse" data-target="#group-4"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
 						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Sistema Operativo<i class=""></i></h6>
 					</div>
-					<div id="group-1" class="list-group collapse in">
+					<div id="group-4" class="list-group collapse in">
 						<div class="filter-list">
 							<ul>
 								<li>
