@@ -6,12 +6,23 @@ function fillTopicDynamicButtons(previousSection,categoria) {
     $("#backToMultipleGroup").html("&lt Back to "+categoria);
 }
 
-function fillMultipleGroupDynamicButtons(previousSection) {
+function fillMultipleGroupDynamicButtons(previousSection,categoria) {
 	var backToCategoryButton = document.getElementById('backToCategory');
     var beginTourButton = document.getElementById('beginTour');
     backToCategoryButton.setAttribute('href','#'+previousSection);
     $("#backToCategory").html("Back to "+previousSection);
-    beginTourButton.setAttribute('href','#planPage&0'); //planPage deve cambiare in base alla basic page
+    if (categoria=='plans') {
+        beginTourButton.setAttribute('href','#planPage&0');
+    }
+    if (categoria=='entertainment') {
+        beginTourButton.setAttribute('href','#planPage&0');
+    }
+    if (categoria=='smartphones') {
+        beginTourButton.setAttribute('href','#deviceInfo&smartphones&0');
+    }
+    if (categoria=='tablets') {
+        beginTourButton.setAttribute('href','#deviceInfo&tablets&10');
+    }
 }
 
 function loadBreadCrumb(categoria) {

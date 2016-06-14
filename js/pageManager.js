@@ -84,7 +84,7 @@ function manager(args) {
                 loadCategoryName(special);
                 loadTableName(tabella);
                 loadBreadCrumb(special);
-                fillMultipleGroupDynamicButtons(prevSection);
+                fillMultipleGroupDynamicButtons(prevSection,categoria);
                 break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
@@ -95,7 +95,7 @@ function manager(args) {
 
                 loadTableName(page);
 
-                fillMultipleGroupDynamicButtons('allDevices');
+                fillMultipleGroupDynamicButtons('allDevices',special);
                 break;
                 case 'deviceInfo':
                 var tabella='devices';
