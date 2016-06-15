@@ -86,6 +86,9 @@ function manager(args) {
                 loadBreadCrumb(special);
                 fillMultipleGroupDynamicButtons(prevSection,categoria);
                 break;
+                case 'smartifeInfo':
+                var tabella='smartlifeservices';
+                getPlanInfo(tabella,special,id);
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
                 loadSidebar(special);
