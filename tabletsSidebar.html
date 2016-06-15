@@ -2,11 +2,14 @@
 <div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
 	<script type="text/javascript">
 		var $checkboxes = $("input:checkbox");
+		var information = document.getElementById('information');
+		var categoryName=information.getAttribute("categoryName");
+        var tableName=information.getAttribute("tableName");
 		$checkboxes.on("change", function(){
 			var opts = getFilterOptions();
-			update(opts);
+			update(tableName,categoryName,opts);
 		});
-		update();
+		update(tableName,categoryName);
 	</script>
 	<div class="row">
 		<div class="grid-m-12 grid-s-12 grid-xs-12">
@@ -19,8 +22,8 @@
 						<div class="filter-list">
 							<ul>
 								<li>
-									<input type="checkbox" id="tutti" name="tutti">
-									<label for="fixedline">Tutti</label>
+									<input type="checkbox" id="tuttiDevices" name="tuttiDevices">
+									<label for="tuttiDevices">Tutti</label>
 								</li>
 								<li>
 									<input type="checkbox" id="5" name="5">

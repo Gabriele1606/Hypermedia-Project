@@ -25,7 +25,7 @@ function loadBreadCrumb(categoria) {
         $("#breadcrumbName").html("Smartphones");
     }
     else if(categoria=='tablets'){
-        $("#breadcrumbName").html("Devices");
+        $("#breadcrumbName").html("Tablets");
     }
 }
 
