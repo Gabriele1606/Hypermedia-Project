@@ -1,9 +1,17 @@
-function fillTopicDynamicButtons(previousSection,categoria) {
-    var previous = document.getElementById('previous');
-    var next = document.getElementById('next');
-    var backToMultipleGroupButton = document.getElementById('backToMultipleGroup');
-    backToMultipleGroup.setAttribute('href','#'+previousSection+'&'+categoria);
+function fillTopicDynamicButtons(previousSection,categoria,id) {
+    var idValue = parseInt(id);
+    var next=idValue+1;
+    var previous=idValue-1;
+    /*var backToMultipleGroupButton = document.getElementById('backToMultipleGroup');*/
+    $("#backToMultipleGroup").attr("href",'#'+previousSection+'&'+categoria);
+    /*backToMultipleGroup.setAttribute('href','#'+previousSection+'&'+categoria);*/
     $("#backToMultipleGroup").html("&lt Back to "+categoria);
+    $("#next").html("Next");
+    $("#previous").html("Previous");
+    if(categoria='plans') {
+        $("#next").attr("href",'#smartlifeInfo'+'&'+categoria+'&'+next);
+        $("#previous").attr("href",'#smartlifeInfo'+'&'+categoria+'&'+previous);
+    }
 }
 
 function fillMultipleGroupDynamicButtons(previousSection,categoria) {
@@ -12,10 +20,10 @@ function fillMultipleGroupDynamicButtons(previousSection,categoria) {
     backToCategoryButton.setAttribute('href','#'+previousSection);
     $("#backToCategory").html("Back to "+previousSection);
     if (categoria=='plans') {
-        beginTourButton.setAttribute('href','#planPage&0');
+        beginTourButton.setAttribute('href','#smartlifeInfo&plans&6');
     }
     if (categoria=='entertainment') {
-        beginTourButton.setAttribute('href','#planPage&0');
+        beginTourButton.setAttribute('href','#smartlifeInfo&plans&6');
     }
     if (categoria=='smartphones') {
         beginTourButton.setAttribute('href','#deviceInfo&smartphones&0');
@@ -26,9 +34,8 @@ function fillMultipleGroupDynamicButtons(previousSection,categoria) {
 }
 
 function loadBreadCrumb(categoria) {
-    var breadCrumb = document.getElementById('breadcrumbName');
     if(categoria=='plans') {
-        $("#breadcrumbName").html("Plans");
+        $("#breadcrumbName").html('<a href="#smartlifeservices&plans">Plans</a>');
     } else if(categoria=='entertainment') {
         $("#breadcrumbName").html("TV & Entertainment");
     }
@@ -36,12 +43,10 @@ function loadBreadCrumb(categoria) {
         $("#breadcrumbName").html("Smartphones");
     }
     else if(categoria=='tablets'){
-        $("#breadcrumbName").html("Devices");
+        $("#breadcrumbName").html("Tablets");
     }
 }
 
 function loadDynamicContactBreadCrumb(value){
-    var breadCrumb=document.getElementById('dynamicContactBreadcrumb');
     $("#dynamicContactBreadcrumb").html(value);
-
 }

@@ -117,7 +117,7 @@ section#allSmartLifeServices img {
 }
 
 section#plans {
-	 background-color: rgb(242,255,255);
+  background-color: rgb(242,255,255);
 }
 
 .products,.plans-grid {
@@ -156,26 +156,97 @@ section#plans {
 }
 
 /*************************
+***** Plan Info Page******
+**************************/
+
+section#smartlifeInfo .nav-tabs li {
+  background-color: #0099ff;
+  color: white;
+}
+
+section#smartlifeInfo .nav {
+  margin-top: 5px;
+}
+
+section#smartlifeInfo .nav-tabs li a {
+  color: white;
+  background: transparent;
+}
+
+section#smartlifeInfo .name-container {
+  padding-bottom: 3px;
+}
+
+section#smartlifeInfo .btn a {
+  color: white;
+}
+
+section#smartlifeInfo .form-control {
+  border-color: #cc0000;
+}
+
+.activate-plan input {
+  margin: 5px;
+}
+
+.activate-plan {
+  text-align: center;
+}
+
+section#smartlifeInfo #prezzo {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+section#smartlifeInfo #promo {
+  font-weight: bold;
+  text-align: center;
+}
+
+section#smartlifeInfo .nav-tabs li a:hover {
+  background-color: #003d66;
+}
+
+section#smartlifeInfo .nav-tabs li.active {
+  background-color: #003d66;
+}
+
+section#smartlifeInfo h2 {
+  font-size: 40px;
+}
+
+
+#contenuti {
+  display: flex;
+}
+
+#contenuti div {
+  margin-right: 10px;
+}
+
+/*************************
 ***** All Assistance Page*
 **************************/
 
 section#services{
 	padding-top: 15px;
-    background-image: url(../images/assistanceservices/background.jpg);
+  background-image: url(../images/assistanceservices/background.jpg);
 }
 
 section#services row{
-    table-layout: fixed;
+  table-layout: fixed;
 }
 
 .btn-primary:hover {
 	background-color: #990000;    
 }
 section#services .btn-primary {
-    float:right;
-    width: 35%;
-    text-align: center;
-    
+  float:right;
+  width: 35%;
+  text-align: center;
+
 }
 section#services a {
 	color: #fff;
@@ -187,55 +258,55 @@ section#services a {
 
 section#theGroup{
 	padding-top: 15px;
-    background-image: url(../images/theGroup/background.png);
+  background-image: url(../images/theGroup/background.png);
 }
 
 section#theGroup .nav-tabs>li>a {
-    align-content: center;
-    background-color: #000033;
-    color: #fff;
-    margin-right: 15px;
-    border-bottom: 0px;
+  align-content: center;
+  background-color: #000033;
+  color: #fff;
+  margin-right: 15px;
+  border-bottom: 0px;
 }
 section#theGroup .nav-tabs {
-    margin: 0 auto;
-    padding: 20px;
-    width: 70%;
-    border: 0px;
-    border-bottom: 0px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+  border: 0px;
+  border-bottom: 0px;
 }
 section#theGroup .nav-tabs>li{
-    border-bottom: 0px;
+  border-bottom: 0px;
 }
 
 section#theGroup .nav-tabs>li.active>a{
-    background-color: #cc0000;
-    border-bottom: 0px;
+  background-color: #cc0000;
+  border-bottom: 0px;
 }
 
 section#theGroup .nav-tabs>li>a:hover {
 	background-color: #990000;    
 }
-    
+
 section#theGroup .nav-tabs>li.active>a:after{
-    border-style: none;
+  border-style: none;
 }
 
 section#theGroup .nav-tabs.nav-justified>.active>a {
-    border: none;
+  border: none;
 }
 
 section#theGroup .nav-tabs.nav-justified>.active>a:hover{
-    border: none;
+  border: none;
 }
 
 section#theGroup .nav-tabs.nav-justified>.active>a:focus{
-    border: none;
+  border: none;
 }
 
 section#theGroup h2{
-    padding-top: 15px;
-	color: #fff;
+  padding-top: 15px;
+  color: #fff;
 }
 section#theGroup h3{
 	color: #fff;
@@ -244,49 +315,49 @@ section#theGroup i {
 	color: #fff;
 }
 section#theGroup div#text{
-    color: #fff;
-    border-bottom: 3px dotted #ccc;
-    width: 93%;
-    padding-bottom: 10px;
-    text-align: justify;
+  color: #fff;
+  border-bottom: 3px dotted #ccc;
+  width: 93%;
+  padding-bottom: 10px;
+  text-align: justify;
 }
 
 section#theGroup . row{
-    width: 85%;
+  width: 85%;
 }
 
 section#theGroup div#textintable{
-    border-right: 3px dotted #ccc;    
-    color: #fff;
-    padding-left: 35px;
-    text-align: justify;
+  border-right: 3px dotted #ccc;    
+  color: #fff;
+  padding-left: 35px;
+  text-align: justify;
 }
 
 section#theGroup div#textintable2{
-    color: #fff;
-    padding-left: 35px;
-    padding-bottom: 20px;
-    text-align: justify;
+  color: #fff;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  text-align: justify;
 }
 section#theGroup h2#coloredText{
-    color: #ff0000;
-    font-size: large;
+  color: #ff0000;
+  font-size: large;
 }
 section#theGroup strong#coloredText{
-    color: #ff0000;
-    font-size: large;
+  color: #ff0000;
+  font-size: large;
 }
 .btn-primary:hover {
 	background-color: #990000;    
 }
 section#theGroup .btn-primary {
-    float:right;
-    width: 25%;
-    text-align: center;
+  float:right;
+  width: 25%;
+  text-align: center;
 }
-   section#theGroup a {
-       color: #fff;
-   }
+section#theGroup a {
+ color: #fff;
+}
 ul#navigationNews {
  padding-left: 0px;
  padding-top: 10px;
@@ -364,13 +435,13 @@ ul#utilsDoc li{
   .sliding-sidebar.collapse, .sliding-sidebar.collapsing {
     display: block !important;
     -webkit-transform: translate3D(0%, 0, 0);
-            transform: translate3D(0%, 0, 0);
+    transform: translate3D(0%, 0, 0);
     -webkit-transition: all 200ms;
     transition: all 200ms;
   }
   .sliding-sidebar.collapse.in {
     -webkit-transform: translate3D(0, 0, 0);
-            transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05), 2px 0 0 rgba(0, 0, 0, 0.05), 3px 0 0 rgba(0, 0, 0, 0.05);
   }
 }
@@ -384,7 +455,7 @@ ul#utilsDoc li{
 .collapsed .parent-collapsed {
   display: inline-block;
 }
- 
+
 /*************************
 ******* CONTACT MENU *****
 **************************/
@@ -429,7 +500,7 @@ ul#utilsDoc li{
 
 .contact-menu  > li.active {
   background: none repeat scroll 0 0 #00004d;
-	color: #fff;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   margin-right: 20px;
@@ -449,12 +520,12 @@ ul#utilsDoc li{
   margin: 0 0 40px 0;
   padding: 0;
 }
-    
+
 section#contact {
 	
   background: url(../images/contact/contact.png) no-repeat center center fixed; 
   background-size: cover;;
-	
+
 }
 
 .contact_div {
@@ -544,30 +615,30 @@ section#contact h2 {
 
 }
 .submit_button{
-    background: -webkit-linear-gradient(left top, #980000 , #E80000 );
-	height: 210px;
-	width:  200px;
-	color: white;
-	font-size: 40px;
-	text-align: center;
-	margin-top: -35px;
-	margin-right: 40px;
-	float: right;
-	border: none;
-	border-radius: 5px;
+  background: -webkit-linear-gradient(left top, #980000 , #E80000 );
+  height: 210px;
+  width:  200px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: -35px;
+  margin-right: 40px;
+  float: right;
+  border: none;
+  border-radius: 5px;
 }
 .submit_button:hover{
-    background: -webkit-linear-gradient(left top, #580000  , #880000  );
-	height: 210px;
-	width:  200px;
-	color: white;
-	font-size: 40px;
-	text-align: center;
-	margin-top: -35px;
-	margin-right: 40px;
-	float: right;
-	border: none;
-	border-radius: 5px;
+  background: -webkit-linear-gradient(left top, #580000  , #880000  );
+  height: 210px;
+  width:  200px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: -35px;
+  margin-right: 40px;
+  float: right;
+  border: none;
+  border-radius: 5px;
 }
 .text_area{
 	resize: none;
@@ -590,21 +661,21 @@ section#contact-info h1 {
 }
 
 .ico {
-    
-    display: inline-block;
-    width: 12px;
-    height: 20px;
-    background: url("https://img.tim.it/img/img_trova_negozio/sprite_ico_pin.png") no-repeat 0 0;
+
+  display: inline-block;
+  width: 12px;
+  height: 20px;
+  background: url("https://img.tim.it/img/img_trova_negozio/sprite_ico_pin.png") no-repeat 0 0;
 }
 
 .ico.autorizzato {
-    background-position: 0 100%;
+  background-position: 0 100%;
 }
- .timSymbol{
- 	margin-left:750px;
- 	margin-top: 90px; 
+.timSymbol{
+  margin-left:750px;
+  margin-top: 90px; 
 
- }
+}
 
 /*************************
 ********* Map in FindYorShop CSS ******
@@ -626,15 +697,15 @@ section#contact-info h1 {
 }
 
 .gmap{
-    border: 10px solid #f6f5f0;
-    border-box: 50%;
-    height: 300px;
-    width: 600px;
-    box-shadow: 0px 0px 3px 3px #e7e4dc;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    float:left;
+  border: 10px solid #f6f5f0;
+  border-box: 50%;
+  height: 300px;
+  width: 600px;
+  box-shadow: 0px 0px 3px 3px #e7e4dc;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  float:left;
 }
 
 .gmap-area .map-content ul {
@@ -756,7 +827,7 @@ section#contact-info h1 {
   background-color: #fff;
   margin: 0 15px 0 0;
   position: relative;
- 
+
 
 }
 
@@ -777,9 +848,9 @@ section#contact-info h1 {
   width: 20px;
   height: 20px;
   background-color: #c52d2f;
-   margin: 0 15px 0 0;
-   border: 1px solid #c52d2f;
-   position: relative;
+  margin: 0 15px 0 0;
+  border: 1px solid #c52d2f;
+  position: relative;
   
 }
 
@@ -793,19 +864,19 @@ section#contact-info h1 {
   border: 1px solid #c52d2f;
   left: -3px;
 
- 
+
 }
 
 .carousel-indicators {
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
 }
 
 #map-slider .active .animation.animated-item-1 {
@@ -880,18 +951,18 @@ section#allDevices h2{
 }
 
 section#allDevices .btn-primary {
-    float:right;
-    width: 35%;
-    text-align: center;
-    
+  float:right;
+  width: 35%;
+  text-align: center;
+
 }
 section#allDevices a {
   color: #fff;
 }
 section#allDevices .icon-dim{
-    display: block;
-    height: auto;
-    max-width: 20%;
+  display: block;
+  height: auto;
+  max-width: 20%;
 }
 /*************************
 ***** Single Device page ****
@@ -910,46 +981,46 @@ section#infoDevice .immagine{
 }
 
 section#devicesInfo .nav-tabs>li>a {
-    align-content: center;
-    background-color: #000033;
-    color: #fff;
-    margin-right: 15px;
-    border-bottom: 0px;
+  align-content: center;
+  background-color: #000033;
+  color: #fff;
+  margin-right: 15px;
+  border-bottom: 0px;
 }
 section#devicesInfo.nav-tabs {
-    margin: 0 auto;
-    padding: 20px;
-    width: 70%;
-    border: 0px;
-    border-bottom: 0px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+  border: 0px;
+  border-bottom: 0px;
 }
 section#devicesInfo .nav-tabs>li{
-    border-bottom: 0px;
+  border-bottom: 0px;
 }
 
 section#devicesInfo .nav-tabs>li.active>a{
-    background-color: #cc0000;
-    border-bottom: 0px;
+  background-color: #cc0000;
+  border-bottom: 0px;
 }
 
 section#devicesInfo .nav-tabs>li>a:hover {
   background-color: #990000;    
 }
-    
+
 section#devicesInfo .nav-tabs>li.active>a:after{
-    border-style: none;
+  border-style: none;
 }
 
 section#devicesInfo .nav-tabs.nav-justified>.active>a {
-    border: none;
+  border: none;
 }
 
 section#devicesInfo .nav-tabs.nav-justified>.active>a:hover{
-    border: none;
+  border: none;
 }
 
 section#devicesInfo .nav-tabs.nav-justified>.active>a:focus{
-    border: none;
+  border: none;
 }
 
 .icon-device{
@@ -965,9 +1036,9 @@ section#devicesInfo .nav-tabs.nav-justified>.active>a:focus{
 **************************/
 
 section#devices .btn-primary {
-    float: left;
-    text-align: center;
-    
+  float: left;
+  text-align: center;
+
 }
 section#devices a {
   color: #fff;
@@ -978,9 +1049,9 @@ section#devices hr {
 }
 
 section#devicesInfo .btn-primary {
-    float: left;
-    text-align: center;
-    
+  float: left;
+  text-align: center;
+
 }
 section#devicesInfo a {
   color: #fff;

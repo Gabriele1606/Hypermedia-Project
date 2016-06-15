@@ -86,25 +86,28 @@ function manager(args) {
                 loadBreadCrumb(special);
                 fillMultipleGroupDynamicButtons(prevSection,categoria);
                 break;
-                case 'smartifeInfo':
+                case 'smartlifeInfo':
                 var tabella='smartlifeservices';
-                getPlanInfo(tabella,special,id);
+                getPlanInfo(tabella,special,id,function () { clickPageLinks(); });
+                loadCategoryName(special);
+                loadTableName(tabella);
+                loadBreadCrumb(special);
+                fillTopicDynamicButtons(tabella,special,id);
+                clickPageLinks();
+                break;
                 case 'devices':
                 getIntro(page,special,function () { clickPageLinks(); });
                 loadSidebar(special);
                 loadCategoryName(special);
-
                 loadBreadCrumb(special);
-
                 loadTableName(page);
-
                 fillMultipleGroupDynamicButtons('allDevices',special);
                 break;
                 case 'deviceInfo':
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
            
-                fillTopicDynamicButtons(tabella,special);
+                fillTopicDynamicButtons(tabella,special,id);
                 break;
                 case 'caratteristicheTecniche':
                 clickPageLinks();
