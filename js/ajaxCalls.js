@@ -80,7 +80,7 @@ function getIntro(tabella,categoria,callback) {
                 content+=intro[i].intro;
             }
 
-             $(".products").append(content);
+            $(".products").append(content);
 
             callback();
         },
@@ -101,13 +101,13 @@ function getDeviceInfo(tabella,categoria,id,callback) {
         success: function(response) {
 
             var info=JSON.parse(response);
-             $(".nome").append(info[0].nome);
-             $(".immagine").append(info[0].immagine);
-             $(".icone").append(info[0].icone);
-             $(".caratteristiche").append(info[0].caratteristiche);
-             $(".colori").append(info[0].colori);
-             $(".compra").append(info[0].compra);
-             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
+            $(".nome").append(info[0].nome);
+            $(".immagine").append(info[0].immagine);
+            $(".icone").append(info[0].icone);
+            $(".caratteristiche").append(info[0].caratteristiche);
+            $(".colori").append(info[0].colori);
+            $(".compra").append(info[0].compra);
+            $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
 
             callback();
         },
@@ -127,9 +127,37 @@ function getDeviceInfoTecniche(tabella,id,callback) {
         success: function(response) {
 
             var info=JSON.parse(response);
-             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
-             $(".button").append(info[0].button);
-             
+            $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
+            $(".button").append(info[0].button);
+            
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
+function getPlanInfo(tabella,categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getPlanInfo.php", //Relative or absolute path to file.php file
+        data: {tabella:tabella, categoria:categoria, id:id},
+        success: function(response) {
+
+            var info=JSON.parse(response);
+            $("#immagine").append(info[0].immagine);
+            $("#smartlifeName").html(info[0].nome);
+            $(".nome").append(info[0].nome);
+            $("#contenuti").append(info[0].contenuti);
+            $("#descrizione").append(info[0].descrizione);
+            $("#prezzo").append(info[0].prezzo);
+            $("#promo").append(info[0].promo);
+            $("#activation").append(info[0].attivazione);
+            $("#faqs").append(info[0].faqs);
 
             callback();
         },
