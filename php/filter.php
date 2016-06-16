@@ -109,7 +109,7 @@ if(in_array("samsung", $opts))
 if(in_array("LG", $opts))
 	$where .=' AND marca = "'."LG".'"'.'AND promozione = "'."no".'"';
 
-if(in_array("huawei", $opts))
+if(in_array("Huawei", $opts))
 	$where .=' AND marca = "'."Huawei".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("nokia", $opts))
@@ -130,44 +130,41 @@ if(in_array("microsoft", $opts))
 if(in_array("tutti", $opts))
 	$where ;
 
-if(in_array("tablets", $opts))
-	$where .=' AND categoria = "'."tablets".'"'.'AND promozione = "'."si".'"';
+if(in_array("tablet", $opts))
+	$where .=' AND categoria = "'."tablet".'"';
 
 if(in_array("smartphones", $opts))
-	$where .=' AND categoria = "'."smartphones".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND categoria = "'."smartphones".'"';
 
 if(in_array("fisso", $opts))
-	$where .=' AND categoria = "'."fisso".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND categoria = "'."fisso".'"';
 
 if(in_array("connessione", $opts))
-	$where .=' AND categoria = "'."connessione".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND categoria = "'."connessione".'"';
 
 if(in_array("camera", $opts))
-	$where .=' AND categoria = "'."camera".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND categoria = "'."camera".'"';
 
 if(in_array("printer", $opts))
-	$where .=' AND categoria = "'."printer".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND categoria = "'."printer".'"';
 
 if(in_array("fitness", $opts))
-	$where .=' AND categoria = "'."fitness".'"'.'AND promozione = "'."si".'"';
-
-if(in_array("fitness", $opts))
-	$where .=' AND categoria = "'."fitness".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND categoria = "'."fitness".'"';
 
 if(in_array("huawei", $opts))
-	$where .=' AND marca = "'."Huawei".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND marca = "'."huawei".'"';
 
 if(in_array("olivetti", $opts))
-	$where .=' AND marca = "'."Olivetti".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND marca = "'."Olivetti".'"';
 
 if(in_array("dlink", $opts))
-	$where .=' AND marca = "'."Dlink".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND marca = "'."Dlink".'"';
 
 if(in_array("sony", $opts))
-	$where .=' AND marca = "'."Sony".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND marca = "'."Sony".'"';
 
 if(in_array("tim", $opts))
-	$where .=' AND marca = "'."Tim".'"'.'AND promozione = "'."si".'"';
+	$where .=' AND marca = "'."Tim".'"';
 
 
 $query = $select . $from . $where;
