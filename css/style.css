@@ -134,6 +134,9 @@ section#plans {
 
 .product-card:hover {
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+  background-color: rgba(128, 179, 255,0.7);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 @media (max-width: 920px) {
