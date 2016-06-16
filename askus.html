@@ -1,3 +1,4 @@
+<div class="container">
 <h1><b>Ask Us</b></h1>
 <hr>
 <h2>Benvenuto nell'area segnalazione</h2>
@@ -10,55 +11,70 @@
 <div>
 
 <form  name="send_problem" class="contact-form" action="php/insertProblem.php" id="send_problem" onsubmit="return(validateForm())" method="post">
-
-<div class="input_name">
+<div class="centerInputForm">
+<div class="row">
+<div class="col-md-3">
   First name*:<br>
   <input type="text" class="form-control" name="name" placeholder="Nome...">
 </div>
 
-<div class="input_surname">
+<div class="col-md-3">
   Last name*:<br>
   <input type="text" class="form-control" name="surname" placeholder="Cognome...">
 </div>
 
-<div class="input_mail">
+<div class="col-md-3">
   Mail*:<br>
   <input type="text" class="form-control" name="mail" placeholder="Indirizzo mail...">
 </div>
 
-<div class="input_telephone">
+<div class="col-md-3">
   Telephone Number*:<br>
   <input type="text"  class="form-control" name="telephone" placeholder="Telefono...">
+   &nbsp
+    &nbsp
+</div>
 </div>
 
-
-<div class="input_birthday">
+<div class="row">
+<div class="col-md-3">
   Your Birthday*:<br>
   <input type="text" class="form-control" name="birthday" placeholder="YYYY/MM/GG">
 </div>
 
-<div class="input_city">
+<div class="col-md-3">
 	Your City:<br>
 <input type="text" class="form-control" name="city" placeholder="City...">
 </div>
 
-<div class="input_provincia">
+<div class="col-md-3">
 	Your Province:<br>
 <input type="text" class="form-control" name="provincia" placeholder="Provincia...">
 </div>
 
-<div class="input_cap">
+<div class="col-md-3">
 
   Insert CAP:<br>
   <input type="text" class="form-control" name="cap" placeholder="CAP...">
+   &nbsp &nbsp
+</div>
+
+</div>
 </div>
 
 	
-  <input type="submit" class="submit_button" value="SEND">
 
 
-<textarea class="text_area" class="form-control" name="textArea" id="textArea" rows="4" cols="98">
+  <br>
+  <div class="col-md-7">
+<textarea class="form-control hresize textAreaPosition"  name="textArea" id="textArea" rows="4" cols="98">
 </textarea>
+</div>
+
+<input type="submit" class="btn-primary col-md-1 buttonForm" value="SEND">
+
+
 
 </form>
+
 </div>

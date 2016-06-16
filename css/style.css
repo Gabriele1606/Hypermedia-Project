@@ -424,7 +424,7 @@ ul#utilsDoc li{
     padding-top: 60px;
   }
 
-  .btn .visible-xs {
+  .visible-xs {
     display: inline-block !important;
   }
 
@@ -547,109 +547,17 @@ section#contact h2 {
 	margin-left: 13px;
 }
 
-.contact_left_space{
-	text-align: left;
-	margin-left: 13px;
-	margin-top: 20px;
-	float: left;
+.centerInputForm{
+  margin-right: 30px;
 }
-.contact_right_space{
-	text-align: left;
-	margin-left: 500px;
+.buttonForm{
+  margin-left: 25px;
+  margin-top:20px;
 }
 
-.input_name{
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.input_surname{
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.input_mail{
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.input_telephone{
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-
-}
-.input_birthday{
-	clear: left;
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.input_city{
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.input_provincia{
-
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.input_cap{
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	float: left;
-
-}
-.submit_button{
-  background: -webkit-linear-gradient(left top, #980000 , #E80000 );
-  height: 210px;
-  width:  200px;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin-top: -35px;
-  margin-right: 40px;
-  float: right;
-  border: none;
-  border-radius: 5px;
-}
-.submit_button:hover{
-  background: -webkit-linear-gradient(left top, #580000  , #880000  );
-  height: 210px;
-  width:  200px;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin-top: -35px;
-  margin-right: 40px;
-  float: right;
-  border: none;
-  border-radius: 5px;
-}
-.text_area{
-	resize: none;
-	clear: left;
-	margin-left: 10px;
-	margin-top: 20px;
-	padding-bottom: 10px;
-	float: left;
+.textAreaPosition{
+  margin-left: -15px;
+  margin-bottom:10px;
 }
 
 section#contact-info h1 {
@@ -674,12 +582,32 @@ section#contact-info h1 {
 .ico.autorizzato {
   background-position: 0 100%;
 }
-.timSymbol{
-  margin-left:750px;
-  margin-top: 90px; 
+
+ .timSymbol{
+ 	margin-left:750px;
+ 	margin-top: 90px; 
+}
+
+section#contactMenu .btn-primary {
+    text-align: center;
+    
+}
+section#contactMenu a {
+    text-align: center;
+    color:#fff;
+    
+}
+section#contactMenu li.active p{
+    background-color: #600000 ;
 
 }
 
+section#contactMenu a {
+  color: #fff;
+}
+section#contactMenu .redNavigationInfo{
+  color:red;
+}
 /*************************
 ********* Map in FindYorShop CSS ******
 **************************/
@@ -690,25 +618,25 @@ section#contact-info h1 {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 0;
-  width: auto;
 }
 
 .gmap-area .gmap iframe {
-  border: 50%;
+  border-radius: 50%;
   height: 280px;
-  width: 600px;
+  width: 300px;
 }
 
 .gmap{
-  border: 10px solid #f6f5f0;
-  border-box: 50%;
-  height: 300px;
-  width: 600px;
-  box-shadow: 0px 0px 3px 3px #e7e4dc;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-  float:left;
+
+    border: 10px solid #f6f5f0;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
 }
 
 .gmap-area .map-content ul {
@@ -938,8 +866,8 @@ section#map-slider h2{
   height:250px;
 }
 .introTelefonoFisso{
-  height:300px;
-  width:550px;
+  height:150px;
+  width:280px;
 
 }
 /*************************

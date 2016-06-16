@@ -5,11 +5,18 @@ $categoria=$_POST['categoria'];
 $tabella=$_POST['tabella'];
 $select = 'SELECT *';
 $from = ' FROM '.$tabella;
+if($categoria=='promotions'){
+	$promozione='si';
+	$where = ' WHERE promozione='.'"'.$promozione.'"';
+}
+else{
 $where = ' WHERE categoria='.'"'.$categoria.'"';
+}
 
 $opts = isset($_POST['filterOpts'])? $_POST['filterOpts'] : array('');
 
 /* START PLANS FILTER OPTIONS */
+
 
 if (in_array("fixedline", $opts))
 	$where .=' AND tipo = "'."fixedline".'"';
@@ -60,53 +67,105 @@ if(in_array("seriea", $opts))
 
 /* START SMARTPHONE FILTER OPTIONS */
 
-if (in_array("tutti", $opts))
-    $where .=' AND tipo = "'."fixedline".'"';
+if (in_array("tuttiDevices", $opts))
+    $where .='AND promozione = "'."no".'"';
 
 if(in_array("4", $opts))
-	$where .=' AND display >= "'."4".'"';
+	$where .=' AND display >= "'."4".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("5", $opts))
-	$where .=' AND display>= "'."5".'"';
+	$where .=' AND display>= "'."5".'"'.'AND promozione = "'."no".'"';
+
+if(in_array("7", $opts))
+	$where .=' AND display>= "'."7".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("6", $opts))
-	$where .=' AND display>= "'."6".'"';
+	$where .=' AND display>= "'."6".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("downTo150", $opts))
-	$where .=' AND prezzo < "'."150".'"';
+	$where .=' AND prezzo < "'."150".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("between150and300", $opts))
-	$where .=' AND prezzo >= "'."150".'"'.' AND prezzo <= "'."300".'"';
+	$where .=' AND prezzo >= "'."150".'"'.' AND prezzo = "'."300".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("between300and600", $opts))
-	$where .=' AND prezzo >= "'."300".'"'.' AND prezzo <= "'."600".'"';
+	$where .=' AND prezzo >= "'."300".'"'.' AND prezzo = "'."600".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("upTo600", $opts))
-	$where .=' AND prezzo >= "'."600".'"';
+	$where .=' AND prezzo >= "'."600".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("apple", $opts))
-	$where .=' AND marca = "'."Apple".'"';
+	$where .=' AND marca = "'."Apple".'"'.'AND promozione = "'."no".'"';
+
+if(in_array("acer", $opts))
+	$where .=' AND marca = "'."Acer".'"'.'AND promozione = "'."no".'"';
+
+if(in_array("alcatel", $opts))
+	$where .=' AND marca = "'."Alcatel".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("samsung", $opts))
-	$where .=' AND marca = "'."Samsung".'"';
+	$where .=' AND marca = "'."Samsung".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("LG", $opts))
-	$where .=' AND marca = "'."LG".'"';
+	$where .=' AND marca = "'."LG".'"'.'AND promozione = "'."no".'"';
 
-if(in_array("huawei", $opts))
-	$where .=' AND marca = "'."Huawei".'"';
+if(in_array("Huawei", $opts))
+	$where .=' AND marca = "'."Huawei".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("nokia", $opts))
-	$where .=' AND marca = "'."Nokia".'"';
+	$where .=' AND marca = "'."Nokia".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("ios", $opts))
-	$where .=' AND sistemaoperativo = "'."IOS".'"';
+	$where .=' AND sistemaoperativo = "'."IOS".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("android", $opts))
-	$where .=' AND sistemaoperativo = "'."Android".'"';
+	$where .=' AND sistemaoperativo = "'."Android".'"'.'AND promozione = "'."no".'"';
 
 if(in_array("microsoft", $opts))
-	$where .=' AND marca = "'."Microsoft".'"';
+	$where .=' AND marca = "'."Microsoft".'"'.'AND promozione = "'."no".'"';
+
+
+
+/* START PROMOTION FILTER OPTIONS */
+if(in_array("tutti", $opts))
+	$where ;
+
+if(in_array("tablet", $opts))
+	$where .=' AND categoria = "'."tablet".'"';
+
+if(in_array("smartphones", $opts))
+	$where .=' AND categoria = "'."smartphones".'"';
+
+if(in_array("fisso", $opts))
+	$where .=' AND categoria = "'."fisso".'"';
+
+if(in_array("connessione", $opts))
+	$where .=' AND categoria = "'."connessione".'"';
+
+if(in_array("camera", $opts))
+	$where .=' AND categoria = "'."camera".'"';
+
+if(in_array("printer", $opts))
+	$where .=' AND categoria = "'."printer".'"';
+
+if(in_array("fitness", $opts))
+	$where .=' AND categoria = "'."fitness".'"';
+
+if(in_array("huawei", $opts))
+	$where .=' AND marca = "'."huawei".'"';
+
+if(in_array("olivetti", $opts))
+	$where .=' AND marca = "'."Olivetti".'"';
+
+if(in_array("dlink", $opts))
+	$where .=' AND marca = "'."Dlink".'"';
+
+if(in_array("sony", $opts))
+	$where .=' AND marca = "'."Sony".'"';
+
+if(in_array("tim", $opts))
+	$where .=' AND marca = "'."Tim".'"';
+
 
 $query = $select . $from . $where;
 $result=mysqli_query($dbc,$query);
