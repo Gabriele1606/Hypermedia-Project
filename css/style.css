@@ -907,6 +907,7 @@ section#allDevices .icon-dim{
 
 section#devicesInfo h6{
  background-color:#cc0000;
+ margin:3px;
 
 }
 
@@ -916,6 +917,10 @@ section#devicesInfo .filter-title.side-filter-empreendimento{
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 10px
+}
+
+section#devicesInfo .side-filter {
+  background: transparent;
 }
 
 .clickColor:hover{

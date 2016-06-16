@@ -2,15 +2,17 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
     var idValue = parseInt(id);
     var next=idValue+1;
     var previous=idValue-1;
-    /*var backToMultipleGroupButton = document.getElementById('backToMultipleGroup');*/
     $("#backToMultipleGroup").attr("href",'#'+previousSection+'&'+categoria);
-    /*backToMultipleGroup.setAttribute('href','#'+previousSection+'&'+categoria);*/
     $("#backToMultipleGroup").html("&lt Back to "+categoria);
     $("#next").html("Next");
     $("#previous").html("Previous");
-    if(categoria='plans') {
+    if(categoria=='plans') {
         $("#next").attr("href",'#smartlifeInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#smartlifeInfo'+'&'+categoria+'&'+previous);
+    }
+    if(categoria=='smartphones' || categoria=='tablets') {
+        $("#next").attr("href",'#deviceInfo'+'&'+categoria+'&'+next);
+        $("#previous").attr("href",'#deviceInfo'+'&'+categoria+'&'+previous);
     }
 }
 
