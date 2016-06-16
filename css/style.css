@@ -188,6 +188,11 @@ section#smartlifeInfo .form-control {
   border-color: #cc0000;
 }
 
+section#smartlifeInfo .panel-body {
+  border: 1px #e0e0d1 solid;
+  border-radius: 10px;
+}
+
 .activate-plan input {
   margin: 5px;
 }
