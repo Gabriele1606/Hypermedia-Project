@@ -898,14 +898,21 @@ section#allDevices .icon-dim{
 /*************************
 ***** Single Device page ****
 **************************/
-section#infoDevice .immagine{
-  height:290px;
-  width:150px;
+
+
+section#devicesInfo h6{
+ background-color:#cc0000;
+
 }
-.clickColor{
-  height:10%;
-  width:10%;
+
+section#devicesInfo .filter-title.side-filter-empreendimento{
+    background-color: #cc0000;
+    background: #cc0000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px
 }
+
 .clickColor:hover{
   height:15%;
   width:15%;

@@ -106,7 +106,7 @@ function manager(args) {
                 case 'deviceInfo':
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
-           
+                
                 fillTopicDynamicButtons(tabella,special,id);
                 break;
                 case 'caratteristicheTecniche':
