@@ -47,6 +47,9 @@ function loadBreadCrumb(categoria) {
     else if(categoria=='tablets'){
         $("#breadcrumbName").html("Tablets");
     }
+    else if(categoria=='promotions') {
+        $("#breadcrumbName").html("Smart Life Promotions");   
+    }
 }
 
 function loadDynamicContactBreadCrumb(value){

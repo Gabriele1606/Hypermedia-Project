@@ -88,7 +88,7 @@ section#allSmartLifeServices p {
 }
 
 section#allSmartLifeServices img {
-	box-shadow: 8px 8px 10px #aaa;
+	box-shadow: 0px 0px 10px 0px #808080;
 	border-radius: 20%;
 }
 
@@ -130,6 +130,10 @@ section#plans {
   flex-grow: 1;
   flex-basis: 21%;
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-card.implemented {
+  box-shadow: 0px 0px 5px 0px #000080;
 }
 
 .product-card:hover {
@@ -184,6 +188,11 @@ section#smartlifeInfo .btn a {
   color: white;
 }
 
+section#smartlifeInfo .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+
 section#smartlifeInfo .form-control {
   border-color: #cc0000;
 }
@@ -191,6 +200,7 @@ section#smartlifeInfo .form-control {
 section#smartlifeInfo .panel-body {
   border: 1px #e0e0d1 solid;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .activate-plan input {

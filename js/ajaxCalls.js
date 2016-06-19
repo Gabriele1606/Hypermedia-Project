@@ -91,6 +91,31 @@ function getIntro(tabella,categoria,callback) {
     });
 }
 
+function getPromoIntro(tabella,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getPromoIntro.php", //Relative or absolute path to file.php file
+        data: {tabella:tabella},
+        success: function(response) {
+
+            var intro=JSON.parse(response);
+            var content='';
+            for(var i=0;i<intro.length;i++){
+                content+=intro[i].intro;
+            }
+
+            $(".products").append(content);
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
 
 function getDeviceInfo(tabella,categoria,id,callback) {
     $.ajax({

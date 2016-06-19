@@ -79,12 +79,21 @@ function manager(args) {
                 var tabella='smartlifeservices';
                 var categoria=special;
                 var prevSection='allSmartLifeServices';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
-                loadSidebar(special);
-                loadCategoryName(special);
-                loadTableName(tabella);
-                loadBreadCrumb(special);
-                fillMultipleGroupDynamicButtons(prevSection,categoria);
+                if(categoria!='promotions') {
+                    getIntro(tabella,categoria,function () { clickPageLinks(); });
+                    loadSidebar(special);
+                    loadCategoryName(special);
+                    loadTableName(tabella);
+                    loadBreadCrumb(special);
+                    fillMultipleGroupDynamicButtons(prevSection,categoria);
+                }
+                else {
+                    getPromoIntro(tabella,function () { clickPageLinks(); });
+                    loadCategoryName(special);
+                    loadTableName(tabella);
+                    loadBreadCrumb(special);
+                    fillMultipleGroupDynamicButtons('allPromotions',categoria);
+                }
                 break;
                 case 'smartlifeInfo':
                 var tabella='smartlifeservices';
