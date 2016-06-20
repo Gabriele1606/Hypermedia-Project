@@ -50,6 +50,12 @@ function loadBreadCrumb(categoria) {
     else if(categoria=='promotions') {
         $("#breadcrumbName").html("Smart Life Promotions");   
     }
+    else if(categoria=='assistenzaTecnica') {
+        $("#breadcrumbName").html("Assistenza Tecnica");   
+    }
+    else if(categoria=='lineManagement') {
+        $("#breadcrumbName").html("Line Management");   
+    }
 }
 
 function loadDynamicContactBreadCrumb(value){
