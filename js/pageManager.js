@@ -129,9 +129,8 @@ function manager(args) {
                 case 'caratteristicheTecniche':
                 clickPageLinks();
                 break;
-                case 'classes_lvl':
-                getCorsiPerLivello(function () { clickPageLinks(); });
-                break;
+                case 'whoweare':
+                clickPageLinks();
                 case 'classes_cat':
                 getCorsiCat(special,function () { clickPageLinks(); });
                 break;
