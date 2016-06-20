@@ -6,11 +6,15 @@ $tabella=$_POST['tabella'];
 $select = 'SELECT *';
 $from = ' FROM '.$tabella;
 if($categoria=='promotions'){
-	$promozione='si';
-	$where = ' WHERE promozione='.'"'.$promozione.'"';
+	if($tabella=='devices') {
+		$promozione='si';
+		$where = ' WHERE promozione='.'"'.$promozione.'"';
+	} else if($tabella=='smartlifeservices') {
+		$where = ' WHERE promo!="NULL" ';
+	}
 }
 else{
-$where = ' WHERE categoria='.'"'.$categoria.'"';
+	$where = ' WHERE categoria='.'"'.$categoria.'"';
 }
 
 $opts = isset($_POST['filterOpts'])? $_POST['filterOpts'] : array('');
@@ -68,7 +72,7 @@ if(in_array("seriea", $opts))
 /* START SMARTPHONE FILTER OPTIONS */
 
 if (in_array("tuttiDevices", $opts))
-    $where .='AND promozione = "'."no".'"';
+	$where .='AND promozione = "'."no".'"';
 
 if(in_array("4", $opts))
 	$where .=' AND display >= "'."4".'"'.'AND promozione = "'."no".'"';

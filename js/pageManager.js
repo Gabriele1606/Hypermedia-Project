@@ -82,18 +82,16 @@ function manager(args) {
                 if(categoria!='promotions') {
                     getIntro(tabella,categoria,function () { clickPageLinks(); });
                     loadSidebar(special);
-                    loadCategoryName(special);
-                    loadTableName(tabella);
-                    loadBreadCrumb(special);
                     fillMultipleGroupDynamicButtons(prevSection,categoria);
                 }
                 else {
                     getPromoIntro(tabella,function () { clickPageLinks(); });
-                    loadCategoryName(special);
-                    loadTableName(tabella);
-                    loadBreadCrumb(special);
                     fillMultipleGroupDynamicButtons('allPromotions',categoria);
+                    loadSidebar('smartlifePromo');
                 }
+                loadCategoryName(special);
+                loadTableName(tabella);
+                loadBreadCrumb(special);
                 break;
                 case 'smartlifeInfo':
                 var tabella='smartlifeservices';

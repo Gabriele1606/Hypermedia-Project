@@ -1,0 +1,130 @@
+<!-- Sidebar -->
+<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
+	<script type="text/javascript">
+		var $checkboxes = $("input:checkbox");
+		var information = document.getElementById('information');
+		var categoryName=information.getAttribute("categoryName");
+		var tableName=information.getAttribute("tableName");
+		$checkboxes.on("change", function(){
+			var opts = getFilterOptions();
+			update(tableName,categoryName,opts);
+		});
+		update(tableName,categoryName);
+	</script>
+	<div class="row">
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-1"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Fixed Line <i class="fa fa-phone"></i>
+					</h6>
+				</div>
+				<div id="group-1" class="list-group collapse in">
+					<div class="filter-list">
+						<ul>
+							<li>
+								<input type="checkbox" id="fixedline" name="fixedline">
+								<label for="fixedline">All plans</label>
+							</li>
+							<li>
+								<input type="checkbox" id="timvision" name="timvision">
+								<label for="timvision">Internet,Voice & TIM Vision</label>
+							</li>
+							<li>
+								<input type="checkbox" id="fixinternet" name="fixinternet">
+								<label for="fixinternet">Internet, Voice & Sky</label>
+							</li>
+							<li>
+								<input type="checkbox" id="fixvoiceinternet" name="fixvoiceinternet">
+								<label for="fixvoiceinternet">Voice & Internet</label>
+							</li>
+							<li>
+								<input type="checkbox" id="voice" name="voice">
+								<label for="voice">Voice Only</label>
+							</li>
+							<li>
+								<input type="checkbox" id="service" name="service">
+								<label for="service">Fixed Line Service & App</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-2"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Mobile <i class="fa fa-mobile"></i>
+					</h6>
+				</div>
+				<div id="group-2" class="list-group collapse in">
+					<div class="filter-list">
+						<ul>
+							<li>
+								<input type="checkbox" id="mobile" name="mobile">
+								<label for="mobile">All plans</label>
+							</li>
+							<li>
+								<input type="checkbox" id="mobvoiceinternet" name="mobvoiceinternet">
+								<label for="mobvoiceinternet">Voice & Internet</label>
+							</li>
+							<li>
+								<input type="checkbox" id="mobinternet" name="mobinternet">
+								<label for="mobinternet">Internet for Tablet & PC</label>
+							</li>
+							<li>
+								<input type="checkbox" id="smartphone" name="smartphone">
+								<label for="smartphone">Smartphone on installments</label>
+							</li>
+							<li>
+								<input type="checkbox" id="overseas" name="overseas">
+								<label for="overseas">Overseas</label>
+							</li>
+							<li>
+								<input type="checkbox" id="service" name="service">
+								<label for="service">Mobile Service & Apps</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-1"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Entertainment <i class="fa fa-television"></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tv" name="tv">
+									<label for="tv">TV</label>
+								</li>
+								<li>
+									<input type="checkbox" id="music" name="music">
+									<label for="music">TIM Music</label>
+								</li>
+								<li>
+									<input type="checkbox" id="reading" name="reading">
+									<label for="reading">TIM Reading</label>
+								</li>
+								<li>
+									<input type="checkbox" id="games" name="games">
+									<label for="games">TIM Games</label>
+								</li>
+								<li>
+									<input type="checkbox" id="seriea" name="seriea">
+									<label for="seriea">Serie A TIM</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>    
+	</div>
+</div>
