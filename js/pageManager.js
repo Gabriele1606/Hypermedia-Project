@@ -75,6 +75,17 @@ function manager(args) {
                 case 'allAssistanceServices':
                 clickPageLinks();
                 break;
+                case 'assistanceServices':
+                var tabella='assistanceservices';
+                var categoria=special;
+                var prevSection='allAssistanceServices';
+                getIntro(tabella,categoria,function () { clickPageLinks(); });
+                loadSidebar(special);
+                loadCategoryName(special);
+                loadTableName(tabella);
+                loadBreadCrumb(special);
+                fillMultipleGroupDynamicButtons(prevSection,categoria);
+                break;
                 case 'smartlifeservices': //è da modificare: plans deve andare dentro la tabella smartlife
                 var tabella='smartlifeservices';
                 var categoria=special;
