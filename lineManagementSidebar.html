@@ -1,0 +1,43 @@
+<!-- Sidebar -->
+<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
+	<script type="text/javascript">
+		var $checkboxes = $("input:checkbox");
+		var information = document.getElementById('information');
+		var categoryName=information.getAttribute("categoryName");
+		var tableName=information.getAttribute("tableName");
+		$checkboxes.on("change", function(){
+			var opts = getFilterOptions();
+			update(tableName,categoryName,opts);
+		});
+		update(tableName,categoryName);
+	</script>
+	<div class="row">
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-1"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Servizi TIM <i class="fa fa-star"></i>
+					</h6>
+				</div>
+				<div id="group-1" class="list-group collapse in">
+					<div class="filter-list">
+						<ul>
+							<li>
+								<input type="checkbox" id="allservices" name="allservices">
+								<label for="allservices">All Services</label>
+							</li>
+							<li>
+								<input type="checkbox" id="onlysim" name="onlysim">
+								<label for="onlysim">Mobile Line</label>
+							</li>
+							<li>
+								<input type="checkbox" id="home" name="home">
+								<label for="home">ADSL, Fibra &amp; Home</label>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>    
+	</div>
+</div>

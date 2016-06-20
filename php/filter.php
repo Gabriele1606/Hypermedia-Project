@@ -171,6 +171,37 @@ if(in_array("tim", $opts))
 	$where .=' AND marca = "'."Tim".'"';
 
 
+/* START Assistance Services FILTER OPTIONS */
+if(in_array("product", $opts))
+	$where ;
+
+if(in_array("devices", $opts))
+	$where .=' AND (tipo = "'."devices".'" OR tipo ="'."alls".'")';
+
+if(in_array("modem", $opts))
+	$where .=' AND (tipo = "'."adslefibra".'" OR tipo ="'."alls".'" OR tipo ="'."navigazione".'")';
+
+if(in_array("tventertainment", $opts))
+	$where .=' AND (tipo = "'."decoder".'" OR tipo ="'."alls".'")';
+
+if(in_array("services", $opts))
+	$where ;
+
+if(in_array("sim", $opts))
+	$where .=' AND (tipo = "'."devices".'" OR tipo ="'."alls".'")';
+
+if(in_array("adsl", $opts))
+	$where .=' AND (tipo = "'."adslefibra".'" OR tipo ="'."alls".'" OR tipo ="'."navigazione".'")';
+
+if(in_array("allservices", $opts))
+	$where ;
+
+if(in_array("onlysim", $opts))
+	$where .=' AND (tipo = "'."devices".'" OR tipo ="'."alls".'")';
+
+if(in_array("home", $opts))
+	$where .=' AND (tipo = "'."adslefibra".'" OR tipo ="'."alls".'")';
+
 $query = $select . $from . $where;
 $result=mysqli_query($dbc,$query);
 if($result){
