@@ -58,6 +58,6 @@ function loadBreadCrumb(categoria) {
     }
 }
 
-function loadDynamicContactBreadCrumb(value){
-    $("#dynamicContactBreadcrumb").html(value);
+function loadStaticPageBreadCrumb(value){
+    $("#staticPageBreadcrumb").html(value);
 }

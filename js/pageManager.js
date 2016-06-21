@@ -61,9 +61,6 @@ function manager(args) {
                 case 'home':
                 clickPageLinks();
                 break;
-                case 'whoweare':
-                clickPageLinks();
-                break;
                 case 'allPromotions':
                 getPromoIndex();
                 clickPageLinks();
@@ -130,7 +127,9 @@ function manager(args) {
                 clickPageLinks();
                 break;
                 case 'whoweare':
+                loadStaticPageBreadCrumb('Innovation');
                 clickPageLinks();
+                break;
                 case 'classes_cat':
                 getCorsiCat(special,function () { clickPageLinks(); });
                 break;
@@ -159,21 +158,21 @@ function manager(args) {
             window.scrollTo(0,0);
         });
 
-    }
+}
 
-    function staticPageManager(page) {
-        $( ".content" ).load(page+'.html', function() {
+function staticPageManager(page) {
+ $( ".content" ).load(page+'.html', function() {
 
-            switch (page) {
-                case 'askus':
-                clickPageLinks();
-                break;
-                case 'findyourshop':
-                clickPageLinks();
-                break;
-                case 'contact':
-                clickPageLinks();
-                break;
-            }
-        });
+    switch (page) {
+        case 'askus':
+        clickPageLinks();
+        break;
+        case 'findyourshop':
+        clickPageLinks();
+        break;
+        case 'contact':
+        clickPageLinks();
+        break;
     }
+});
+}

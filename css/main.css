@@ -629,7 +629,7 @@ input.search-form:hover {
   height: 100%;
   opacity: 0;
   border-radius: 0;
-  background: #c52d2f;
+  background-color: rgba(197, 45, 47, 0.9);
   color: #fff;
   vertical-align: middle;
   -webkit-transition: opacity 500ms;
@@ -917,10 +917,6 @@ a.accordion-toggle  i{
   margin-top: 0;
 }
 
-.tab-content img{
-  border-radius: 4px;
-}
-
 .testimonial h2{
   margin-top: 0;
 }
@@ -1185,9 +1181,17 @@ a.accordion-toggle  i{
 
 .single-profile-top, 
 .single-profile-bottom  {
-  border: 1px solid #ddd;
+  border: 3px dashed #ddd;
   padding: 15px;
   position: relative;
+  background-color: floralwhite;
+}
+
+.single-profile-top:hover, 
+.single-profile-bottom:hover  {
+  box-shadow: 0px 0px 13px 0px #000080; 
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
 .media_image {

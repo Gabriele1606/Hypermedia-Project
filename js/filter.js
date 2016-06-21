@@ -32,9 +32,11 @@ function update(tabella,categoria,opts){
 }
 
 function loadCategoryName(categoria) {
-	document.getElementById('information').setAttribute('categoryName',categoria);
+	$("#information").attr('categoryName',categoria);
+	/*document.getElementById('information').setAttribute('categoryName',categoria);*/
 }
 
 function loadTableName(tabella) {
-	document.getElementById('information').setAttribute('tableName',tabella);
+	$("#information").attr('tableName',tabella);
+	/*document.getElementById('information').setAttribute('tableName',tabella);*/
 }
