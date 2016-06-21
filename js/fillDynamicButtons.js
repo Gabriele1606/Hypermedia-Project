@@ -14,6 +14,10 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
         $("#next").attr("href",'#deviceInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#deviceInfo'+'&'+categoria+'&'+previous);
     }
+    if(categoria=='assistenzaTecnica') {
+        $("#next").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+next);
+        $("#previous").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+previous);
+    }
 }
 
 function fillMultipleGroupDynamicButtons(previousSection,categoria) {
@@ -32,6 +36,9 @@ function fillMultipleGroupDynamicButtons(previousSection,categoria) {
     }
     if (categoria=='tablets') {
         beginTourButton.setAttribute('href','#deviceInfo&tablets&10');
+    }
+      if (categoria=='assistenzaTecnica') {
+        beginTourButton.setAttribute('href','#assistanceServicesInfo&assistenzaTecnica&0');
     }
 }
 
