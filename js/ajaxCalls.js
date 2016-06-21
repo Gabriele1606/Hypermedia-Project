@@ -193,6 +193,27 @@ function getPlanInfo(tabella,categoria,id,callback) {
     });
 }
 
+function getAssistanceInfo(tabella,categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getAssistanceInfo.php", //Relative or absolute path to file.php file
+        data: {tabella:tabella, categoria:categoria, id:id},
+        success: function(response) {
+
+            var info=JSON.parse(response);
+            $(".nome").append(info[0].nome);
+            $("#immagine").append(info[0].immagine);
+            $("#descrizione").append(info[0].descrizione);
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
 // retrieve courses given a category (category param)
 function getCorsiCat(category,callback) {
 
