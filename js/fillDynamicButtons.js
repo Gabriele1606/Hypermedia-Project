@@ -58,10 +58,10 @@ function loadBreadCrumb(categoria) {
         $("#breadcrumbName").html("Smart Life Promotions");   
     }
     else if(categoria=='assistenzaTecnica') {
-        $("#breadcrumbName").html("Assistenza Tecnica");   
+        $("#breadcrumbName").html('<a href="#assistanceServices&assistenzaTecnica">Assistenza Tecnica</a>');   
     }
     else if(categoria=='lineManagement') {
-        $("#breadcrumbName").html("Line Management");   
+        $("#breadcrumbName").html('<a href="#assistanceServices&lineManagement">Line Management</a>');   
     }
 }
 

@@ -205,6 +205,7 @@ function getAssistanceInfo(tabella,categoria,id,callback) {
             $(".nome").append(info[0].nome);
             $("#immagine").append(info[0].immagine);
             $("#descrizione").append(info[0].descrizione);
+            $("#assistanceName").html(info[0].nome);
             callback();
         },
         error: function(request,error)
