@@ -297,6 +297,55 @@ section#assistanceServices .product-image i:hover {
   border: 3px solid #c52d2f;
 }
 
+/****************************************
+***** Assistance Services Info Page******
+*****************************************/
+
+section#assistanceServicesInfo .nav-tabs li {
+  background-color: #0099ff;
+  color: white;
+}
+
+section#assistanceServicesInfo .nav {
+  margin-top: 5px;
+}
+
+section#assistanceServicesInfo .nav-tabs li a {
+  color: white;
+  background: transparent;
+}
+
+section#assistanceServicesInfo .verifica-garanzia {
+  margin-top: 50px;
+}
+
+section#assistanceServicesInfo .btn a {
+  color: white;
+}
+
+section#assistanceServicesInfo .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+
+section#assistanceServicesInfo .form-control {
+  border-color: #cc0000;
+  margin-bottom: 10px;
+}
+
+section#assistanceServicesInfo .panel-body {
+  border: 1px #e0e0d1 solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+section#assistanceServicesInfo .nav-tabs li a:hover {
+  background-color: #003d66;
+}
+
+section#assistanceServicesInfo .nav-tabs li.active {
+  background-color: #003d66;
+}
 
 /*************************
 ***** The Group Telecom*
