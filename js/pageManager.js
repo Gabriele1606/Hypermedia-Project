@@ -140,8 +140,12 @@ function manager(args) {
                 loadStaticPageBreadCrumb('Innovation');
                 clickPageLinks();
                 break;
-                case 'classes_cat':
-                getCorsiCat(special,function () { clickPageLinks(); });
+                case 'transitionSmartLifeToDevice':
+                var tabella='smartlifeservices';
+                loadCategoryName(special);
+                loadTableName(page);
+                loadBreadCrumb(special);
+                getCombinedDevices(special,id,function () { clickPageLinks(); });
                 break;
                 case 'single_class':
                 getCorso(special,function () { clickPageLinks(); });

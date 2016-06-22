@@ -9,6 +9,7 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
     if(categoria=='plans') {
         $("#next").attr("href",'#smartlifeInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#smartlifeInfo'+'&'+categoria+'&'+previous);
+        $("#combinedDevices").attr("href","#transitionSmartLifeToDevice"+'&'+categoria+'&'+id);
     }
     if(categoria=='smartphones' || categoria=='tablets') {
         $("#next").attr("href",'#deviceInfo'+'&'+categoria+'&'+next);

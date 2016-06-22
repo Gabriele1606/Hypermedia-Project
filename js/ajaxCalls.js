@@ -172,15 +172,18 @@ function getPlanInfo(tabella,categoria,id,callback) {
         url: "php/getPlanInfo.php", //Relative or absolute path to file.php file
         data: {tabella:tabella, categoria:categoria, id:id},
         success: function(response) {
-
             var info=JSON.parse(response);
+            var promo=info[0].promo;
             $("#immagine").append(info[0].immagine);
             $("#smartlifeName").html(info[0].nome);
             $(".nome").append(info[0].nome);
             $("#contenuti").append(info[0].contenuti);
             $("#descrizione").append(info[0].descrizione);
             $("#prezzo").append(info[0].prezzo);
-            $("#promo").append(info[0].promo);
+            if(promo!="NULL") {
+                $("#promo").append(promo);
+                $("#morePromotionsButton").html('<i class="btn btn-primary"><a href="#'+tabella+'&'+'promotions">More Promotions</a></i>');  
+            }
             $("#activation").append(info[0].attivazione);
             $("#faqs").append(info[0].faqs);
 
@@ -215,35 +218,24 @@ function getAssistanceInfo(tabella,categoria,id,callback) {
     });
 }
 
-// retrieve courses given a category (category param)
-function getCorsiCat(category,callback) {
-
-    console.log("I'm ready!");
-
+//function used to retrieve combined devices from a specific smart life service
+function getCombinedDevices(categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "http://zerbinatifrancesco.it/hypermedia/php/getCorsi.php", //Relative or absolute path to file.php file
-        data: {cat:category},
+        url: "php/getCombinedDevices.php", //Relative or absolute path to file.php file
+        data: {tabella:'smartlifeservices', categoria:categoria, id:id},
         success: function(response) {
-
-            var corsi=JSON.parse(response);
-
-            var el='<div class="cardio_list">';
-            for(var i=0;i<corsi.length-1;i++){
-
-                var toPrint = corsi[i];
-                el += drawEntryCorso(false,toPrint);
-
-            }
-            // last one (different css)
-            var toPrint = corsi[corsi.length-1];
-            el +=drawEntryCorso(true,toPrint);
-
-            el+='</div><div class="clear"></div>';
+            var info=JSON.parse(response);
+            var nome=info[0].nome;
+            $("#fordevices").append(info[0].fordevices);
+            $("#smartlifeName").html(nome);
+            $("#smartlifeTitle").append(nome);
+            $("#smartlifeName").attr("href","#smartlifeservices&"+categoria+"&"+id);
+            $("#backToProduct").attr("href","#smartlifeInfo&"+categoria+"&"+id);
+            $("#backToProduct").html("Back to "+nome);
 
 
-            $(".classes").html(el);
             callback();
         },
         error: function(request,error)
@@ -251,9 +243,7 @@ function getCorsiCat(category,callback) {
             console.log("Error");
         }
     });
-
 }
-
 // get all the courses
 function getCorsi(callback){
     console.log("I'm ready!");
