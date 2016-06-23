@@ -1,0 +1,105 @@
+<!-- Sidebar -->
+<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
+	<script type="text/javascript">
+		var $checkboxes = $("input:checkbox");
+		var information = document.getElementById('information');
+		var categoryName=information.getAttribute("categoryName");
+        var tableName=information.getAttribute("tableName");
+		$checkboxes.on("change", function(){
+			var opts = getFilterOptions();
+			update(tableName,categoryName,opts);
+		});
+		update(tableName,categoryName);
+	</script>
+	<div class="row">
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-1"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Tipologia<i class=""></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tutti" name="tutti">
+									<label for="fixedline">Tutti</label>
+								</li>
+								<li>
+									<input type="checkbox" id="tablet" name="tablet">
+									<label for="tablet">Tablet</label>
+								</li>
+								<li>
+									<input type="checkbox" id="smartphones" name="smartphones">
+									<label for="smartphones">Smartphones</label>
+								</li>
+								<li>
+									<input type="checkbox" id="fisso" name="fisso">
+									<label for="fisso">Telefoni fissi</label>
+								</li>
+								<li>
+									<input type="checkbox" id="connessione" name="connessione">
+									<label for="connessione">Wi-Fi</label>
+								</li>
+								<li>
+									<input type="checkbox" id="printer" name="printer">
+									<label for="printer">Stampante</label>
+								</li>
+								<li>
+									<input type="checkbox" id="camera" name="camera">
+									<label for="camera">Camera</label>
+								</li>
+								<li>
+									<input type="checkbox" id="fitness" name="fitness">
+									<label for="fitness">Fitness</label>
+								</li>
+								<li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-2"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Marca<i class=""></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tutti" name="tutti">
+									<label for="fixedline">Tutti</label>
+								</li>
+								<li>
+									<input type="checkbox" id="huawei" name="huawei">
+									<label for="huawei">Huawei</label>
+								</li>
+								<li>
+									<input type="checkbox" id="olivetti" name="olivetti">
+									<label for="olivetti">Olivetti</label>
+								</li>
+								<li>
+									<input type="checkbox" id="dlink" name="dlink">
+									<label for="dlink">D-Link</label>
+								</li>
+								<li>
+									<input type="checkbox" id="sony" name="sony">
+									<label for="sony">Sony</label>
+								</li>
+								<li>
+									<input type="checkbox" id="tim" name="tim">
+									<label for="tim">Tim</label>
+								</li>
+								<li>
+								
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div> 
+			</div>
+		</div>

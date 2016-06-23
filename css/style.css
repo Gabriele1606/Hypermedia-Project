@@ -1,0 +1,1176 @@
+/* This CSS stylesheed includes CSS styles for non-predefined elements of the bootstrap theme.
+Those elements are accessible in main.css */
+
+/*************************
+******* General **********
+**************************/
+
+.navigation-info {
+  margin: 0px;
+  background: #000033;
+  color: #fff;
+  border-top: 1px solid #00264d;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.navigation-info a:hover {
+  color: #4da6ff;
+}
+
+/*************************
+******* Home Banners *****
+**************************/
+
+section.banners {
+	padding-top: 40px;
+	background-color: #e6e6ff;
+}
+
+.banner {
+	margin-bottom: 10px;
+}
+
+/*************************
+******* Main Logo ********
+**************************/
+
+a.navbar-brand {
+	margin-bottom: 10px;
+}
+
+/*************************
+***** Promotions Page ****
+**************************/
+
+section#promo_page {
+	background-image: url(../images/promotions/bg.jpg);
+}
+
+section#promo_page h2 {
+	margin-top: 15px;
+}
+
+section#promo_page p {
+	background-color: rgba(230, 246, 255,0.9);
+	border-radius: 16px;
+}
+
+section#promo_page a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.btn-primary:hover {
+	background-color: #990000;
+}
+
+/*************************
+***** All Smart Life Page*
+**************************/
+
+section#allSmartLifeServices {
+	background-image: url(../images/smartlife_cat/bg.jpg);
+	padding-top: 15px;
+}
+
+section#allSmartLifeServices a {
+	color: #fff;
+	font-size: 20px;
+}
+
+section#allSmartLifeServices p {
+	background-color: rgba(230, 246, 255,0.6);
+	border-radius: 16px;
+	padding: 5px;
+}
+
+section#allSmartLifeServices img {
+	box-shadow: 0px 0px 10px 0px #808080;
+	border-radius: 20%;
+}
+
+.btn-primary:hover {
+	background-color: #990000;
+}
+
+/*************************
+***** All Plans Page******
+**************************/
+
+/*Product page layout*/
+
+#categoryName {
+  display: none;
+}
+
+#nav-buttons a {
+  margin: 10px;
+}
+
+#nav-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+section#plans {
+  background-color: rgb(242,255,255);
+}
+
+.products,.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 21%;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-card.implemented {
+  box-shadow: 0px 0px 5px 0px #000080;
+}
+
+.product-card:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
+  background-color: rgba(128, 179, 255,0.7);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 46%;
+  }
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+.product-price {
+	color: red;
+	font-weight: bold;
+}
+
+/*************************
+***** Plan Info Page******
+**************************/
+
+section#smartlifeInfo .nav-tabs li {
+  background-color: #0099ff;
+  color: white;
+}
+
+section#smartlifeInfo .nav {
+  margin-top: 5px;
+}
+
+section#smartlifeInfo .nav-tabs li a {
+  color: white;
+  background: transparent;
+}
+
+section#smartlifeInfo .name-container {
+  padding-bottom: 3px;
+}
+
+section#smartlifeInfo .btn a {
+  color: white;
+}
+
+section#smartlifeInfo .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+
+section#smartlifeInfo .form-control {
+  border-color: #cc0000;
+}
+
+section#smartlifeInfo .panel-body {
+  border: 1px #e0e0d1 solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.activate-plan input {
+  margin: 5px;
+}
+
+.activate-plan {
+  text-align: center;
+}
+
+section#smartlifeInfo #prezzo {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+section#smartlifeInfo #promo {
+  font-weight: bold;
+  text-align: center;
+}
+
+section#smartlifeInfo .nav-tabs li a:hover {
+  background-color: #003d66;
+}
+
+section#smartlifeInfo .nav-tabs li.active {
+  background-color: #003d66;
+}
+
+section#smartlifeInfo h2 {
+  font-size: 40px;
+}
+
+
+#contenuti {
+  display: flex;
+}
+
+#contenuti div {
+  margin-right: 10px;
+}
+
+/*************************
+***** All Assistance Page*
+**************************/
+
+section#services{
+	padding-top: 15px;
+  background-image: url(../images/assistanceservices/background.jpg);
+}
+
+section#services row{
+  table-layout: fixed;
+}
+
+.btn-primary:hover {
+	background-color: #990000;    
+}
+section#services .btn-primary {
+  float:right;
+  width: 35%;
+  text-align: center;
+
+}
+section#services a {
+	color: #fff;
+}
+
+section#assistanceServices .product-image i{
+  font-size: 50px;
+  height: 110px;
+  width: 110px;
+  margin: 3px;
+  border-radius: 100%;
+  line-height: 110px;
+  text-align:center;
+  background: #ffffff;
+  color: #c52d2f;
+  border: 3px solid #ffffff;
+  box-shadow: inset 0 0 0 5px #f2f2f2;
+  -webkit-box-shadow: inset 0 0 0 5px #f2f2f2;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+section#assistanceServices .product-image i:hover {
+  background: #c52d2f;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #c52d2f;
+  -webkit-box-shadow: inset 0 0 0 5px #c52d2f;
+  border: 3px solid #c52d2f;
+}
+
+/****************************************
+***** Assistance Services Info Page******
+*****************************************/
+
+section#assistanceServicesInfo .nav-tabs li {
+  background-color: #0099ff;
+  color: white;
+}
+
+section#assistanceServicesInfo .nav {
+  margin-top: 5px;
+}
+
+section#assistanceServicesInfo .nav-tabs li a {
+  color: white;
+  background: transparent;
+}
+
+section#assistanceServicesInfo .verifica-garanzia {
+  margin-top: 50px;
+}
+
+section#assistanceServicesInfo .btn a {
+  color: white;
+}
+
+section#assistanceServicesInfo .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+
+section#assistanceServicesInfo .form-control {
+  border-color: #cc0000;
+  margin-bottom: 10px;
+}
+
+section#assistanceServicesInfo .panel-body {
+  border: 1px #e0e0d1 solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+section#assistanceServicesInfo .nav-tabs li a:hover {
+  background-color: #003d66;
+}
+
+section#assistanceServicesInfo .nav-tabs li.active {
+  background-color: #003d66;
+}
+
+/*************************
+***** The Group Telecom*
+**************************/
+
+section#theGroup{
+	padding-top: 15px;
+  background-image: url(../images/theGroup/background.png);
+}
+
+section#theGroup .nav-tabs>li>a {
+  align-content: center;
+  background-color: #000033;
+  color: #fff;
+  margin-right: 15px;
+  border-bottom: 0px;
+}
+section#theGroup .nav-tabs {
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+  border: 0px;
+  border-bottom: 0px;
+}
+section#theGroup .nav-tabs>li{
+  border-bottom: 0px;
+}
+
+section#theGroup .nav-tabs>li.active>a{
+  background-color: #cc0000;
+  border-bottom: 0px;
+}
+
+section#theGroup .nav-tabs>li>a:hover {
+	background-color: #990000;    
+}
+
+section#theGroup .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+section#theGroup .nav-tabs.nav-justified>.active>a {
+  border: none;
+}
+
+section#theGroup .nav-tabs.nav-justified>.active>a:hover{
+  border: none;
+}
+
+section#theGroup .nav-tabs.nav-justified>.active>a:focus{
+  border: none;
+}
+
+section#theGroup h2{
+  padding-top: 15px;
+  color: #fff;
+}
+section#theGroup h3{
+	color: #fff;
+}
+section#theGroup i {
+	color: #fff;
+}
+section#theGroup div#text{
+  color: #fff;
+  border-bottom: 3px dotted #ccc;
+  width: 93%;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+section#theGroup . row{
+  width: 85%;
+}
+
+section#theGroup div#textintable{
+  border-right: 3px dotted #ccc;    
+  color: #fff;
+  padding-left: 35px;
+  text-align: justify;
+}
+
+section#theGroup div#textintable2{
+  color: #fff;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+section#theGroup h2#coloredText{
+  color: #ff0000;
+  font-size: large;
+}
+section#theGroup strong#coloredText{
+  color: #ff0000;
+  font-size: large;
+}
+.btn-primary:hover {
+	background-color: #990000;    
+}
+section#theGroup .btn-primary {
+  float:right;
+  width: 25%;
+  text-align: center;
+}
+section#theGroup a {
+ color: #fff;
+}
+ul#navigationNews {
+ padding-left: 0px;
+ padding-top: 10px;
+}
+ul#navigationNews li{
+ display: inline;
+ font-style: italic;
+ color: #fff;
+ margin: 5px;
+}
+ul#navigationNews li{
+ display: inline;
+ font-style: italic;
+ color: #fff;
+ margin: 5px;
+}
+ul#utilsDoc {
+ padding-left: 0px;
+}
+ul#utilsDoc li{
+ list-style-type: none;
+ font-style: italic;
+ color: #fff;
+}
+
+/*************************
+***** Sidebar CSS ****
+**************************/
+
+#filter-sidebar {
+  background-color: rgba(77, 166, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.container-fluid {
+  max-width: 960px;
+}
+
+[data-toggle="collapse"] {
+  cursor: pointer;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.valign-middle {
+  vertical-align: middle !important;
+}
+
+@media screen and (max-width: 767px) {
+
+  .navbar-fixed-top.visible-xs + .row {
+    padding-top: 60px;
+  }
+
+  .visible-xs {
+    display: inline-block !important;
+  }
+
+  .sliding-sidebar {
+    position: absolute;
+    z-index: 1;
+    /*background: #fff;*/
+    min-height: 100%;
+    border-right: 1px solid #ccc;
+  }
+  .sliding-sidebar.collapse, .sliding-sidebar.collapsing {
+    display: block !important;
+    -webkit-transform: translate3D(0%, 0, 0);
+    transform: translate3D(0%, 0, 0);
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+  }
+  .sliding-sidebar.collapse.in {
+    -webkit-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.05), 2px 0 0 rgba(0, 0, 0, 0.05), 3px 0 0 rgba(0, 0, 0, 0.05);
+  }
+}
+.parent-collapsed {
+  display: none;
+}
+
+.collapsed .parent-expanded {
+  display: none;
+}
+.collapsed .parent-collapsed {
+  display: inline-block;
+}
+
+/*************************
+******* CONTACT MENU *****
+**************************/
+
+
+.contact-menu  > li {
+  display: inline-block;
+}
+
+.contact-menu  > li a {
+  background: none repeat scroll 0 0 #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-menu  > li a:hover {
+	background: none repeat scroll 0 0 #00004d;
+	color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-menu  > li.active {
+  background: none repeat scroll 0 0 #00004d;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contact-menu  {
+  list-style: none outside none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+section#contact {
+	
+  background: url(../images/contact/contact.png) no-repeat center center fixed; 
+  background-size: cover;;
+
+}
+
+.contact_div {
+	background-color: rgba(230, 246, 255,0.9);
+	border-radius: 5px;
+	
+}
+section#contact p {
+	color: black;
+}
+section#contact h1 {
+	color: red;
+}
+section#contact h2 {
+	color: red;
+	margin-left: 13px;
+}
+
+.centerInputForm{
+  margin-right: 30px;
+}
+.buttonForm{
+  margin-left: 25px;
+  margin-top:20px;
+}
+
+.textAreaPosition{
+  margin-left: -15px;
+  margin-bottom:10px;
+}
+
+section#contact-info h1 {
+	position: left;
+	color: red;
+}
+.text-blu{
+	color: #004991;
+}
+.text-red{
+	color: red;
+}
+
+.ico {
+
+  display: inline-block;
+  width: 12px;
+  height: 20px;
+  background: url("https://img.tim.it/img/img_trova_negozio/sprite_ico_pin.png") no-repeat 0 0;
+}
+
+.ico.autorizzato {
+  background-position: 0 100%;
+}
+
+ .timSymbol{
+ 	margin-left:750px;
+ 	margin-top: 90px; 
+}
+
+section#contactMenu .btn-primary {
+    text-align: center;
+    
+}
+section#contactMenu a {
+    text-align: center;
+    color:#fff;
+    
+}
+section#contactMenu li.active p{
+    background-color: #600000 ;
+
+}
+
+section#contactMenu a {
+  color: #fff;
+}
+section#contactMenu .redNavigationInfo{
+  color:red;
+}
+/*************************
+********* Map in FindYorShop CSS ******
+**************************/
+
+.gmap-area {
+  background-image: url("../images/map.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.gmap-area .gmap iframe {
+  border-radius: 50%;
+  height: 280px;
+  width: 300px;
+}
+
+.gmap{
+
+    border: 10px solid #f6f5f0;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.gmap-area .map-content ul {
+  list-style: none; 
+}
+
+.gmap-area .map-content address h5{
+  font-weight: 700;
+  /* font-size: 16px; */
+}
+
+/*************************
+********* Carousel in find your shop******
+**************************/
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+#map-slider .carousel .carousel-content {
+  background-color: white;
+  opacity:0.8;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: -100px;
+  margin-bottom: 30px
+}
+
+#map-slider .carousel .slide-margin{
+  margin-top: 140px;
+}
+
+#map-slider .carousel h2 {
+  color: #fff;
+}
+
+#map-slider .carousel .btn-slide {
+  padding: 8px 20px;
+  background-color: #c52d2f;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+#map-slider .carousel .slider-img{
+  text-align: right;
+  position: absolute;
+}
+
+
+#map-slider .carousel .item {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  height: auto;
+  -webkit-transition: opacity ease-in-out 500ms;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+}
+
+#map-slider .carousel .item:first-child {
+  top: auto;
+  position: relative;
+}
+
+#map-slider .carousel .item.active {
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 500ms;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  z-index: 1;
+  height:auto;
+}
+
+#map-slider .prev,
+#map-slider .next {
+  position: absolute;
+  top: 50%;
+  background-color: #c52d2f;
+  color: #fff;
+  display: inline-block;
+  margin-top: 310px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+#map-slider .prev:hover,
+#map-slider .next:hover {
+  background-color: #000;
+}
+
+#map-slider .prev {
+  left: 15px;
+}
+
+#map-slider .next {
+  right: 15px;
+}
+
+
+#map-slider .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin: 0 15px 0 0;
+  position: relative;
+
+
+}
+
+#map-slider .carousel-indicators li:after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #FFF;
+  left: -3px;
+  top:-3px;
+
+}
+
+#map-slider .carousel-indicators .active{
+  width: 20px;
+  height: 20px;
+  background-color: #c52d2f;
+  margin: 0 15px 0 0;
+  border: 1px solid #c52d2f;
+  position: relative;
+  
+}
+
+#map-slider .carousel-indicators .active:after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: #c52d2f;
+  border: 1px solid #c52d2f;
+  left: -3px;
+
+
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+#map-slider .active .animation.animated-item-1 {
+  -webkit-animation: fadeInUp 300ms linear 300ms both;
+  -moz-animation: fadeInUp 300ms linear 300ms both;
+  -o-animation: fadeInUp 300ms linear 300ms both;
+  -ms-animation: fadeInUp 300ms linear 300ms both;
+  animation: fadeInUp 300ms linear 300ms both;
+}
+
+#map-slider .active .animation.animated-item-2 {
+  -webkit-animation: fadeInUp 300ms linear 600ms both;
+  -moz-animation: fadeInUp 300ms linear 600ms both;
+  -o-animation: fadeInUp 300ms linear 600ms both;
+  -ms-animation: fadeInUp 300ms linear 600ms both;
+  animation: fadeInUp 300ms linear 600ms both;
+}
+
+#map-slider .active .animation.animated-item-3 {
+  -webkit-animation: fadeInUp 300ms linear 900ms both;
+  -moz-animation: fadeInUp 300ms linear 900ms both;
+  -o-animation: fadeInUp 300ms linear 900ms both;
+  -ms-animation: fadeInUp 300ms linear 900ms both;
+  animation: fadeInUp 300ms linear 900ms both;
+}
+
+#map-slider .active .animation.animated-item-4 {
+  -webkit-animation: fadeInUp 300ms linear 1200ms both;
+  -moz-animation: fadeInUp 300ms linear 1200ms both;
+  -o-animation: fadeInUp 300ms linear 1200ms both;
+  -ms-animation: fadeInUp 300ms linear 1200ms both;
+  animation: fadeInUp 300ms linear 1200ms both;
+}
+
+/*************************
+******* TEXT COLOR*****
+**************************/
+
+section#map-slider h2{
+	color:#0000FF;
+}
+
+/*************************
+***** Intro image Devices*
+**************************/
+.introImageSmartphones{
+  width:150px;
+  height:290px;
+}
+.introImageSecondarySmartphones{
+  width:300px;
+  height:290px;
+}
+.introImageTablets{
+  width:150px;
+  height:250px;
+}
+.introTelefonoFisso{
+  height:150px;
+  width:280px;
+
+}
+/*************************
+***** All Devices page ****
+**************************/
+
+section#allDevices {
+  background-image: url(../images/allDevices/sfondo.jpg);
+}
+section#allDevices h2{
+  color:white;
+}
+
+section#allDevices .btn-primary {
+  float:right;
+  width: 35%;
+  text-align: center;
+
+}
+section#allDevices a {
+  color: #fff;
+}
+section#allDevices .icon-dim{
+  display: block;
+  height: auto;
+  max-width: 20%;
+}
+/*************************
+***** Single Device page ****
+**************************/
+
+
+section#devicesInfo h6{
+ background-color:#cc0000;
+ margin:3px;
+
+}
+
+section#devicesInfo .filter-title.side-filter-empreendimento{
+    background-color: #cc0000;
+    background: #cc0000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px
+}
+
+section#devicesInfo .side-filter {
+  background: transparent;
+}
+
+.clickColor:hover{
+  height:15%;
+  width:15%;
+}
+
+section#devicesInfo .nav-tabs>li>a {
+  align-content: center;
+  background-color: #000033;
+  color: #fff;
+  margin-right: 15px;
+  border-bottom: 0px;
+}
+section#devicesInfo.nav-tabs {
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+  border: 0px;
+  border-bottom: 0px;
+}
+section#devicesInfo .nav-tabs>li{
+  border-bottom: 0px;
+}
+
+section#devicesInfo .nav-tabs>li.active>a{
+  background-color: #cc0000;
+  border-bottom: 0px;
+}
+
+section#devicesInfo .nav-tabs>li>a:hover {
+  background-color: #990000;    
+}
+
+section#devicesInfo .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+section#devicesInfo .nav-tabs.nav-justified>.active>a {
+  border: none;
+}
+
+section#devicesInfo .nav-tabs.nav-justified>.active>a:hover{
+  border: none;
+}
+
+section#devicesInfo .nav-tabs.nav-justified>.active>a:focus{
+  border: none;
+}
+
+.icon-device{
+  width:50px;
+  height: 50px;
+  display: inline-block;
+
+}
+
+
+/*************************
+***** All Devices by category ****
+**************************/
+
+section#devices .btn-primary {
+  float: left;
+  text-align: center;
+
+}
+section#devices a {
+  color: #fff;
+}
+section#devices hr {
+  width:70%;
+  margin: none;
+}
+
+section#devicesInfo .btn-primary {
+  float: left;
+  text-align: center;
+
+}
+section#devicesInfo a {
+  color: #fff;
+}
+section#devicesInfo hr.bar {
+  width:100%;
+  margin: auto;
+}
+#bar{
+  width:100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section#devices hr {
+  width:100%;
+  margin: auto;
+}
+
+.buttonMargin{
+  margin-right: 15px;
+}
+
+/*************************
+***** Who we are *********
+**************************/
+
+#logo .nav-tabs>li.active>a:after{
+  border-style: none;
+}
+
+section.whoweare {
+  padding-bottom: 15px;
+}
+
+#logo {
+  text-align: center;
+  background-color: #e6f0ff;
+  padding: 20px;
+}
+
+section#whoweare h2 {
+  color: #e6f0ff;
+}
+
+section#whoweare p {
+  text-align: center;
+  margin: 20px 40px;
+}
+
+section#whoweare #introduction {
+  padding: 20px !important;
+}
+
+.box-connessi {
+  text-align: center;
+}
+
+.box-connessi p {
+	margin: 7px;
+}
+
+.box-connessi img:hover {
+  box-shadow: 0px 0px 8px 0px #000080; 
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.testimonials {
+  margin: 15px;
+  border-radius: 100%;
+}
+
+#whowearePage .tab-content {
+  background-color: #e6f0ff;
+}
+
+.grid-box {
+  padding: 0px;
+}
+
+/*************************
+***** Transition *********
+**************************/
+
+section.transition {
+  padding: 20px;
+}

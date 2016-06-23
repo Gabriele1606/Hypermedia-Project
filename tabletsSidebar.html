@@ -1,0 +1,153 @@
+<!-- Sidebar -->
+<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
+	<script type="text/javascript">
+		var $checkboxes = $("input:checkbox");
+		var information = document.getElementById('information');
+		var categoryName=information.getAttribute("categoryName");
+        var tableName=information.getAttribute("tableName");
+		$checkboxes.on("change", function(){
+			var opts = getFilterOptions();
+			update(tableName,categoryName,opts);
+		});
+		update(tableName,categoryName);
+	</script>
+	<div class="row">
+		<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-1"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Display<i class=""></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tuttiDevices" name="tuttiDevices">
+									<label for="tuttiDevices">Tutti</label>
+								</li>
+								<li>
+									<input type="checkbox" id="5" name="5">
+									<label for="5">>5 pollici</label>
+								</li>
+								<li>
+									<input type="checkbox" id="6" name="6">
+									<label for="6">>6 pollici</label>
+								</li>
+								<li>
+									<input type="checkbox" id="7" name="7">
+									<label for="7">>7 pollici</label>
+								</li>
+								<li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-m-12 grid-s-12 grid-xs-12">
+				<div class="side-filter">
+					<div class="filter-title side-filter-empreendimento">
+						<h6 data-toggle="collapse" data-target="#group-2"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+							<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Prezzo <i class=""></i></h6>
+						</div>
+						<div id="group-2" class="list-group collapse in">
+							<div class="filter-list">
+								<ul>
+									<li>
+										<input type="checkbox" id="downTo150" name="downTo150">
+										<label for="downTo150">&lt150 Euro</label>
+									</li>
+									<li>
+										<input type="checkbox" id="between150and300" name="between150and300">
+										<label for="between150and300">150-300 Euro</label>
+									</li>
+									<li>
+										<input type="checkbox" id="between300and600" name="between300and600">
+										<label for="between300and600">300-600 Euro</label>
+									</li>
+									<li>
+										<input type="checkbox" id="upTo600" name="upTo600">
+										<label for="upTo600">>600 Euro</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-3"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Marca<i class=""></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tutti" name="tutti">
+									<label for="fixedline">Tutti</label>
+								</li>
+								<li>
+									<input type="checkbox" id="apple" name="apple">
+									<label for="apple">Apple</label>
+								</li>
+								<li>
+									<input type="checkbox" id="samsung" name="samsung">
+									<label for="samsung">Samsung</label>
+								</li>
+								<li>
+									<input type="checkbox" id="huawei" name="huawei">
+									<label for="huawei">Huawei</label>
+								</li>
+								<li>
+									<input type="checkbox" id="acer" name="acer">
+									<label for="acer">Acer</label>
+								</li>
+								<li>
+									<input type="checkbox" id="alcatel" name="alcatel">
+									<label for="alcatel">Alcatel</label>
+								</li>
+								<li>
+								
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div> 
+			<div class="grid-m-12 grid-s-12 grid-xs-12">
+			<div class="side-filter">
+				<div class="filter-title side-filter-empreendimento">
+					<h6 data-toggle="collapse" data-target="#group-4"><i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						<i class="fa fa-fw fa-caret-right parent-collapsed"></i>Sistema Operativo<i class=""></i></h6>
+					</div>
+					<div id="group-1" class="list-group collapse in">
+						<div class="filter-list">
+							<ul>
+								<li>
+									<input type="checkbox" id="tutti" name="tutti">
+									<label for="fixedline">Tutti</label>
+								</li>
+								<li>
+									<input type="checkbox" id="ios" name="ios">
+									<label for="ios">IOS</label>
+								</li>
+								<li>
+									<input type="checkbox" id="android" name="android">
+									<label for="android">Android</label>
+								</li>
+								<li>
+									<input type="checkbox" id="microsoft" name="microsoft">
+									<label for="microsoft">Microsoft</label>
+								</li>
+								<li>
+								
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>  
+			</div>
+		</div>

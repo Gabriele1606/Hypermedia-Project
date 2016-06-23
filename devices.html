@@ -1,0 +1,32 @@
+<div id="information" categoryName="" tableName=""><!-- This div will keep empty and not visible, and is only used
+	by Javascript to detect the category name for the correct filter --></div>
+	<ol class="breadcrumb navigation-info">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#allDevices">All Devices</a></li>
+		<li class="active" id="breadcrumbName">smartphones</li>
+	</ol>
+
+
+
+<section class="no-margin" id="devices">
+	
+	<div class="container">
+		
+		<div class="row col-md-offset-3">
+			  <div class="col-md-3">
+					<p class="btn-primary buttonMargin"><a href="#" id="backToCategory"> &lt Back to all devices</a></p>
+			 </div>
+				<div class="col-md-2 col-md-offset-3">
+			  <p class="btn-primary"><a id="beginTour" href="#deviceInfo" onclick="getDeviceInfo('devices','smartphones','0',function(){ clickPageLinks(); })">Begin tour</a></p>
+	</div>
+	</div>
+<hr>
+<div class="sidebar-filter col-md-3 wow fadeInUp animated">
+			<!-- Here gets loaded the sidebar for the plans page -->
+		</div>
+<div class="products center col-md-9 col-sm-9">
+  <!-- content from DB goes here -->
+</div>
+</div>
+
+</section><!-- /end of plans grid-->

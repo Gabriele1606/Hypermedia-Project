@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html>
-
-<link rel="stylesheet" href="index.css">
+<html lang="en">
 <head>
-	<include 
-	<div id="header">
-	<img src="images/header.jpg" alt="headerTim">
-	</div>
+	<meta charset="iso-8859-1">
+	<meta http-equiv="Content-Type" content="text/html"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Telecom Italia Mobile | Hypermedia Project</title>
 
-	<ul id="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
-</head>
-<body>
+	<!-- Bootstrap and external styles-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/sidebar.css" rel="stylesheet">
 
-</body>
-</html>
+	<!-- Core CSS-->
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!--[if lower than IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->       
+	<link rel="shortcut icon" href="images/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+	<!-- Import jQuery library and Javascript -->
+	<script type="text/javascript" src="js/ajaxCalls.js"></script>
+	<script type="text/javascript" src="js/pageManager.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/fillDynamicButtons.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/loadSidebar.js"></script>
+
+	<!-- This script loads dinamically the headerContent, mainContent and footerContent with jQuery -->
+
+	<script>
+		$(function(){
+
+				// load the header
+				$(".headerContent").load( "header.html");
+
+				// default behaviour: load homepage
+				$(".mainContent").load( "home.html", function() {
+					// after loading the page we should load the page manager for links
+					
+						// load dynamic links (index.html)
+						clickPageLinks();
+
+
+					});
+				// load footer
+				$(".footerContent").load("footer.html");
+			});
+		</script>
+	</head>
+	<!--/head-->
+
+	<body>
+
+		<!-- start real template -->
+		<div class="headerContent"></div>
+		<div class="mainContent"></div>
+		<div class="footerContent"></div>
+		<!-- end template -->
+
+		<!-- Import jQuery plugins for Bootstrap theme -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.prettyPhoto.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/wow.min.js"></script>
+
+	</body>
+
+	</html>
