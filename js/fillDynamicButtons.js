@@ -15,7 +15,7 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
         $("#next").attr("href",'#deviceInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#deviceInfo'+'&'+categoria+'&'+previous);
     }
-    if(categoria=='assistenzaTecnica') {
+    if(categoria=='assistenzaTecnica' || categoria=='lineManagement') {
         $("#next").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+previous);
     }
@@ -40,6 +40,9 @@ function fillMultipleGroupDynamicButtons(previousSection,categoria) {
     }
       if (categoria=='assistenzaTecnica') {
         beginTourButton.setAttribute('href','#assistanceServicesInfo&assistenzaTecnica&0');
+    }    
+      if (categoria=='lineManagement') {
+        beginTourButton.setAttribute('href','#assistanceServicesInfo&lineManagement&6');
     }
 }
 
