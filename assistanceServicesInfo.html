@@ -26,31 +26,8 @@
 				
 			</div>
 			<div class="col-md-4">
-				<div class="verifica-garanzia">
-					<script>
-						$(document).ready(function(){
-							$("#verifica-garanzia").submit(function(event){
-								var email = document.forms["verifica-garanzia"]["email-address"].value;
-								if (email==null || email=='') {
-									alert("Errore: devi inserire un indirizzo email valido.");
-                                    event.preventDefault();
-								} else {
-									alert("Presto sarai ricontattato da un nostro operatore. Controlla la tua email "+email+"!");
-									event.preventDefault();
-								}
-							});
-						});
-					</script><center>
-                    <h2>Verifica garanzia</h2></center>
-                    <p style="text-align:justify">Altrimenti verifica la data del tuo scontrino fiscale e se quest'ultima rientra nell'arco temporale di due anni, lascia la tua email nel form qui sotto, sarai ricontattato il prima possibile e ti sarà spiegato passo dopo passo di come usufruire del servizio di Garanzia sui prodotti TIM.</p>
-					<form  name="verifica-garanzia" id="verifica-garanzia">
-						<div class="form-group">
-							<input type="text"  class="form-control" placeholder="Inserisci il tuo nome e cognome" value="">
-                            <input type="email" name="email-address" class="form-control" placeholder="Inserisci il tuo indirizzo email" value="">
-                            <input type="date" class="form-control" placeholder="Inserisci la data di acquisto" value="">
-							<input type="submit" class="btn btn-primary" value="Verifica">
-						</div>
-					</form>
+				<div id="contenuto" class="wow fadeInUp animated" style=text-align:justify>
+					<!-- content from DB goes here -->
 				</div>
 			</div>
 
