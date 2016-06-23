@@ -76,12 +76,19 @@ function manager(args) {
                 var tabella='assistanceservices';
                 var categoria=special;
                 var prevSection='allAssistanceServices';
-                getIntro(tabella,categoria,function () { clickPageLinks(); });
-                loadSidebar(special);
+                if(categoria=='promotions'){
+                    getIntro(tabella, categoria, function () { clickPageLinks(); });
+                    fillMultipleGroupDynamicButtons('allPromotions',categoria);
+                    loadSidebar('assistanceServicesPromo');
+                }
+                else{
+                    getIntro(tabella,categoria,function () { clickPageLinks(); });
+                    loadSidebar(special);
+                    fillMultipleGroupDynamicButtons(prevSection,categoria);
+                }
                 loadCategoryName(special);
                 loadTableName(tabella);
                 loadBreadCrumb(special);
-                fillMultipleGroupDynamicButtons(prevSection,categoria);
                 break;
                 case 'assistanceServicesInfo':
                 var tabella='assistanceservices';
