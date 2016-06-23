@@ -12,7 +12,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 
-$query="SELECT nome, immagine, descrizione FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+$query="SELECT nome, immagine, descrizione, contenuto FROM $tabella WHERE categoria='$categoria' AND id='$id'";
 
 $result=mysqli_query($dbc,$query);
 if($result) {
