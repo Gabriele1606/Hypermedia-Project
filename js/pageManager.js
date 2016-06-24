@@ -159,19 +159,6 @@ function manager(args) {
                 loadStaticPageBreadCrumb('Group Description');
                 clickPageLinks();
                 break;
-                case 'trainers':
-                getIstruttori(function () { clickPageLinks(); });
-                break;
-                case 'single_trainer':
-                getIstruttore(special,function () { clickPageLinks(); });
-                $.getScript("js/externalAPIs.js", function() {
-                    getTweets();
-                });
-                break;
-                case 'pricing':
-                facebookInit();
-                facebookPrepare();
-                break;
                 default:
                 clickPageLinks();
             }

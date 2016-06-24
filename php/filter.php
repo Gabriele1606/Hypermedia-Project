@@ -1,5 +1,7 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+
 require('connect_db.php');
 $categoria=$_POST['categoria'];
 $tabella=$_POST['tabella'];
