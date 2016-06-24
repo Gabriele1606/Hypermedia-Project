@@ -1,109 +1,120 @@
-
-<!-- Start Device Info section -->
-<script type="text/javascript" src="js/changeDeviceImage.js"></script>
-<br>
-<section class="no-margin" id="devicesInfo">
-	<div class="container">
-		<div class="center">
-			<div class="col-md-7">
-				<ul class="nav nav-tabs nav-justified">
-					<li class="active"><a data-toggle="tab" href="#presentation">Presentazione</a></li>
-					<li><a data-toggle="tab" href="#caratteristiche">Caratteristiche Tecniche</a></li>
-				</ul>
-			</div>
-			<div class="col-md-5">
-				<p class="btn-primary backToAllDevices"><a href="#" id="backToMultipleGroup" ></a></p>
-
-			</div>
-
-		</div>
-   <hr class="bar">
-		<!-- Sidebar -->
-		<div class="col-md-2">
-			<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
-				<div class="row">
-					<div class="grid-m-12 grid-s-12 grid-xs-12">
-						<div class="side-filter">
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									<a href="#" id="next">Next</a>
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									<a href="#" id="previous">Previous</a>
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									BUTTON 2
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									BUTTON 2
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									BUTTON 2
-								</h6>
-							</div>
-
-						</div>
-					</div>    
+<div id="information" categoryName="" tableName=""><!-- This div will keep empty and not visible, and is only used
+	by Javascript to detect the category name --></div>
+	<ol class="breadcrumb navigation-info">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#allDevices">All Devices</a></li>
+		<li id="breadcrumbName">DYNAMIC MULTIPLE GROUP</li>
+		<li class="active" id="deviceName">DYNAMIC SMART LIFE SERVICE</li>
+	</ol>
+	<!-- Start Device Info section -->
+	<script type="text/javascript" src="js/changeDeviceImage.js"></script>
+	<br>
+	<section class="no-margin" id="devicesInfo">
+		<div class="container wow fadeInDown animated">
+			<div class="center">
+				<div class="col-md-7">
+					<ul class="nav nav-tabs nav-justified">
+						<li class="active"><a data-toggle="tab" href="#presentation">Presentazione</a></li>
+						<li><a data-toggle="tab" href="#caratteristiche">Caratteristiche Tecniche</a></li>
+					</ul>
 				</div>
+				<div class="col-md-5">
+					<p class="btn-primary backToAllDevices"><a href="#" id="backToMultipleGroup" ></a></p>
+
+				</div>
+
 			</div>
-		</div><!-- end sidebar -->
-
-		<div class="col-md-10">
-			
-			<div class="tab-content">
-				<div id="presentation" class="tab-pane fade in active">
-
-					<div class="nome">
-						<!-- content from DB goes here -->
-					</div>
-
+			<hr class="bar">
+			<!-- Sidebar -->
+			<div class="col-md-2">
+				<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
 					<div class="row">
-						<div class="center col-md-7">
-							<div class="immagine">
-								<!-- content from DB goes here -->
+						<div class="grid-m-12 grid-s-12 grid-xs-12">
+							<div class="side-filter">
+								<div class="filter-title side-filter-empreendimento">
+									<h6>
+										<a href="#" id="next">Next</a>
+									</h6>
+								</div>
+								<div class="filter-title side-filter-empreendimento">
+									<h6>
+										<a href="#" id="previous">Previous</a>
+									</h6>
+								</div>
+								<div class="filter-title side-filter-empreendimento">
+									<h6>
+										BUTTON 2
+									</h6>
+								</div>
+								<div class="filter-title side-filter-empreendimento">
+									<h6>
+										BUTTON 2
+									</h6>
+								</div>
+								<div class="filter-title side-filter-empreendimento">
+									<h6>
+										BUTTON 2
+									</h6>
+								</div>
+
 							</div>
-							<br>
-							<div class="icone ">
-								<!-- content from DB goes here -->
-							</div>
+						</div>    
+					</div>
+				</div>
+			</div><!-- end sidebar -->
+
+			<div class="col-md-10">
+
+				<div class="tab-content">
+					<div id="presentation" class="tab-pane fade in active">
+
+						<div>
+							<center>
+							<h2 class="nome" style="font-weight: bold;">
+									<!-- content from DB goes here -->
+								</h2>
+							</center>
 						</div>
 
-						<div class="col-md-5">
-							<div class="caratteristiche">
+						<div class="row">
+							<div class="center col-md-7">
+								<div class="immagine">
+									<!-- content from DB goes here -->
+								</div>
+								<br>
+								<div class="icone ">
+									<!-- content from DB goes here -->
+								</div>
 							</div>
+
+							<div class="col-md-5">
+								<div class="caratteristiche">
+								</div>
+								<!-- content from DB goes here -->
+
+								<div class="colori">
+									<!-- content from DB goes here -->
+								</div>
+								<div class="compra">
+									<hr id="bar">	
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+
+					<div id="caratteristiche" class="tab-pane fade in">
+
+						<div class="caratteristichetecniche">
 							<!-- content from DB goes here -->
-
-							<div class="colori">
-								<!-- content from DB goes here -->
-							</div>
-							<div class="compra">
-								<hr id="bar">	
-							</div>
-
 						</div>
-
-
 					</div>
+
 				</div>
-
-				<div id="caratteristiche" class="tab-pane fade in">
-
-					<div class="caratteristichetecniche">
-						<!-- content from DB goes here -->
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
-</div>
 
 </section><!-- /end of plans grid-->

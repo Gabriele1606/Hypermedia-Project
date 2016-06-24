@@ -126,13 +126,15 @@ function getDeviceInfo(tabella,categoria,id,callback) {
         success: function(response) {
 
             var info=JSON.parse(response);
-            $(".nome").append(info[0].nome);
+            var nome=info[0].nome;
+            $(".nome").append(nome);
             $(".immagine").append(info[0].immagine);
             $(".icone").append(info[0].icone);
             $(".caratteristiche").append(info[0].caratteristiche);
             $(".colori").append(info[0].colori);
             $(".compra").append(info[0].compra);
             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
+            $("#deviceName").html(nome);
 
             callback();
         },

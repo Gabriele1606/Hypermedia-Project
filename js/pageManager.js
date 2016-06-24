@@ -139,6 +139,7 @@ function manager(args) {
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
                 fillTopicDynamicButtons(tabella,special,id);
+                loadBreadCrumb(special);
                 break;
                 case 'caratteristicheTecniche':
                 clickPageLinks();
@@ -154,8 +155,9 @@ function manager(args) {
                 loadBreadCrumb(special);
                 getCombinedDevices(special,id,function () { clickPageLinks(); });
                 break;
-                case 'single_class':
-                getCorso(special,function () { clickPageLinks(); });
+                case 'groupTelecomItalia':
+                loadStaticPageBreadCrumb('Group Description');
+                clickPageLinks();
                 break;
                 case 'trainers':
                 getIstruttori(function () { clickPageLinks(); });
