@@ -245,6 +245,53 @@ function getCombinedDevices(categoria,id,callback) {
         }
     });
 }
+//function used to retrieve combined Smart life from a specific devices
+function getCombinedSmartLife(categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCombinedSmartLife.php", //Relative or absolute path to file.php file
+        data: {tabella:'devices', categoria:categoria, id:id},
+        success: function(response) {
+            var info=JSON.parse(response);
+            $("#forsmartlife").append(info[0].nome);
+            $("#forsmartlife").append(info[0].forsmartlife);
+            $("#backToProduct").attr("href","#smartlifeInfo&"+categoria+"&"+id);
+            $("#backToProduct").html("Back to "+nome);
+
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+//function used to retrieve combined Smart life from a specific devices
+function getCombinedAssistantServices(categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCombinedAssistantServices.php", //Relative or absolute path to file.php file
+        data: {tabella:'devices', categoria:categoria, id:id},
+        success: function(response) {
+            var info=JSON.parse(response);
+            $("#forassistantservices").append(info[0].nome);
+            $("#forassistantservices").append(info[0].forassistantservices);
+            $("#backToProduct").attr("href","#smartlifeInfo&"+categoria+"&"+id);
+            $("#backToProduct").html("Back to "+nome);
+
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
 // get all the courses
 function getCorsi(callback){
     console.log("I'm ready!");

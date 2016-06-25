@@ -1,7 +1,15 @@
 
 <!-- Start Device Info section -->
 <script type="text/javascript" src="js/changeDeviceImage.js"></script>
-<br>
+<div id="information" categoryName="" tableName=""><!-- This div will keep empty and not visible, and is only used
+	by Javascript to detect the category name for the correct filter --></div>
+	<ol class="breadcrumb navigation-info">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#allSmartLifeServices">Smart Life Services</a></li>
+		<li id="breadcrumbName"><a href="#device">DYNAMIC MULTIPLE GROUP</a></li>
+		<li class="active" id="smartlifeName">DYNAMIC SMART LIFE SERVICE</li>
+	</ol>
+	<br>
 <section class="no-margin" id="devicesInfo">
 	<div class="container">
 		<div class="center">
@@ -12,48 +20,21 @@
 				</ul>
 			</div>
 			<div class="col-md-5">
-				<p class="btn-primary backToAllDevices"><a href="#" id="backToMultipleGroup" ></a></p>
-
+				<p class="btn-primary buttonMargin"><a href="#" id="backToMultipleGroup" ></a></p>
+				<p class="btn-primary buttonMargin "><a href="#" id="previous">Previous</a></p>
+				<p class="btn-primary buttonMargin"><a href="#" id="next">Next</a></p>
 			</div>
 
 		</div>
    <hr class="bar">
 		<!-- Sidebar -->
 		<div class="col-md-2">
-			<div id="sidebar-filtros" class="grid-m-4 grid-s-4 grid-xs-12">
-				<div class="row">
-					<div class="grid-m-12 grid-s-12 grid-xs-12">
-						<div class="side-filter">
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									<a href="#" id="next">Next</a>
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									<a href="#" id="previous">Previous</a>
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									BUTTON 2
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									BUTTON 2
-								</h6>
-							</div>
-							<div class="filter-title side-filter-empreendimento">
-								<h6>
-									BUTTON 2
-								</h6>
-							</div>
-
-						</div>
-					</div>    
-				</div>
-			</div>
+			<p><b>Find out more Devices Promotions right here!</b></p>
+			<p class="btn-primary buttonMargin "><a href="#devices&promotions">Device Promotions</a></p>
+			<p><b>Find out all SL. Services that suite with this Devices</b></p>
+			<p class="btn-primary buttonMargin "><a href="#" id="combinedSmartLife">Combined SL Services</a></p>
+			<p><b>Find out all AS. Services that suite with this Devices to solve your problem</b></p>
+			<p class="btn-primary buttonMargin "><a href="#" id="combinedAssistantServices">Combined ASS. Services</a></p>
 		</div><!-- end sidebar -->
 
 		<div class="col-md-10">

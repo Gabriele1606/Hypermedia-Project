@@ -135,10 +135,17 @@ function manager(args) {
                 loadTableName(page);
                 fillMultipleGroupDynamicButtons('allDevices',special);
                 break;
+                case 'transitionDeviceToSmartLife':
+                getCombinedSmartLife(special,id,function () { clickPageLinks(); });
+                break;
+                case 'transitionDeviceToAssistantServices':
+                getCombinedAssistantServices(special,id,function () { clickPageLinks(); });
+                break;
                 case 'deviceInfo':
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });
                 fillTopicDynamicButtons(tabella,special,id);
+                loadBreadCrumb(special);
                 break;
                 case 'caratteristicheTecniche':
                 clickPageLinks();
