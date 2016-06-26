@@ -1071,7 +1071,9 @@ section#transition .btn-primary  a {
 /*************************
 ***** All Devices by category ****
 **************************/
-
+section#devices{
+background-color: rgb(242,255,255);
+}
 section#devices .btn-primary {
   float: left;
   text-align: center;
