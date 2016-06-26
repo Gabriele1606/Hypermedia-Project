@@ -134,7 +134,7 @@ function getDeviceInfo(tabella,categoria,id,callback) {
             $(".colori").append(info[0].colori);
             $(".compra").append(info[0].compra);
             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
-            $("#deviceName").html(info[0].buttonName);
+            $("#deviceName").html(nome);
 
             callback();
         },
@@ -285,12 +285,14 @@ function getCombinedSmartLife(categoria,id,callback) {
         data: {tabella:'devices', categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);
-            $("#forsmartlife").append(info[0].nome);
+            var nome=info[0].nome;
+            $("#forsmartlife").append(nome);
+            $("#deviceName").html(nome);
             $("#forsmartlife").append(info[0].forsmartlife);
-            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
-            $("#backToProduct").html("Back to "+info[0].buttonName);
             $("#deviceName").attr("href","#deviceInfo&"+categoria+"&"+id);
-            $("#deviceName").html(info[0].buttonName);
+            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
+            $("#backToProduct").html("Back to "+nome);
+            
 
 
             callback();
@@ -310,13 +312,13 @@ function getCombinedAssistantServices(categoria,id,callback) {
         data: {tabella:'devices', categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);
-            $("#forassistantservices").append(info[0].nome);
+            var nome=info[0].nome;
+            $("#forassistantservices").append(nome);
+            $("#deviceName").html(nome);
             $("#forassistantservices").append(info[0].forassistantservices);
-            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
-            $("#backToProduct").html("Back to "+info[0].buttonName);
-            $("#deviceName").html(info[0].buttonName);
             $("#deviceName").attr("href","#deviceInfo&"+categoria+"&"+id);
-
+            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
+            $("#backToProduct").html("Back to "+nome);
 
             callback();
         },
