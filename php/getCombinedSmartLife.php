@@ -12,7 +12,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 
-$query="SELECT nome,forsmartlife FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+$query="SELECT buttonName,categoria,id,forsmartlife FROM $tabella WHERE categoria='$categoria' AND id='$id'";
 
 $result=mysqli_query($dbc,$query);
 if($result) {

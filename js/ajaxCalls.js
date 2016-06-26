@@ -256,8 +256,8 @@ function getCombinedSmartLife(categoria,id,callback) {
             var info=JSON.parse(response);
             $("#forsmartlife").append(info[0].nome);
             $("#forsmartlife").append(info[0].forsmartlife);
-            $("#backToProduct").attr("href","#smartlifeInfo&"+categoria+"&"+id);
-            $("#backToProduct").html("Back to "+nome);
+            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
+            $("#backToProduct").html("Back to "+info[0].buttonName);
 
 
             callback();
@@ -279,8 +279,8 @@ function getCombinedAssistantServices(categoria,id,callback) {
             var info=JSON.parse(response);
             $("#forassistantservices").append(info[0].nome);
             $("#forassistantservices").append(info[0].forassistantservices);
-            $("#backToProduct").attr("href","#smartlifeInfo&"+categoria+"&"+id);
-            $("#backToProduct").html("Back to "+nome);
+            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
+            $("#backToProduct").html("Back to "+info[0].buttonName);
 
 
             callback();
