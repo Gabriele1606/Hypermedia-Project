@@ -261,7 +261,7 @@ function getCombinedDevices(categoria,id,callback) {
             $("#assistanceName").html(nome);
             $("#assistanceTitle").append(nome);
             $("#immagine").append(info[0].immagine);
-            $("#assistanceName").attr("href","#assistanceservices&"+categoria+"&"+id);
+            $("#assistanceName").attr("href","#assistanceServicesInfo&"+categoria+"&"+id);
             $("#backToProduct").attr("href","#assistanceServicesInfo&"+categoria+"&"+id);
             $("#backToProduct").html("Back to "+nome);
 

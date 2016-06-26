@@ -15,7 +15,7 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
         $("#next").attr("href",'#deviceInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#deviceInfo'+'&'+categoria+'&'+previous);
 
-        $("#backToMultipleGroup").html("&lt Back to Smartphones");
+        $("#backToMultipleGroup").html("&lt Back to "+categoria);
 
         $("#combinedSmartLife").attr("href","#transitionDeviceToSmartLife"+'&'+categoria+'&'+id);
         $("#combinedAssistantServices").attr("href","#transitionDeviceToAssistantServices"+'&'+categoria+'&'+id); 
