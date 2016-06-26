@@ -19,6 +19,7 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
     if(categoria=='assistenzaTecnica' || categoria=='lineManagement') {
         $("#next").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+previous);
+        $("#combinedDevices").attr("href","#transitionAssistancetoDevices"+'&'+categoria+'&'+id);
         $("#backToMultipleGroup").html("&lt Back to Assistance Services");
     }
 }

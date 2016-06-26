@@ -247,4 +247,32 @@ function getCombinedDevices(categoria,id,callback) {
         }
     });
 }
+    
+    function getCombinedDevicesForAssistance(categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCombinedDevicesForAssistance.php", //Relative or absolute path to file.php file
+        data: {tabella:'assistanceservices', categoria:categoria, id:id},
+        success: function(response) {
+            var info=JSON.parse(response);
+            var nome=info[0].nome;
+            $("#fordevices").append(info[0].fordevices);
+            $("#assistanceName").html(nome);
+            $("#assistanceTitle").append(nome);
+            $("#immagine").append(info[0].immagine);
+            $("#assistanceName").attr("href","#assistanceservices&"+categoria+"&"+id);
+            $("#backToProduct").attr("href","#assistanceServicesInfo&"+categoria+"&"+id);
+            $("#backToProduct").html("Back to "+nome);
+
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+    
+}
 
