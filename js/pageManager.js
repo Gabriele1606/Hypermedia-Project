@@ -135,6 +135,14 @@ function manager(args) {
                 loadTableName(page);
                 fillMultipleGroupDynamicButtons('allDevices',special);
                 break;
+                case 'transitionDeviceToSmartLife':
+                getCombinedSmartLife(special,id,function () { clickPageLinks(); });
+                loadBreadCrumb(special);
+                break;
+                case 'transitionDeviceToAssistantServices':
+                getCombinedAssistantServices(special,id,function () { clickPageLinks(); });
+                loadBreadCrumb(special);
+                break;
                 case 'deviceInfo':
                 var tabella='devices';
                 getDeviceInfo(tabella,special,id,function () { clickPageLinks(); });

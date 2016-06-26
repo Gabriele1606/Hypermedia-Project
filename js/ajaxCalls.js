@@ -134,7 +134,7 @@ function getDeviceInfo(tabella,categoria,id,callback) {
             $(".colori").append(info[0].colori);
             $(".compra").append(info[0].compra);
             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
-            $("#deviceName").html(nome);
+            $("#deviceName").html(info[0].buttonName);
 
             callback();
         },
@@ -275,4 +275,57 @@ function getCombinedDevices(categoria,id,callback) {
     });
     
 }
+
+//function used to retrieve combined Smart life from a specific devices
+function getCombinedSmartLife(categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCombinedSmartLife.php", //Relative or absolute path to file.php file
+        data: {tabella:'devices', categoria:categoria, id:id},
+        success: function(response) {
+            var info=JSON.parse(response);
+            $("#forsmartlife").append(info[0].nome);
+            $("#forsmartlife").append(info[0].forsmartlife);
+            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
+            $("#backToProduct").html("Back to "+info[0].buttonName);
+            $("#deviceName").attr("href","#deviceInfo&"+categoria+"&"+id);
+            $("#deviceName").html(info[0].buttonName);
+
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+//function used to retrieve combined Smart life from a specific devices
+function getCombinedAssistantServices(categoria,id,callback) {
+    $.ajax({
+        method: "POST",
+        crossDomain: true, //localhost purposes
+        url: "php/getCombinedAssistantServices.php", //Relative or absolute path to file.php file
+        data: {tabella:'devices', categoria:categoria, id:id},
+        success: function(response) {
+            var info=JSON.parse(response);
+            $("#forassistantservices").append(info[0].nome);
+            $("#forassistantservices").append(info[0].forassistantservices);
+            $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
+            $("#backToProduct").html("Back to "+info[0].buttonName);
+            $("#deviceName").html(info[0].buttonName);
+            $("#deviceName").attr("href","#deviceInfo&"+categoria+"&"+id);
+
+
+            callback();
+        },
+        error: function(request,error)
+        {
+            console.log("Error");
+        }
+    });
+}
+
+
 

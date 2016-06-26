@@ -14,7 +14,12 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
     if(categoria=='smartphones' || categoria=='tablets') {
         $("#next").attr("href",'#deviceInfo'+'&'+categoria+'&'+next);
         $("#previous").attr("href",'#deviceInfo'+'&'+categoria+'&'+previous);
+
         $("#backToMultipleGroup").html("&lt Back to Smartphones");
+
+        $("#combinedSmartLife").attr("href","#transitionDeviceToSmartLife"+'&'+categoria+'&'+id);
+        $("#combinedAssistantServices").attr("href","#transitionDeviceToAssistantServices"+'&'+categoria+'&'+id); 
+
     }
     if(categoria=='assistenzaTecnica' || categoria=='lineManagement') {
         $("#next").attr("href",'#assistanceServicesInfo'+'&'+categoria+'&'+next);
