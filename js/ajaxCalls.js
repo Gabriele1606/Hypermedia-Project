@@ -134,7 +134,7 @@ function getDeviceInfo(tabella,categoria,id,callback) {
             $(".colori").append(info[0].colori);
             $(".compra").append(info[0].compra);
             $(".caratteristichetecniche").append(info[0].caratteristichetecniche);
-            $("#deviceName").html(nome);
+            $("#deviceName").html(info[0].buttonName);
 
             callback();
         },
@@ -261,6 +261,7 @@ function getCombinedSmartLife(categoria,id,callback) {
             $("#forsmartlife").append(info[0].forsmartlife);
             $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
             $("#backToProduct").html("Back to "+info[0].buttonName);
+            $("#deviceName").html(info[0].buttonName);
 
 
             callback();

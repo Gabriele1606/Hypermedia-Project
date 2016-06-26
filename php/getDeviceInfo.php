@@ -14,7 +14,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 
-	$query="SELECT nome, immagine, icone, caratteristiche, colori, compra, caratteristichetecniche FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+	$query="SELECT nome,buttonName, immagine, icone, caratteristiche, colori, compra, caratteristichetecniche FROM $tabella WHERE categoria='$categoria' AND id='$id'";
 
 
 
