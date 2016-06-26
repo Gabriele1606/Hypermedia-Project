@@ -166,6 +166,10 @@ section#plans {
 ***** Plan Info Page******
 **************************/
 
+section#smartlifeInfo {
+  background-color: rgb(242,255,255);
+}
+
 section#smartlifeInfo .nav-tabs li {
   background-color: #0099ff;
   color: white;
@@ -323,6 +327,12 @@ section#assistanceServicesInfo .btn a {
   color: white;
 }
 
+section#assistanceServicesInfo .btn-primary {
+  width: 100%;
+}
+section#assistanceServicesInfo .btn-primary#small {
+  width: 49.5%;
+}
 section#assistanceServicesInfo .nav-tabs>li.active>a:after{
   border-style: none;
 }
@@ -1177,6 +1187,14 @@ section#whoweare #introduction {
 
 section.transition {
   padding: 20px;
+}
+
+section.transitionAssistance {
+  padding: 0px;
+}
+
+section.transitionAssistance #immagine{
+  margin-bottom: 20px;
 }
 
 #fordevices h3:hover {

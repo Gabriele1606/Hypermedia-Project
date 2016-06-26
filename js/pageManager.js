@@ -163,6 +163,13 @@ function manager(args) {
                 loadBreadCrumb(special);
                 getCombinedDevices(special,id,function () { clickPageLinks(); });
                 break;
+                case 'transitionAssistancetoDevices':
+                var tabella='assistanceservices';
+                loadCategoryName(special);
+                loadTableName(page);
+                loadBreadCrumb(special);
+                getCombinedDevicesForAssistance(special,id,function () { clickPageLinks(); });
+                break;
                 case 'groupTelecomItalia':
                 loadStaticPageBreadCrumb('Group Description');
                 clickPageLinks();

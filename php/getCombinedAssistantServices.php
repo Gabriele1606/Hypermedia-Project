@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 require('connect_db.php');
 
 if (isset($_POST['tabella'])) {
