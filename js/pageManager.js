@@ -107,15 +107,16 @@ function manager(args) {
                 if(categoria!='promotions') {
                     getIntro(tabella,categoria,function () { clickPageLinks(); });
                     loadSidebar(special);
+                    loadTableName(tabella);
                     fillMultipleGroupDynamicButtons(prevSection,categoria);
                 }
                 else {
                     getPromoIntro(tabella,function () { clickPageLinks(); });
+                    loadTableName(tabella);
                     fillMultipleGroupDynamicButtons('allPromotions',categoria);
                     loadSidebar('smartlifePromo');
                 }
                 loadCategoryName(special);
-                loadTableName(tabella);
                 loadBreadCrumb(special);
                 break;
                 case 'smartlifeInfo':
@@ -133,7 +134,10 @@ function manager(args) {
                 loadCategoryName(special);
                 loadBreadCrumb(special);
                 loadTableName(page);
-                fillMultipleGroupDynamicButtons('allDevices',special);
+                if(special!='promotions')
+                    fillMultipleGroupDynamicButtons('allDevices',special);
+                else
+                    fillMultipleGroupDynamicButtons('allPromotions',special);
                 break;
                 case 'transitionDeviceToSmartLife':
                 getCombinedSmartLife(special,id,function () { clickPageLinks(); });
