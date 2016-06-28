@@ -57,6 +57,12 @@
 					});
 				// load footer
 				$(".footerContent").load("footer.html");
+
+				$(document).bind("mobileinit", function () {
+					$.support.cors = true;
+					$.mobile.allowCrossDomainPages = true;
+				});
+
 			});
 		</script>
 	</head>

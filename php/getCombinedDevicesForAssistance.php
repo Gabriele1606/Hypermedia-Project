@@ -1,5 +1,7 @@
 <?php
+
 header('Access-Control-Allow-Origin: *');
+
 require('connect_db.php');
 
 if (isset($_POST['tabella'])) {
@@ -12,7 +14,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 
-$query="SELECT nome,id,categoria,forassistantservices FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+$query="SELECT nome, fordevices, immagine FROM $tabella WHERE categoria='$categoria' AND id='$id'";
 
 $result=mysqli_query($dbc,$query);
 if($result) {

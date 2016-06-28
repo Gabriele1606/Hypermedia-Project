@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 require('connect_db.php');
 
 if (isset($_POST['tabella'])) {
@@ -12,7 +12,7 @@ else{
 	echo "Error, table wasn't set correctly";
 }
 
-$query="SELECT buttonName,categoria,id,forsmartlife FROM $tabella WHERE categoria='$categoria' AND id='$id'";
+$query="SELECT nome,categoria,id,forsmartlife FROM $tabella WHERE categoria='$categoria' AND id='$id'";
 
 $result=mysqli_query($dbc,$query);
 if($result) {

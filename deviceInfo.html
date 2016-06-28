@@ -1,91 +1,112 @@
-
-<!-- Start Device Info section -->
-<script type="text/javascript" src="js/changeDeviceImage.js"></script>
-<div id="information" categoryName="" tableName=""><!-- This div will keep empty and not visible, and is only used
-	by Javascript to detect the category name for the correct filter --></div>
-		<ol class="breadcrumb navigation-info">
+<div id="information" categoryName="" tableName=""><!-- This div will keep empty and not visible, and is only used by Javascript to detect the category name --></div>
+	<ol class="breadcrumb navigation-info">
 		<li><a href="#home">Home</a></li>
 		<li><a href="#allDevices">All Devices</a></li>
 		<li id="breadcrumbName">DYNAMIC MULTIPLE GROUP</li>
 		<li class="active" id="deviceName">DYNAMIC SMART LIFE SERVICE</li>
 	</ol>
-
+	<!-- Start Device Info section -->
+	<script type="text/javascript" src="js/changeDeviceImage.js"></script>
 	<br>
-<section class="no-margin" id="devicesInfo">
-	<div class="container">
-		<div class="center">
-			<div class="col-md-7">
-				<ul class="nav nav-tabs nav-justified">
-					<li class="active"><a data-toggle="tab" href="#presentation">Presentazione</a></li>
-					<li><a data-toggle="tab" href="#caratteristiche">Caratteristiche Tecniche</a></li>
-				</ul>
-			</div>
-			<div class="col-md-5">
+	<section class="no-margin" id="devicesInfo">
+		<div class="container wow fadeInDown animated">
+			<div class="center">
+				<div class="col-md-7">
+					<ul class="nav nav-tabs nav-justified">
+						<li class="active"><a data-toggle="tab" href="#presentation">Presentazione</a></li>
+						<li><a data-toggle="tab" href="#caratteristiche">Caratteristiche Tecniche</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5">
 				<p class="btn-primary buttonMargin"><a href="#" id="backToMultipleGroup" ></a></p>
 				<p class="btn-primary buttonMargin "><a href="#" id="previous">Previous</a></p>
 				<p class="btn-primary buttonMargin"><a href="#" id="next">Next</a></p>
 			</div>
 
-		</div>
-   <hr class="bar">
-		<!-- Sidebar -->
+			</div>
+			<hr class="bar">
+			
+			<!-- Sidebar -->
 		<div class="col-md-2">
+			<div class="">
 			<p><b>Find out more Devices Promotions right here!</b></p>
 			<p class="btn-primary buttonMargin "><a href="#devices&promotions">Device Promotions</a></p>
+
+			</div>
+			<br>
+			<br>
+			<br>
+		
+		<div class="">
 			<p><b>Find out all SL. Services that suite with this Devices</b></p>
+			</div>
 			<p class="btn-primary buttonMargin "><a href="#" id="combinedSmartLife">Combined SL Services</a></p>
+			<br>
+			<br>
+			<br>
+
+		
+		<div class="">
 			<p><b>Find out all AS. Services that suite with this Devices to solve your problem</b></p>
+			</div>
 			<p class="btn-primary buttonMargin "><a href="#" id="combinedAssistantServices">Combined ASS. Services</a></p>
+		
 		</div><!-- end sidebar -->
+		<br>
+		<br>
 
-		<div class="col-md-10">
-			
-			<div class="tab-content">
-				<div id="presentation" class="tab-pane fade in active">
+			<div class="col-md-10">
 
-					<div class="nome">
-						<!-- content from DB goes here -->
-					</div>
+				<div class="tab-content">
+					<div id="presentation" class="tab-pane fade in active">
 
-					<div class="row">
-						<div class="center col-md-7">
-							<div class="immagine">
-								<!-- content from DB goes here -->
-							</div>
-							<br>
-							<div class="icone ">
-								<!-- content from DB goes here -->
-							</div>
+						<div>
+							<center>
+							<h2 class="nome" style="font-weight: bold;">
+									<!-- content from DB goes here -->
+								</h2>
+							</center>
 						</div>
 
-						<div class="col-md-5">
-							<div class="caratteristiche">
+						<div class="row">
+							<div class="center col-md-7">
+								<div class="immagine">
+									<!-- content from DB goes here -->
+								</div>
+								<br>
+								<div class="icone ">
+									<!-- content from DB goes here -->
+								</div>
 							</div>
+
+							<div class="col-md-5">
+								<div class="caratteristiche">
+								</div>
+								<!-- content from DB goes here -->
+
+								<div class="colori">
+									<!-- content from DB goes here -->
+								</div>
+								<div class="compra">
+									<hr id="bar">	
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+
+					<div id="caratteristiche" class="tab-pane fade in">
+
+						<div class="caratteristichetecniche">
 							<!-- content from DB goes here -->
-
-							<div class="colori">
-								<!-- content from DB goes here -->
-							</div>
-							<div class="compra">
-								<hr id="bar">	
-							</div>
-
 						</div>
-
-
 					</div>
+
 				</div>
-
-				<div id="caratteristiche" class="tab-pane fade in">
-
-					<div class="caratteristichetecniche">
-						<!-- content from DB goes here -->
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</div>
-</div>
 
 </section><!-- /end of plans grid-->

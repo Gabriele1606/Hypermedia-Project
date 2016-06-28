@@ -1,5 +1,7 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
+
 require('connect_db.php');
 $categoria=$_POST['categoria'];
 $tabella=$_POST['tabella'];
@@ -11,7 +13,9 @@ if($categoria=='promotions'){
 		$where = ' WHERE promozione='.'"'.$promozione.'"';
 	} else if($tabella=='smartlifeservices') {
 		$where = ' WHERE promo!="NULL" ';
-	}
+	} else if ($tabella=='assistanceservices'){
+        $where = ' WHERE categoria='.'"'.$categoria.'"';
+    }
 }
 else{
 	$where = ' WHERE categoria='.'"'.$categoria.'"';
@@ -170,6 +174,17 @@ if(in_array("sony", $opts))
 if(in_array("tim", $opts))
 	$where .=' AND marca = "'."Tim".'"';
 
+if(in_array("product", $opts))
+	$where ;
+
+if(in_array("devices", $opts))
+	$where .=' AND tipo = "'."devices".'"';
+
+if(in_array("adslefibra", $opts))
+	$where .=' AND tipo = "'."adslefibra".'"';
+
+if(in_array("tventertainment", $opts))
+	$where .=' AND tipo = "'."tventertainment".'"';
 
 /* START Assistance Services FILTER OPTIONS */
 if(in_array("product", $opts))

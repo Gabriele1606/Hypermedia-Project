@@ -1,5 +1,6 @@
 <?php
 
+header('Access-Control-Allow-Origin: *');
 #Connect on 'localhost' for user 'admin'
 #with password 'password' to database 'tim'.
 $dbc = mysqli_connect

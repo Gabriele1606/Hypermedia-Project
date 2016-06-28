@@ -107,15 +107,16 @@ function manager(args) {
                 if(categoria!='promotions') {
                     getIntro(tabella,categoria,function () { clickPageLinks(); });
                     loadSidebar(special);
+                    loadTableName(tabella);
                     fillMultipleGroupDynamicButtons(prevSection,categoria);
                 }
                 else {
                     getPromoIntro(tabella,function () { clickPageLinks(); });
+                    loadTableName(tabella);
                     fillMultipleGroupDynamicButtons('allPromotions',categoria);
                     loadSidebar('smartlifePromo');
                 }
                 loadCategoryName(special);
-                loadTableName(tabella);
                 loadBreadCrumb(special);
                 break;
                 case 'smartlifeInfo':
@@ -133,13 +134,18 @@ function manager(args) {
                 loadCategoryName(special);
                 loadBreadCrumb(special);
                 loadTableName(page);
-                fillMultipleGroupDynamicButtons('allDevices',special);
+                if(special!='promotions')
+                    fillMultipleGroupDynamicButtons('allDevices',special);
+                else
+                    fillMultipleGroupDynamicButtons('allPromotions',special);
                 break;
                 case 'transitionDeviceToSmartLife':
                 getCombinedSmartLife(special,id,function () { clickPageLinks(); });
+                loadBreadCrumb(special);
                 break;
                 case 'transitionDeviceToAssistantServices':
                 getCombinedAssistantServices(special,id,function () { clickPageLinks(); });
+                loadBreadCrumb(special);
                 break;
                 case 'deviceInfo':
                 var tabella='devices';
@@ -161,21 +167,16 @@ function manager(args) {
                 loadBreadCrumb(special);
                 getCombinedDevices(special,id,function () { clickPageLinks(); });
                 break;
-                case 'single_class':
-                getCorso(special,function () { clickPageLinks(); });
+                case 'transitionAssistancetoDevices':
+                var tabella='assistanceservices';
+                loadCategoryName(special);
+                loadTableName(page);
+                loadBreadCrumb(special);
+                getCombinedDevicesForAssistance(special,id,function () { clickPageLinks(); });
                 break;
-                case 'trainers':
-                getIstruttori(function () { clickPageLinks(); });
-                break;
-                case 'single_trainer':
-                getIstruttore(special,function () { clickPageLinks(); });
-                $.getScript("js/externalAPIs.js", function() {
-                    getTweets();
-                });
-                break;
-                case 'pricing':
-                facebookInit();
-                facebookPrepare();
+                case 'groupTelecomItalia':
+                loadStaticPageBreadCrumb('Group Description');
+                clickPageLinks();
                 break;
                 default:
                 clickPageLinks();

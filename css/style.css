@@ -116,6 +116,10 @@ section#allSmartLifeServices img {
   display: inline;
 }
 
+.navButton {
+  margin-bottom: 15px;
+}
+
 section#plans {
   background-color: rgb(242,255,255);
 }
@@ -165,6 +169,10 @@ section#plans {
 /*************************
 ***** Plan Info Page******
 **************************/
+
+section#smartlifeInfo {
+  background-color: rgb(242,255,255);
+}
 
 section#smartlifeInfo .nav-tabs li {
   background-color: #0099ff;
@@ -323,6 +331,12 @@ section#assistanceServicesInfo .btn a {
   color: white;
 }
 
+section#assistanceServicesInfo .btn-primary {
+  width: 100%;
+}
+section#assistanceServicesInfo .btn-primary#small {
+  width: 49.5%;
+}
 section#assistanceServicesInfo .nav-tabs>li.active>a:after{
   border-style: none;
 }
@@ -971,6 +985,7 @@ section#allDevices {
 }
 section#allDevices h2{
   color:white;
+  margin-top: 10px;
 }
 
 section#allDevices .btn-primary {
@@ -1071,7 +1086,9 @@ section#transition .btn-primary  a {
 /*************************
 ***** All Devices by category ****
 **************************/
-
+section#devices{
+background-color: rgb(242,255,255);
+}
 section#devices .btn-primary {
   float: left;
   text-align: center;
@@ -1175,4 +1192,19 @@ section#whoweare #introduction {
 
 section.transition {
   padding: 20px;
+}
+
+section.transitionAssistance {
+  padding: 0px;
+}
+
+section.transitionAssistance #immagine{
+  margin-bottom: 20px;
+}
+
+#fordevices h3:hover {
+  box-shadow: 0px 0px 30px 0px #000080;
+  border-radius: 90%;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
