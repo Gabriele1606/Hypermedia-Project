@@ -18,5 +18,5 @@
         <platform name="android" />
         <platform name="winphone" />
 
-        <icon src="images/logo.png" />
+        <icon src="images/logo_phonegap.png" />
     </widget>
