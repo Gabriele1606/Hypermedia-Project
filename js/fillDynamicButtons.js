@@ -46,6 +46,17 @@ function fillMultipleGroupDynamicButtons(previousSection,categoria) {
 	var backToCategoryButton = document.getElementById('backToCategory');
     var beginTourButton = document.getElementById('beginTour');
     backToCategoryButton.setAttribute('href','#'+previousSection);
+    if(categoria=='promotions') {
+        var tabella = document.getElementById('information');
+        if(tabella.getAttribute('tableName')=='smartlifeservices')
+            beginTourButton.setAttribute('href','#smartlifeInfo&plans&6');
+        else if(tabella.getAttribute('tableName')=='assistanceServices')
+            beginTourButton.setAttribute('href','#assistanceServicesInfo&assistenzaTecnica&0');
+        else if(tabella.getAttribute('tableName')=='devices')
+            beginTourButton.setAttribute('href','#deviceInfo&smartphones&0');
+        $("#backToCategory").html("Back to All Promotions");
+    }
+
     if (categoria=='plans') {
         beginTourButton.setAttribute('href','#smartlifeInfo&plans&6');
         $("#backToCategory").html("Back to All Smart Life Services");
