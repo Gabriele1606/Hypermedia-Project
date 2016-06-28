@@ -1,7 +1,20 @@
 function fillTopicDynamicButtons(previousSection,categoria,id) {
     var idValue = parseInt(id);
-    var next=idValue+1;
-    var previous=idValue-1;
+    var next;
+    var previous;
+    if(categoria=='smartphones' || categoria=='tablets'){
+        if(idValue==1){
+            next=0;
+            previous=0;
+        }else if(idValue==0){
+            next=1;
+            previous=1;
+        }
+
+    }else{
+    next=idValue+1;
+    previous=idValue-1;
+    }
     $("#backToMultipleGroup").attr("href",'#'+previousSection+'&'+categoria);
     $("#next").html("Next");
     $("#previous").html("Previous");
