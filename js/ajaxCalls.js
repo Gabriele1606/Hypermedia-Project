@@ -265,7 +265,6 @@ function getCombinedDevices(categoria,id,callback) {
             $("#backToProduct").attr("href","#assistanceServicesInfo&"+categoria+"&"+id);
             $("#backToProduct").html("Back to "+nome);
 
-
             callback();
         },
         error: function(request,error)
@@ -292,7 +291,7 @@ function getCombinedSmartLife(categoria,id,callback) {
             $("#deviceName").attr("href","#deviceInfo&"+categoria+"&"+id);
             $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
             $("#backToProduct").html("Back to "+nome);
-            
+            $("#deviceTitle").append(nome);
 
 
             callback();
@@ -319,6 +318,7 @@ function getCombinedAssistantServices(categoria,id,callback) {
             $("#deviceName").attr("href","#deviceInfo&"+categoria+"&"+id);
             $("#backToProduct").attr("href","#deviceInfo&"+info[0].categoria+"&"+info[0].id);
             $("#backToProduct").html("Back to "+nome);
+            $("#deviceTitle").append(nome);
 
             callback();
         },
