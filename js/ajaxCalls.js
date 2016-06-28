@@ -9,7 +9,7 @@
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getPromoIndex.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getPromoIndex.php", //Relative or absolute path to file.php file
         data: '',
         success: function(response) {
 
@@ -39,7 +39,7 @@ function getCategorie(categoria,callback){
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getCategorie.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getCategorie.php", //Relative or absolute path to file.php file
         data: {categoria:categoria},
         success: function(response) {
 
@@ -70,7 +70,7 @@ function getIntro(tabella,categoria,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getIntro.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getIntro.php", //Relative or absolute path to file.php file
         data: {tabella:tabella, categoria:categoria},
         success: function(response) {
 
@@ -95,7 +95,7 @@ function getPromoIntro(tabella,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getPromoIntro.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getPromoIntro.php", //Relative or absolute path to file.php file
         data: {tabella:tabella},
         success: function(response) {
 
@@ -121,7 +121,7 @@ function getDeviceInfo(tabella,categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getDeviceInfo.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getDeviceInfo.php", //Relative or absolute path to file.php file
         data: {tabella:tabella, categoria:categoria, id:id},
         success: function(response) {
 
@@ -149,7 +149,7 @@ function getDeviceInfoTecniche(tabella,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getDeviceInfoTecniche.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getDeviceInfoTecniche.php", //Relative or absolute path to file.php file
         data: {tabella:tabella, id:id},
         success: function(response) {
 
@@ -171,7 +171,7 @@ function getPlanInfo(tabella,categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getPlanInfo.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getPlanInfo.php", //Relative or absolute path to file.php file
         data: {tabella:tabella, categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);
@@ -202,7 +202,7 @@ function getAssistanceInfo(tabella,categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getAssistanceInfo.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getAssistanceInfo.php", //Relative or absolute path to file.php file
         data: {tabella:tabella, categoria:categoria, id:id},
         success: function(response) {
 
@@ -226,7 +226,7 @@ function getCombinedDevices(categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getCombinedDevices.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getCombinedDevices.php", //Relative or absolute path to file.php file
         data: {tabella:'smartlifeservices', categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);
@@ -252,7 +252,7 @@ function getCombinedDevices(categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getCombinedDevicesForAssistance.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getCombinedDevicesForAssistance.php", //Relative or absolute path to file.php file
         data: {tabella:'assistanceservices', categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);
@@ -281,7 +281,7 @@ function getCombinedSmartLife(categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getCombinedSmartLife.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getCombinedSmartLife.php", //Relative or absolute path to file.php file
         data: {tabella:'devices', categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);
@@ -308,7 +308,7 @@ function getCombinedAssistantServices(categoria,id,callback) {
     $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "php/getCombinedAssistantServices.php", //Relative or absolute path to file.php file
+        url: "http://tim2016.altervista.org/php/getCombinedAssistantServices.php", //Relative or absolute path to file.php file
         data: {tabella:'devices', categoria:categoria, id:id},
         success: function(response) {
             var info=JSON.parse(response);

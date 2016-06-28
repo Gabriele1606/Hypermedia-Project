@@ -12,8 +12,8 @@ function fillTopicDynamicButtons(previousSection,categoria,id) {
         }
 
     }else{
-    next=idValue+1;
-    previous=idValue-1;
+        next=idValue+1;
+        previous=idValue-1;
     }
     $("#backToMultipleGroup").attr("href",'#'+previousSection+'&'+categoria);
     $("#next").html("Next");
@@ -73,11 +73,11 @@ function fillMultipleGroupDynamicButtons(previousSection,categoria) {
         beginTourButton.setAttribute('href','#deviceInfo&tablets&10');
         $("#backToCategory").html("Back to All Devices");
     }
-      if (categoria=='assistenzaTecnica') {
+    if (categoria=='assistenzaTecnica') {
         beginTourButton.setAttribute('href','#assistanceServicesInfo&assistenzaTecnica&0');
         $("#backToCategory").html("Back to All Assistance Services");
     }    
-      if (categoria=='lineManagement') {
+    if (categoria=='lineManagement') {
         beginTourButton.setAttribute('href','#assistanceServicesInfo&lineManagement&6');
         $("#backToCategory").html("Back to All Assistance Services");
     }

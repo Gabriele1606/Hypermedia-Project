@@ -116,6 +116,10 @@ section#allSmartLifeServices img {
   display: inline;
 }
 
+.navButton {
+  margin-bottom: 15px;
+}
+
 section#plans {
   background-color: rgb(242,255,255);
 }
@@ -981,6 +985,7 @@ section#allDevices {
 }
 section#allDevices h2{
   color:white;
+  margin-top: 10px;
 }
 
 section#allDevices .btn-primary {
