@@ -17,7 +17,7 @@ function update(tabella,categoria,opts){
 	$.ajax({
 		method: "POST",
 		crossDomain: true,
-		url: "php/filter.php",
+		url: "http://tim2016.altervista.org/php/filter.php",
 		data: {filterOpts: opts, tabella:tabella,categoria: categoria},
 		success: function(response){
 			var intro=JSON.parse(response);
